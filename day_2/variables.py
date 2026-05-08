@@ -57,8 +57,15 @@ pi = 3.142
 # circumference = 2 * pi * radius
 # print(circumference)
 
-radius = float(input('enter your radius: '))
+# radius = float(input('enter your radius: '))
 
-area = pi * radius**2
-print(area)
+# area = pi * radius**2
+# print(area)
 
+first_name = input('enter your first name: ')
+last_name = input('what is your last name: ')
+country = input('where are you from? ')
+age = int(input('how old are you? '))
+
+
+print('first name:', first_name, 'last_name:', last_name, 'country:', country, 'age:', age)
