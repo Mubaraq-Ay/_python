@@ -17,29 +17,48 @@ is_light_on = True
 # first_name, last_name, full_name, country, city, age, year, is_married, is_true, is_light_on = 'mubaraq', 'ayanleke', 'ayanleke mubaraq', 'nigeria', 'lagos', 18, True, True, False
 
 
-print(len(first_name))
-print(len(last_name))
+# print(len(first_name))
+# print(len(last_name))
 
-num_one = 5
-num_two = 4
+# num_one = 5
+# num_two = 4
 
-total = num_one + num_two
-print(total)
+# total = num_one + num_two
+# print(total)
 
-diff = num_one - num_two
-print(diff)
+# diff = num_one - num_two
+# print(diff)
 
-product = num_one * num_two
-print(product)
+# product = num_one * num_two
+# print(product)
 
-division = num_one / num_two
-print(division)
+# division = num_one / num_two
+# print(division)
 
-remainder = num_one % num_two
-print(remainder)
+# remainder = num_one % num_two
+# print(remainder)
 
-exp = num_one ** num_two
-print(exp)
+# exp = num_one ** num_two
+# print(exp)
 
-floor_division = num_one // num_two
-print(floor_division)
+# floor_division = num_one // num_two
+# print(floor_division)
+
+
+# to solve for the area of a circle
+
+radius = 30
+pi = 3.142
+
+# area_of_circle = pi * radius**2
+
+# print(area_of_circle)
+
+# circumference = 2 * pi * radius
+# print(circumference)
+
+radius = float(input('enter your radius: '))
+
+area = pi * radius**2
+print(area)
+
