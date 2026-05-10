@@ -131,7 +131,7 @@ y_intercept = -2
 number_of_years = int(input('enter number of years you have lived: '))
 seconds_lived = number_of_years * 31536000
 
-print('you have lived for ', seconds_lived, 'seconds')
+print('you have lived for', seconds_lived, 'seconds')
 
 
 
