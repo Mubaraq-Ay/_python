@@ -35,12 +35,16 @@ complex_num = 3 + 3j
 # print('perimeter of a rectangle: ', perimeter)
 
 # radius of a circle 
-pi = 3.14
+# pi = 3.14
 
-radius = float(input('enter your radius: '))
+# radius = float(input('enter your radius: '))
 
-area_of_circle = pi * radius**2
-circumference_of_circle = 2 * pi * radius
+# area_of_circle = pi * radius**2
+# circumference_of_circle = 2 * pi * radius
 
-print('area of the circle: ', area_of_circle)
-print('circumference of circle: ', circumference_of_circle)
+# print('area of the circle: ', area_of_circle)
+# print('circumference of circle: ', circumference_of_circle)
+
+# slope
+
+ 
