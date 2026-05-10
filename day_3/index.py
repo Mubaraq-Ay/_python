@@ -65,22 +65,59 @@
 # comparison operators
 # ==, !=, >, <, >=, <=
 
-print(3 > 2)
-print(3 >= 2)
-print(3 < 2)
-print(2 <= 3)
-print(3 == 2)
-print(3 != 2)
-print(len('mango') == len('avocado'))
-print(len('mango') != len('avocado'))
-print(len('mango') < len('avocado'))
-print(len('milk') < len('meat'))
-print(len('milk') == len('meat')) 
-print(len('python') > len('dragon')) 
+# print(3 > 2)
+# print(3 >= 2)
+# print(3 < 2)
+# print(2 <= 3)
+# print(3 == 2)
+# print(3 != 2)
+# print(len('mango') == len('avocado'))
+# print(len('mango') != len('avocado'))
+# print(len('mango') < len('avocado'))
+# print(len('milk') < len('meat'))
+# print(len('milk') == len('meat')) 
+# print(len('python') > len('dragon')) 
 
-print('True == True: ', True == True)
+# print('True == True: ', True == True)
 
 # is - returns true if both variables are the same object
 # is not- Returns true if both variables are not the same object
 # in - Returns True if the queried list contains a certain item
 # not in - Returns True if the queried list doesn't have a certain item
+
+# print('1 is 1', 1 is 1)
+# print('1 is not 2', 1 is not 2)
+# print('A in Asabeneh', 'A' in 'Asabeneh')
+# print('B not in Asabeneh', 'B' in 'Asabeneh')
+
+
+# really dont understand this, but i'll definitely come back to it.
+
+'''
+print('1 is 1', 1 is 1)                   # True - because the data values are the same
+print('1 is not 2', 1 is not 2)           # True - because 1 is not 2
+print('A in Asabeneh', 'A' in 'Asabeneh') # True - A found in the string
+print('B not in Asabeneh', 'B' in 'Asabeneh') # False - there is no uppercase B
+print('coding' in 'coding for all') # True - because coding for all has the word coding
+print('a in an:', 'a' in 'an')      # True
+print('4 is 2 ** 2:', 4 is 2 ** 2)   # True
+'''
+
+# logical operators
+# and, or, not
+# and - returns true when both statements are true
+# or - returns true if one statement is true
+# not - reverse the result.
+
+print(3 > 2 and 4 > 3)
+print(3 > 2 and 4 < 3)
+print('True and True: ', True and True)
+print(3 > 2 or 4 > 3)
+print(3 > 2 or 4 < 3)
+print(3 < 2 or 4 < 3)
+print('True or False: ', True or False)
+print( not 3 > 2 )
+print( not True)
+print( not False)
+print( not not True)
+print( not not False)
