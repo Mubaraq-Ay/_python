@@ -77,6 +77,8 @@ y = x**2 + 6*x + 9
 print('the value of y: ', y)
 
 
+print(len('python'))
+
 
 
  
