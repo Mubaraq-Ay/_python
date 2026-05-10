@@ -47,10 +47,10 @@ complex_num = 3 + 3j
 
 # slope
 
-# slope = 2
+slope_one = 2
 
-# x_intercept = 2
-# y_intercept = -2
+x_intercept = 2
+y_intercept = -2
 
 # slope and euclidean distance
 
@@ -65,6 +65,9 @@ print('slope: ', slope)
 
 euclidean_distance = ((6 - 2)**2 + (10 - 2)**2)**0.5
 print('euclidean distance: ', euclidean_distance)
+
+comp = slope_one == slope
+print(comp)
 
 
 
