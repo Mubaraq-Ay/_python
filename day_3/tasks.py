@@ -85,6 +85,16 @@ comp_length = py_length != dragon_length
 print('rs: ', comp_length)
 
 # number 13
+# number 14,15
+
+# 16
+
+txt_len = len('python')
+print(float(str(txt_len)))
+
+
+
+
 
 
 
