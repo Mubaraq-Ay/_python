@@ -25,13 +25,22 @@ complex_num = 3 + 3j
 
 # length and width of a rectangle
 
-length = float(input('enter the length: '))
-width = float(input('enter the width: '))
+# length = float(input('enter the length: '))
+# width = float(input('enter the width: '))
 
-area = length * width
-perimeter = 2 * (length + width)
+# area = length * width
+# perimeter = 2 * (length + width)
 
-print('area of a rectangle: ', area)
-print('perimeter of a rectangle: ', perimeter)
+# print('area of a rectangle: ', area)
+# print('perimeter of a rectangle: ', perimeter)
 
 # radius of a circle 
+pi = 3.14
+
+radius = float(input('enter your radius: '))
+
+area_of_circle = pi * radius**2
+circumference_of_circle = 2 * pi * radius
+
+print('area of the circle: ', area_of_circle)
+print('circumference of circle: ', circumference_of_circle)
