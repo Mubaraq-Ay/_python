@@ -77,24 +77,61 @@ y_intercept = -2
 # print('the value of y: ', y)
 
 
-py_length = len('python')
-dragon_length = len('dragon')
+# py_length = len('python')
+# dragon_length = len('dragon')
 
-comp_length = py_length != dragon_length
+# comp_length = py_length != dragon_length
 
-print('rs: ', comp_length)
+# print('rs: ', comp_length)
 
-# number 13
-# number 14,15
+# # number 13
+# # number 14,15
 
-# 16
+# # 16
 
-txt_len = len('python')
-print(float(str(txt_len)))
+# txt_len = len('python')
+# print(float(str(txt_len)))
+
+# # 17
+
+# # even_num = 
+
+# # 18
+
+# rs = 7 // 3
+
+# print(int(rs))
+
+# #19
+
+# str = '10'
+# num = 10
+
+# print(type(str) == type(num))
+
+# # 20
+
+# float_num = '9.8' # really dont get the question, it's a wrong sytax if i use int('9.8)
+# real_num = 10
+
+# print(float_num == real_num)
+
+# # 21
+
+# hours = float(input('enter hours: '))
+# rate_per_hour = float(input('enter rate per hour: '))
+
+# weekly_earning = hours * rate_per_hour
+
+# print('your weekly earning is: ', weekly_earning)
 
 
+# 22
 
+number_of_years = int(input('enter number of years you have lived: '))
+seconds_lived = number_of_years * 31536000
 
+print('you have lived for ', seconds_lived, 'seconds')
 
 
 
