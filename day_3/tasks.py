@@ -70,14 +70,21 @@ y_intercept = -2
 # print(comp)
 
 # number 11
-x = -2.5
+# x = -2.5
 
-y = x**2 + 6*x + 9
+# y = x**2 + 6*x + 9
 
-print('the value of y: ', y)
+# print('the value of y: ', y)
 
 
-print(len('python'))
+py_length = len('python')
+dragon_length = len('dragon')
+
+comp_length = py_length != dragon_length
+
+print('rs: ', comp_length)
+
+# number 13
 
 
 
