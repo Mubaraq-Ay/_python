@@ -54,20 +54,27 @@ y_intercept = -2
 
 # slope and euclidean distance
 
-x_1 = 2
-x_2 = 6
+# x_1 = 2
+# x_2 = 6
 
-y_1 = 2
-y_2 = 10
+# y_1 = 2
+# y_2 = 10
 
-slope = (y_2 - y_1) / (x_2 - x_1)
-print('slope: ', slope)
+# slope = (y_2 - y_1) / (x_2 - x_1)
+# print('slope: ', slope)
 
-euclidean_distance = ((6 - 2)**2 + (10 - 2)**2)**0.5
-print('euclidean distance: ', euclidean_distance)
+# euclidean_distance = ((6 - 2)**2 + (10 - 2)**2)**0.5
+# print('euclidean distance: ', euclidean_distance)
 
-comp = slope_one == slope
-print(comp)
+# comp = slope_one == slope
+# print(comp)
+
+# number 11
+x = -2.5
+
+y = x**2 + 6*x + 9
+
+print('the value of y: ', y)
 
 
 
