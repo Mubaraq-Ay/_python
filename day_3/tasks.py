@@ -148,7 +148,7 @@ y_intercept = -2
 # age = 20
 # has_ticket = True
 
-# print(age >= 18 and has_ticket == True)
+# print(age >= 18 and has_ticket)
 
 # mod = 15 % 4
 
@@ -165,7 +165,7 @@ y_intercept = -2
 # print(type(float_num is int_num))
 
 
-is_student = False
+is_student = True
 has_loyalty_card = False
 
-print(is_student or has_loyalty_card == True)
+print(is_student or has_loyalty_card)
