@@ -157,3 +157,11 @@ print(mod == 3 )
 number = 2
 
 print(number % 2 == 0)
+
+
+float_num = 3.14
+int_num = 100
+
+print(type(float_num is int_num))
+
+
