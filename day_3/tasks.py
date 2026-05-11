@@ -70,7 +70,7 @@ y_intercept = -2
 # print(comp)
 
 # number 11
-# x = -2.5
+# x = -3
 
 # y = x**2 + 6*x + 9
 
@@ -98,7 +98,10 @@ y_intercept = -2
 
 # # 18
 
+# val = int(2.7)
 # rs = 7 // 3
+
+# print(val == rs)
 
 # print(int(rs))
 
@@ -111,7 +114,7 @@ y_intercept = -2
 
 # # 20
 
-# float_num = '9.8' # really dont get the question, it's a wrong sytax if i use int('9.8)
+# float_num = int(9.8)  
 # real_num = 10
 
 # print(float_num == real_num)
@@ -128,11 +131,13 @@ y_intercept = -2
 
 # 22
 
-number_of_years = int(input('enter number of years you have lived: '))
-seconds_lived = number_of_years * 31536000
+# number_of_years = int(input('enter number of years you have lived: '))
+# seconds_lived = number_of_years * 31536000
 
-print('you have lived for', seconds_lived, 'seconds')
+# print('you have lived for', seconds_lived, 'seconds')
+
+# 23
+# skip for now, i'll need loops.
 
 
 
- 
