@@ -140,4 +140,20 @@ y_intercept = -2
 # skip for now, i'll need loops.
 
 
+# tasks 2
 
+# print('code' in 'i love to code everyday')
+# print('z' not in 'python')
+
+# age = 20
+# has_ticket = True
+
+# print(age >= 18 and has_ticket == True)
+
+mod = 15 % 4
+
+print(mod == 3 )
+
+number = 2
+
+print(number % 2 == 0)
