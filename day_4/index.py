@@ -54,3 +54,7 @@ print('Day 4\t1\t35')
 
 print('this is a backlash symbol (\\)')
 print('in every programming language it starts with \"hello, world!\"')
+
+# string formatting
+
+# old style formatting ( % operator )
