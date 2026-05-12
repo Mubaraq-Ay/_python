@@ -62,22 +62,47 @@
 # %s - string
 # %d - integers
 # %f - floating point numbers
-# "%.number of digitsf" - floating point numbers with fixed precision
+# "%.number of digitsf" - decimal places
 
 # for strings only
 
-first_name = 'mubaraq'
-last_name = 'ayanleke'
-language = 'python'
-formatted_string = 'I am %s %s. i teach %s' %(first_name, last_name, language)
+# first_name = 'mubaraq'
+# last_name = 'ayanleke'
+# language = 'python'
+# formatted_string = 'I am %s %s. i teach %s' %(first_name, last_name, language)
 
-print(formatted_string)
+# print(formatted_string)
 
-# for strings and numbers
+# # for strings and numbers
 
-radius = 10
-pi = 3.14
-area = pi * radius ** 2
-formatted_string = 'the area of circle with a radius %d is %.2f' %(radius, area)
+# radius = 10
+# pi = 3.14
+# area = pi * radius ** 2
+# formatted_string = 'the area of circle with a radius %d is %.2f' %(radius, area)
 
-print(formatted_string)
+# print(formatted_string)
+
+# python_libraries = ['django', 'flask', 'numpy', 'matplotlib', 'pandas']
+# formatted_string = 'the following are python libraries:%s' % (python_libraries)
+
+# print(formatted_string)
+
+my_name = 'mubaraq'
+age = 18
+
+formatting_result = "my name is %s and i'm %d years old" % (my_name, age)
+print(formatting_result)
+
+float_num = 2.33455
+print('to 3d.p: %.3f' % float_num)
+
+height = 189.66
+
+print("my name is %s, i'm %d years old, and my height is %.2f"  % (my_name, age, height))
+
+country = 'Nigeria'
+population = 220000000
+growth_rate = 2.58
+
+print("%s has a population of %d people with a growth rate of %.2f" % (country, population, growth_rate))
+
