@@ -28,3 +28,10 @@ space = ' '
 
 full_name = first_name + space + last_name
 print(full_name)
+
+# checking the length of a string using len() built in function
+
+print(len(first_name))
+print(len(last_name))
+print(len(full_name))
+print(len(first_name) > len(last_name))
