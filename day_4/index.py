@@ -46,15 +46,38 @@
 '''
 
 # print('i hope everyone is enjoying the python challenge. \nAre you?')
-print('Days\tTopics\tExercises') # adding tab space or 4 spaces.
-print('Day 1\t5\t5')
-print('Day 2\t6\t20')
-print('Day 3\t5\t23')
-print('Day 4\t1\t35')
+# print('Days\tTopics\tExercises') # adding tab space or 4 spaces.
+# print('Day 1\t5\t5')
+# print('Day 2\t6\t20')
+# print('Day 3\t5\t23')
+# print('Day 4\t1\t35')
 
-print('this is a backlash symbol (\\)')
-print('in every programming language it starts with \"hello, world!\"')
+# print('this is a backlash symbol (\\)')
+# print('in every programming language it starts with \"hello, world!\"')
 
 # string formatting
 
 # old style formatting ( % operator )
+
+# %s - string
+# %d - integers
+# %f - floating point numbers
+# "%.number of digitsf" - floating point numbers with fixed precision
+
+# for strings only
+
+first_name = 'mubaraq'
+last_name = 'ayanleke'
+language = 'python'
+formatted_string = 'I am %s %s. i teach %s' %(first_name, last_name, language)
+
+print(formatted_string)
+
+# for strings and numbers
+
+radius = 10
+pi = 3.14
+area = pi * radius ** 2
+formatted_string = 'the area of circle with a radius %d is %.2f' %(radius, area)
+
+print(formatted_string)
