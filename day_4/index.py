@@ -104,11 +104,11 @@ country = 'Nigeria'
 population = 220000000
 growth_rate = 2.58
 
-print("%s has a population of %d people with a growth rate of %.2f" % (country, population, growth_rate))
+print("%s has a population of %d people with a growth rate of %.2f%%" % (country, population, growth_rate))
 
 item = 'laptop'
 price = 850.5678
 quantity = 3
 total = quantity * price
 
-print("%s: | %.2f: | %d: | %.2f: " % (item, price, quantity, total))
+print("item: %s | price: %.2f | quantity: %d | total: %.2f " % (item, price, quantity, total))
