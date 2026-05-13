@@ -155,8 +155,8 @@ total = 100
 rs_log = '{} scored {:.2f} out of {} which is {:.2f}%'.format(student, score, total, score)
 print(rs_log)
 
-x = 15
-y = 4
+a = 15
+b = 4
 
 total = '{} + {} = {}'.format(a, b, a + b)
 print(total)
