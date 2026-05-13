@@ -202,5 +202,9 @@ stack = 'python'
 
 print(f'my name is {name}, i am {age} years old, i live in {city} and i code in {stack}')
 
+price = 1500.6789
+discount = 10 
+money_minus = price / discount 
+final_price = price - money_minus
 
-
+print(f'original price: ${price:.2f} | discout: {discount}% | final price: ${final_price:.2f}')
