@@ -192,3 +192,14 @@ print(f'{a} % {b} = {a % b}')
 print(f'{a} // {b} = {a // b}')
 print(f'{a} ** {b} = {a ** b}')
 
+
+# tasks
+
+name = 'mubaraq'
+age = 18
+city = 'lagos'
+stack = 'python'
+
+print(f'{name}')
+
+
