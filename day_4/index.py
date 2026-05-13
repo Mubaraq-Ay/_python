@@ -146,3 +146,10 @@ humidity = 78
 
 result = 'City: {} | Temp: {:.2f}°C | Humidity: {}%'.format(city, temp, humidity)
 print(result)
+
+
+student = 'mubaraq'
+score = 87.6789
+total = 100
+
+rs_log = '{} scored {:.2f} out of {} which is {}'.format(student, score, total)
