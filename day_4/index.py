@@ -208,3 +208,8 @@ money_minus = price / discount
 final_price = price - money_minus
 
 print(f'original price: ${price:.2f} | discout: {discount}% | final price: ${final_price:.2f}')
+
+first = 'python'
+second = 'programming'
+
+print(f"{''}")
