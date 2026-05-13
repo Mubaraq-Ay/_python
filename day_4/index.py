@@ -139,3 +139,10 @@ area = pi * radius ** 2
 formatted_string = 'the area of a circle with a radius {} is {:.2f}.'.format(radius, pi)
 
 print(formatted_string)
+
+city = 'lagos'
+temp = 31.4567
+humidity = 78
+
+result = 'City: {} | Temp: {}°C | Humidity: {}%'.format(city, temp, humidity)
+print(result)
