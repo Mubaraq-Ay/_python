@@ -144,5 +144,5 @@ city = 'lagos'
 temp = 31.4567
 humidity = 78
 
-result = 'City: {} | Temp: {}°C | Humidity: {}%'.format(city, temp, humidity)
+result = 'City: {} | Temp: {:.2f}°C | Humidity: {}%'.format(city, temp, humidity)
 print(result)
