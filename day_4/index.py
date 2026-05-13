@@ -87,28 +87,55 @@
 
 # print(formatted_string)
 
-my_name = 'mubaraq'
-age = 18
+# my_name = 'mubaraq'
+# age = 18
 
-formatting_result = "my name is %s and i'm %d years old" % (my_name, age)
-print(formatting_result)
+# formatting_result = "my name is %s and i'm %d years old" % (my_name, age)
+# print(formatting_result)
 
-float_num = 2.33455
-print('to 3d.p: %.3f' % float_num)
+# float_num = 2.33455
+# print('to 3d.p: %.3f' % float_num)
 
-height = 189.66
+# height = 189.66
 
-print("my name is %s, i'm %d years old, and my height is %.2f"  % (my_name, age, height))
+# print("my name is %s, i'm %d years old, and my height is %.2f"  % (my_name, age, height))
 
-country = 'Nigeria'
-population = 220000000
-growth_rate = 2.58
+# country = 'Nigeria'
+# population = 220000000
+# growth_rate = 2.58
 
-print("%s has a population of %d people with a growth rate of %.2f%%" % (country, population, growth_rate))
+# print("%s has a population of %d people with a growth rate of %.2f%%" % (country, population, growth_rate))
 
-item = 'laptop'
-price = 850.5678
-quantity = 3
-total = quantity * price
+# item = 'laptop'
+# price = 850.5678
+# quantity = 3
+# total = quantity * price
 
-print("item: %s | price: %.2f | quantity: %d | total: %.2f " % (item, price, quantity, total))
+# print("item: %s | price: %.2f | quantity: %d | total: %.2f " % (item, price, quantity, total))
+
+# new style (str) it was introduced in python version 3
+
+first_name = 'mubaraq'
+last_name = 'ayanleke'
+language = 'python'
+formatted_string = 'I am {} {}. i teach {}'.format(first_name, last_name, language)
+print(formatted_string)
+
+a = 4
+b = 3
+
+print('{} + {} = {}'.format(a, b, a + b))
+print('{} - {} = {}'.format(a, b, a - b))
+print('{} * {} = {}'.format(a, b, a * b))
+print('{} / {} = {:.2f}'.format(a, b, a / b))
+print('{} % {} = {}'.format(a, b, a % b))
+print('{} // {} = {}'.format(a, b, a // b))
+print('{} ** {} = {}'.format(a, b, a ** b))
+
+# strings and numbers
+radius = 10
+pi = 3.14
+area = pi * radius ** 2
+formatted_string = 'the area of a circle with a radius {} is {:.2f}.'.format(radius, pi)
+
+print(formatted_string)
