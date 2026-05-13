@@ -115,66 +115,80 @@
 
 # new style (str) it was introduced in python version 3
 
-first_name = 'mubaraq'
-last_name = 'ayanleke'
-language = 'python'
-formatted_string = 'I am {} {}. i teach {}'.format(first_name, last_name, language)
-print(formatted_string)
+# first_name = 'mubaraq'
+# last_name = 'ayanleke'
+# language = 'python'
+# formatted_string = 'I am {} {}. i teach {}'.format(first_name, last_name, language)
+# print(formatted_string)
+
+# a = 4
+# b = 3
+
+# print('{} + {} = {}'.format(a, b, a + b))
+# print('{} - {} = {}'.format(a, b, a - b))
+# print('{} * {} = {}'.format(a, b, a * b))
+# print('{} / {} = {:.2f}'.format(a, b, a / b))
+# print('{} % {} = {}'.format(a, b, a % b))
+# print('{} // {} = {}'.format(a, b, a // b))
+# print('{} ** {} = {}'.format(a, b, a ** b))
+
+# # strings and numbers
+# radius = 10
+# pi = 3.14
+# area = pi * radius ** 2
+# formatted_string = 'the area of a circle with a radius {} is {:.2f}.'.format(radius, pi)
+
+# print(formatted_string)
+
+# city = 'lagos'
+# temp = 31.4567
+# humidity = 78
+
+# result = 'City: {} | Temp: {:.2f}°C | Humidity: {}%'.format(city, temp, humidity)
+# print(result)
+
+
+# student = 'mubaraq'
+# score = 87.6789
+# total = 100
+
+# rs_log = '{} scored {:.2f} out of {} which is {:.2f}%'.format(student, score, total, score/total * 100)
+# print(rs_log)
+
+# a = 15
+# b = 4
+
+# total = '{} + {} = {}'.format(a, b, a + b)
+# print(total)
+
+# minus = '{} - {} = {}'.format(a, b, a - b)
+# print(minus)
+
+# multiply = '{} * {} = {}'.format(a, b, a * b)
+# print(multiply)
+
+# divide = '{} / {} = {:.2f}'.format(a, b, a / b)
+# print(divide)
+
+# modulus = '{} % {} = {}'.format(a, b, a % b)
+# print(modulus)
+
+# floor_division = '{} // {} = {}'.format(a, b, a // b)
+# print(floor_division)
+
+# exponential = '{} ** {} = {}'.format(a, b, a ** b)
+# print(exponential)
+
+
+# string interpolation / f-strings (python 3.6+)
 
 a = 4
 b = 3
+print(f'{a} + {b} = {a + b}')
+print(f'{a} - {b} = {a - b}')
+print(f"{a} * {b} = {a * b}")
+print(f'{a} / {b} = {a / b:.2f}')
+print(f'{a} % {b} = {a % b}')
+print(f'{a} // {b} = {a // b}')
+print(f'{a} ** {b} = {a ** b}')
 
-print('{} + {} = {}'.format(a, b, a + b))
-print('{} - {} = {}'.format(a, b, a - b))
-print('{} * {} = {}'.format(a, b, a * b))
-print('{} / {} = {:.2f}'.format(a, b, a / b))
-print('{} % {} = {}'.format(a, b, a % b))
-print('{} // {} = {}'.format(a, b, a // b))
-print('{} ** {} = {}'.format(a, b, a ** b))
-
-# strings and numbers
-radius = 10
-pi = 3.14
-area = pi * radius ** 2
-formatted_string = 'the area of a circle with a radius {} is {:.2f}.'.format(radius, pi)
-
-print(formatted_string)
-
-city = 'lagos'
-temp = 31.4567
-humidity = 78
-
-result = 'City: {} | Temp: {:.2f}°C | Humidity: {}%'.format(city, temp, humidity)
-print(result)
-
-
-student = 'mubaraq'
-score = 87.6789
-total = 100
-
-rs_log = '{} scored {:.2f} out of {} which is {:.2f}%'.format(student, score, total, score)
-print(rs_log)
-
-a = 15
-b = 4
-
-total = '{} + {} = {}'.format(a, b, a + b)
-print(total)
-
-minus = '{} - {} = {}'.format(a, b, a - b)
-print(minus)
-
-multiply = '{} * {} = {}'.format(a, b, a * b)
-print(multiply)
-
-divide = '{} / {} = {:.2f}'.format(a, b, a / b)
-print(divide)
-
-modulus = '{} % {} = {}'.format(a, b, a % b)
-print(modulus)
-
-floor_division = '{} // {} = {}'.format(a, b, a // b)
-print(floor_division)
-
-exponential = '{} ** {} = {}'.format(a, b, a ** b)
-print(exponential)
