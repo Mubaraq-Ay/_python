@@ -154,3 +154,27 @@ total = 100
 
 rs_log = '{} scored {:.2f} out of {} which is {:.2f}%'.format(student, score, total, score)
 print(rs_log)
+
+x = 15
+y = 4
+
+total = '{} + {} = {}'.format(a, b, a + b)
+print(total)
+
+minus = '{} - {} = {}'.format(a, b, a - b)
+print(minus)
+
+multiply = '{} * {} = {}'.format(a, b, a * b)
+print(multiply)
+
+divide = '{} / {} = {:.2f}'.format(a, b, a / b)
+print(divide)
+
+modulus = '{} % {} = {}'.format(a, b, a % b)
+print(modulus)
+
+floor_division = '{} // {} = {}'.format(a, b, a // b)
+print(floor_division)
+
+exponential = '{} ** {} = {}'.format(a, b, a ** b)
+print(exponential)
