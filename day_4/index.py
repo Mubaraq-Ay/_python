@@ -200,6 +200,7 @@ age = 18
 city = 'lagos'
 stack = 'python'
 
-print(f'{name}')
+print(f'my name is {name}, i am {age} years old, i live in {city} and i code in {stack}')
+
 
 
