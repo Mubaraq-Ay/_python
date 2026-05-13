@@ -152,4 +152,5 @@ student = 'mubaraq'
 score = 87.6789
 total = 100
 
-rs_log = '{} scored {:.2f} out of {} which is {}'.format(student, score, total)
+rs_log = '{} scored {:.2f} out of {} which is {:.2f}%'.format(student, score, total, score)
+print(rs_log)
