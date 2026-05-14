@@ -212,4 +212,4 @@ print(f'original price: ${price:.2f} | discout: {discount}% | final price: ${fin
 first = 'python'
 second = 'programming'
 
-print(f"{''}")
+print(f"'{first}' has 6 characters and '{second}' has 11 characters. \n'{second}' is longer.")
