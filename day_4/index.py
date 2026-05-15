@@ -215,3 +215,12 @@ second = 'programming'
 print(f"'{first}' has {len(first)} characters and '{second}' has {len(second)} characters. \n'{second}' is longer.")
 
 
+#tasks
+
+product = 'macbook pro'
+original_price = 2499.999
+tax_rate = 7.5
+tax_amt = tax_rate / 100 * original_price
+total = original_price + tax_amt
+
+print(f" Produt: {product} | Price: ${original_price:.2f} | Tax: ${tax_amt:.2f} | Total: ${total:.2f}")
