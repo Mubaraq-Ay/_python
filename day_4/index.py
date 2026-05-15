@@ -182,48 +182,80 @@
 
 # string interpolation / f-strings (python 3.6+)
 
-a = 4
-b = 3
-print(f'{a} + {b} = {a + b}')
-print(f'{a} - {b} = {a - b}')
-print(f"{a} * {b} = {a * b}")
-print(f'{a} / {b} = {a / b:.2f}')
-print(f'{a} % {b} = {a % b}')
-print(f'{a} // {b} = {a // b}')
-print(f'{a} ** {b} = {a ** b}')
+# a = 4
+# b = 3
+# print(f'{a} + {b} = {a + b}')
+# print(f'{a} - {b} = {a - b}')
+# print(f"{a} * {b} = {a * b}")
+# print(f'{a} / {b} = {a / b:.2f}')
+# print(f'{a} % {b} = {a % b}')
+# print(f'{a} // {b} = {a // b}')
+# print(f'{a} ** {b} = {a ** b}')
 
 
-# tasks
+# # tasks
 
-name = 'mubaraq'
-age = 18
-city = 'lagos'
-stack = 'python'
+# name = 'mubaraq'
+# age = 18
+# city = 'lagos'
+# stack = 'python'
 
-print(f'my name is {name}, i am {age} years old, i live in {city} and i code in {stack}')
+# print(f'my name is {name}, i am {age} years old, i live in {city} and i code in {stack}')
 
-price = 1500.6789
-discount = 10 
-discount_amt = price * (discount / 100)
-final_price = price - discount_amt
+# price = 1500.6789
+# discount = 10 
+# discount_amt = price * (discount / 100)
+# final_price = price - discount_amt
 
-print(f'original price: ${price:.2f} | discout: {discount}% | final price: ${final_price:.2f}')
+# print(f'original price: ${price:.2f} | discout: {discount}% | final price: ${final_price:.2f}')
 
-first = 'python'
-second = 'programming'
+# first = 'python'
+# second = 'programming'
 
-print(f"'{first}' has {len(first)} characters and '{second}' has {len(second)} characters. \n'{second}' is longer.")
-
-
-#tasks
-
-product = 'macbook pro'
-original_price = 2499.999
-tax_rate = 7.5
-tax_amt = tax_rate / 100 * original_price
-total = original_price + tax_amt
-
-print(f" Product: {product.capitalize()} | Price: ${original_price:.2f} | Tax: ${tax_amt:.2f} | Total: ${total:.2f}")
+# print(f"'{first}' has {len(first)} characters and '{second}' has {len(second)} characters. \n'{second}' is longer.")
 
 
+# #tasks
+
+# product = 'macbook pro'
+# original_price = 2499.999
+# tax_rate = 7.5
+# tax_amt = tax_rate / 100 * original_price
+# total = original_price + tax_amt
+
+# print(f" Product: {product.capitalize()} | Price: ${original_price:.2f} | Tax: ${tax_amt:.2f} | Total: ${total:.2f}")
+
+
+# # python strings as sequences of characters
+# # In Python, a string is treated as a sequence of characters. That means each character has a position called an index.
  
+# # unpacking characters
+
+# language = 'python'
+# a,b,c,d,e,f = language
+# print(a)
+# print(b)
+# print(c)
+# print(d)
+# print(e)
+# print(f)
+
+# accessing characters in strings by index
+
+language = 'python'
+# first_letter = language[0]
+# print(first_letter)
+# second_letter = language[1]
+# print(second_letter)
+# last_index = len(language) - 1
+# print(last_index)
+# last_letter = language[last_index]
+# print(last_letter)
+
+# counting backwards
+
+last_letter = language[-1]
+print(last_letter)
+second_last = language[-2]
+print(second_last)
+
