@@ -204,12 +204,14 @@ print(f'my name is {name}, i am {age} years old, i live in {city} and i code in 
 
 price = 1500.6789
 discount = 10 
-money_minus = price / discount 
-final_price = price - money_minus
+discount_amt = price * (discount / 100)
+final_price = price - discount_amt
 
 print(f'original price: ${price:.2f} | discout: {discount}% | final price: ${final_price:.2f}')
 
 first = 'python'
 second = 'programming'
 
-print(f"'{first}' has 6 characters and '{second}' has 11 characters. \n'{second}' is longer.")
+print(f"'{first}' has {len(first)} characters and '{second}' has {len(second)} characters. \n'{second}' is longer.")
+
+
