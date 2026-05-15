@@ -223,5 +223,7 @@ tax_rate = 7.5
 tax_amt = tax_rate / 100 * original_price
 total = original_price + tax_amt
 
-print(f" Product: {product} | Price: ${original_price:.2f} | Tax: ${tax_amt:.2f} | Total: ${total:.2f}")
+print(f" Product: {product.capitalize()} | Price: ${original_price:.2f} | Tax: ${tax_amt:.2f} | Total: ${total:.2f}")
 
+
+ 
