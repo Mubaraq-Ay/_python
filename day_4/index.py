@@ -259,3 +259,8 @@ print(last_letter)
 second_last = language[-2]
 print(second_last)
 
+# tasks
+
+word = 'developer'
+print(word[0])
+
