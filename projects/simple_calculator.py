@@ -1,5 +1,5 @@
-first_number = int(input('enter a number: '))
-second_number = int(input('enter another number: '))
+first_number = float(input('enter a number: '))
+second_number = float(input('enter another number: '))
 
 add = first_number + second_number
 minus = first_number - second_number
@@ -13,7 +13,7 @@ print(f'================= SIMPLE CALCULATOR =================')
 print(f'Sum:                 {add}')
 print(f'Subtraction:         {minus}')
 print(f'Multiplication:      {multiply}')
-print(f'Division:            {division}')
+print(f'Division:            {division:.2f}')
 print(f'Modulus:             {modulus}')
 print(f'Floor Division:      {floor_division}')
 print(f'Exponential:         {exponetial}')
