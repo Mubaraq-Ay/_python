@@ -296,19 +296,60 @@ language = 'python'
 
 # slicing
 
+# language = 'python'
+# first_three = language[0:3] # starts at zero index and up to 3 but not include 3
+# print(first_three)
+# last_three = language[3:6]
+# print(last_three)
+
+# # another way
+# last_three = language[-3:]
+# print(last_three)
+# last_three = language[3:]
+# print(last_three)
+
+# # reversing a string
+
+# greeting = 'hello, world!'
+# print(greeting[::-1])
+
+# skipping while slicing
+
 language = 'python'
-first_three = language[0:3] # starts at zero index and up to 3 but not include 3
-print(first_three)
-last_three = language[3:6]
-print(last_three)
 
-# another way
-last_three = language[-3:]
-print(last_three)
-last_three = language[3:]
-print(last_three)
+print(language[0:6:2])
+print(language[::2])
+print(language[::3])
 
-# reversing a string
 
-greeting = 'hello, world!'
-print(greeting[::-1])
+# tasks
+
+word = 'engineering'
+print(word[0:4])
+print(word[-4:])
+print(word[3:8])
+print(word[::-1])
+print(word[::2])
+
+# task 2
+
+full_name = 'mubaraq ayanleke'
+first_name = full_name[:7]
+print('first name:', first_name)
+last_name = full_name[8:]
+print('last name:', last_name )
+
+reversed = full_name[::-1]
+print('reversed:', reversed)
+
+initials = f'{full_name[0].upper()}.{full_name[8].upper()}'
+print(initials)
+
+# task 3
+
+sentence = 'backend development is my path'
+print(sentence[0:7])
+print(sentence[-4:])
+print(sentence[8:18])
+print(sentence[::-1])
+print(sentence[::3])
