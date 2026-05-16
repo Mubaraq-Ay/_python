@@ -307,3 +307,8 @@ last_three = language[-3:]
 print(last_three)
 last_three = language[3:]
 print(last_three)
+
+# reversing a string
+
+greeting = 'hello, world!'
+print(greeting[::-1])
