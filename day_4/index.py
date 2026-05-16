@@ -254,13 +254,56 @@ language = 'python'
 
 # counting backwards
 
-last_letter = language[-1]
-print(last_letter)
-second_last = language[-2]
-print(second_last)
+# last_letter = language[-1]
+# print(last_letter)
+# second_last = language[-2]
+# print(second_last)
 
-# tasks
+# tasks, some are wromg
 
-word = 'developer'
-print(word[0])
+# word = 'developer'
+# first_char = word[0]
+# print(first_char)
+# last_char = word[-1]
+# print(last_char)
+# # last_char_len = len(word) - 1 
+# # print(last_char_len)  
+# # fifth_character = word[4]
+# # print(fifth_character)
 
+# name = 'mubaraq'
+# # last_three_char = name[(-1, -2)]
+# # print(last_three_char)
+# # first_three_names = name[{0,1,2}]
+# # print(first_three_names)
+
+# a,b,c,d,e,f,g = name
+# print(a)
+# print(b)
+# print(c)
+# print(d)
+# print(e)
+# print(f)
+# print(g)
+
+# sentence = 'backend engineering'
+# print(sentence[0])
+# print(sentence[-1])
+# print(sentence[8])
+# print(len(sentence))
+# print(len(word) - 1) 
+
+
+# slicing
+
+language = 'python'
+first_three = language[0:3] # starts at zero index and up to 3 but not include 3
+print(first_three)
+last_three = language[3:6]
+print(last_three)
+
+# another way
+last_three = language[-3:]
+print(last_three)
+last_three = language[3:]
+print(last_three)
