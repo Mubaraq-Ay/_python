@@ -1,6 +1,6 @@
-a  = float(input('enter a side: '))
-b  = float(input('enter a side: '))
-c  = float(input('enter a side: '))
+a  = float(input('enter side a: '))
+b  = float(input('enter side b: '))
+c  = float(input('enter side c: '))
 
 base = float(input('enter your base: '))
 height = float(input('enter height: '))
