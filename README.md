@@ -1,0 +1,1 @@
+my python journey. contains daily exercises and mini projects
