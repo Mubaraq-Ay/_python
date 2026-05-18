@@ -367,3 +367,8 @@ challenge = 'thirty days of python'
 print(challenge.count('y'))
 print(challenge.count('y', 7, 14))
 print(challenge.count('th'))
+
+# endswith() - checks if a string ends with a specified ending
+challenge = '30 days of python'
+print(challenge.endswith('on'))
+print(challenge.endswith('tion'))
