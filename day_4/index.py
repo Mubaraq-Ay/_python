@@ -372,3 +372,8 @@ print(challenge.count('th'))
 challenge = '30 days of python'
 print(challenge.endswith('on'))
 print(challenge.endswith('tion'))
+
+# expandtabs() - replaces tab (\t) characters with spaces, tab(8 spaces)
+
+text = "hello\tworld"
+print(text.expandtabs(5))
