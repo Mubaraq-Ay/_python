@@ -315,41 +315,49 @@ language = 'python'
 
 # skipping while slicing
 
-language = 'python'
+# language = 'python'
 
-print(language[0:6:2])
-print(language[::2])
-print(language[::3])
+# print(language[0:6:2])
+# print(language[::2])
+# print(language[::3])
 
 
-# tasks
+# # tasks
 
-word = 'engineering'
-print(word[0:4])
-print(word[-4:])
-print(word[3:8])
-print(word[::-1])
-print(word[::2])
+# word = 'engineering'
+# print(word[0:4])
+# print(word[-4:])
+# print(word[3:8])
+# print(word[::-1])
+# print(word[::2])
 
-# task 2
+# # task 2
 
-full_name = 'mubaraq ayanleke'
-first_name = full_name[:7]
-print('first name:', first_name)
-last_name = full_name[8:]
-print('last name:', last_name )
+# full_name = 'mubaraq ayanleke'
+# first_name = full_name[:7]
+# print('first name:', first_name)
+# last_name = full_name[8:]
+# print('last name:', last_name )
 
-reversed = full_name[::-1]
-print('reversed:', reversed)
+# reversed = full_name[::-1]
+# print('reversed:', reversed)
 
-initials = f'{full_name[0].upper()}.{full_name[8].upper()}'
-print(initials)
+# initials = f'{full_name[0].upper()}.{full_name[8].upper()}'
+# print(initials)
 
-# task 3
+# # task 3
 
-sentence = 'backend development is my path'
-print(sentence[0:7])
-print(sentence[-4:])
-print(sentence[8:18])
-print(sentence[::-1])
-print(sentence[::3])
+# sentence = 'backend development is my path'
+# print(sentence[0:7])
+# print(sentence[-4:])
+# print(sentence[8:18])
+# print(sentence[::-1])
+# print(sentence[::3])
+
+
+# string methods
+# capitalize() - converts the first character of the string to capital letter
+
+challenge = 'thirty days of python'
+print(challenge.capitalize())
+
