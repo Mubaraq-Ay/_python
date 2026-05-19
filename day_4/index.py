@@ -377,3 +377,10 @@ print(challenge.endswith('tion'))
 
 text = "hello\tworld"
 print(text.expandtabs(5))
+
+# find() - returns the index of the substring inside a string
+ 
+challenge = 'thirty days of python'
+print(challenge.find('y'))
+print(challenge.find('th'))
+
