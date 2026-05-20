@@ -488,3 +488,16 @@ print(challenge.isalpha())
 
 challenge = '123'
 print(challenge.isalpha())
+
+
+# isdecimal() - checks if all the characters in a string are decimal (0-9, floating numbers not included)
+
+challenge = 'thirty days of python'
+print(challenge.isdecimal())
+
+challenge = '221'
+print(challenge.isdecimal())
+
+challenge = '12 3'
+print(challenge.isdecimal()) # space excluded..
+
