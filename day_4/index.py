@@ -384,3 +384,9 @@ challenge = 'thirty days of python'
 print(challenge.find('y'))
 print(challenge.find('th'))
 
+# rfind() - returns the index of the last occurence of a substring, start from the back
+
+challenge = 'thirty days of python'
+print(challenge.find('y'))
+
+
