@@ -452,4 +452,12 @@ print(result)
 challenge = 'thirty days of python'
 sub_string = 'da'
 print(challenge.index(sub_string))
-print(challenge.index(sub_string, 9))
+# print(challenge.index(sub_string, 9))
+
+# rindex() - finds position from right to left (default 0 and string length - 1)
+
+challenge = 'thirty days of python'
+sub_string = 'da'
+print(challenge.rindex(sub_string))
+# print(challenge.rindex(sub_string, 9))
+print(challenge.rindex('on', 8))
