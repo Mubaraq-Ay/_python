@@ -428,3 +428,22 @@ port_url = url.find('ayanleke.vercel.app')
 short_url = url[port_url:]
 print(short_url)
 
+
+# format() - formats string into nicer output
+
+first_name = 'mubaraq'
+last_name = 'ayanleke'
+age = 18
+job = 'software engineer'
+country = 'nigeria'
+sentence = 'i am {} {}. i am {} years old. i am {}. i live in {}'.format(first_name, last_name, age, job, country)
+
+print(sentence)
+
+radius = 10
+pi = 3.14
+
+area = pi * radius ** 2
+result = 'the area of a circle with radius {} is {}'.format(str(radius), str(area))
+print(result)
+
