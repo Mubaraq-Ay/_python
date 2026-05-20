@@ -358,35 +358,73 @@ language = 'python'
 # string methods
 # capitalize() - converts the first character of the string to capital letter
 
-challenge = 'thirty days of python'
-print(challenge.capitalize())
+# challenge = 'thirty days of python'
+# print(challenge.capitalize())
 
-# count() - counts how many times a character or substring appears
+# # count() - counts how many times a character or substring appears
 
-challenge = 'thirty days of python'
-print(challenge.count('y'))
-print(challenge.count('y', 7, 14))
-print(challenge.count('th'))
+# challenge = 'thirty days of python'
+# print(challenge.count('y'))
+# print(challenge.count('y', 7, 14))
+# print(challenge.count('th'))
 
-# endswith() - checks if a string ends with a specified ending
-challenge = '30 days of python'
-print(challenge.endswith('on'))
-print(challenge.endswith('tion'))
+# # endswith() - checks if a string ends with a specified ending
+# challenge = '30 days of python'
+# print(challenge.endswith('on'))
+# print(challenge.endswith('tion'))
 
-# expandtabs() - replaces tab (\t) characters with spaces, tab(8 spaces)
+# # expandtabs() - replaces tab (\t) characters with spaces, tab(8 spaces)
 
-text = "hello\tworld"
-print(text.expandtabs(5))
+# text = "hello\tworld"
+# print(text.expandtabs(5))
 
-# find() - returns the index of the substring inside a string
+# # find() - returns the index of the substring inside a string
  
-challenge = 'thirty days of python'
-print(challenge.find('y'))
-print(challenge.find('th'))
+# challenge = 'thirty days of python'
+# print(challenge.find('y'))
+# print(challenge.find('th'))
 
-# rfind() - returns the index of the last occurence of a substring, start from the back
+# # rfind() - returns the index of the last occurence of a substring, start from the back
 
-challenge = 'thirty days of python'
-print(challenge.find('y'))
+# challenge = 'thirty days of python'
+# print(challenge.find('y'))
 
+# tasks
+
+sentence = 'you cannot end a sentence with because because because is a conjunction'
+index = sentence.find('because')
+last_index = sentence.rfind('because')
+index_conj = sentence.find('conjunction')
+print(index)
+print(last_index)
+print(index_conj)
+
+# task 2
+
+email = 'ayanleke.mubaraq@gmail.com'
+index_at = email.find('@')
+print(index_at)
+
+username_slice = email[:index_at]
+print(username_slice)
+
+domain = email[index_at + 1:]
+print(domain)
+
+index_dot = domain.find('.')
+print(index_dot)
+
+
+# task 3
+
+url = 'https://ayanleke.vercel.app'
+index_name = url.find('ayanleke')
+print(index_name)
+
+index_last = url.rfind('.')
+print(index_last)
+
+port_url = url.find('ayanleke.vercel.app')
+short_url = url[port_url:]
+print(short_url)
 
