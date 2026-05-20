@@ -447,3 +447,9 @@ area = pi * radius ** 2
 result = 'the area of a circle with radius {} is {}'.format(str(radius), str(area))
 print(result)
 
+# index() - is used to find the position of an item in a string, list, or tuple
+
+challenge = 'thirty days of python'
+sub_string = 'da'
+print(challenge.index(sub_string))
+print(challenge.index(sub_string, 9))
