@@ -476,3 +476,15 @@ print(challenge.isalnum()) # false because space is not an alphanumeric characte
 
 challenge = 'thirty days of python 2019'
 print(challenge.isalnum())
+
+
+# isalpha() - checks is all string elements are alphabet characters
+
+challenge = 'thirty days of python'
+print(challenge.isalpha()) # space is excluded also
+
+challenge = 'thirtydayspython'
+print(challenge.isalpha())
+
+challenge = '123'
+print(challenge.isalpha())
