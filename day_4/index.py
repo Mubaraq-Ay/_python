@@ -461,3 +461,10 @@ sub_string = 'da'
 print(challenge.rindex(sub_string))
 # print(challenge.rindex(sub_string, 9))
 print(challenge.rindex('on', 8))
+
+
+# isalnum() - checks alphanumeric characters
+
+challenge = 'thirtydayspython'
+print(challenge.isalnum())
+
