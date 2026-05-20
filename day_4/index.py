@@ -468,3 +468,11 @@ print(challenge.rindex('on', 8))
 challenge = 'thirtydayspython'
 print(challenge.isalnum())
 
+challenge = '30dayspython'
+print(challenge.isalnum())
+
+challenge = 'thirty days of python'
+print(challenge.isalnum()) # false because space is not an alphanumeric character
+
+challenge = 'thirty days of python 2019'
+print(challenge.isalnum())
