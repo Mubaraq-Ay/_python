@@ -513,3 +513,14 @@ print(challenge.isdigit())
 challenge = '\u00B2'
 print(challenge.isdigit())
 
+
+# isnumeric() - checks if all characters are numbers or number related
+
+num = '10'
+print(num.isnumeric())
+num = '\u00BD'
+print(num.isnumeric())
+num = '10.5'
+print(num.isnumeric())
+
+# isidentifier() - checks for a valid identifier
