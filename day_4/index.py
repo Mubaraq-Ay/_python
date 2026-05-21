@@ -530,3 +530,12 @@ print(challenge.isidentifier())
 
 challenge = 'thirty_days_of_python'
 print(challenge.isidentifier())
+
+# islower() - checks if all alphabet characters in a string are lowercase
+
+challenge = 'thirty days of python'
+print(challenge.islower())
+
+challenge = 'thirty dAys of python'
+print(challenge.islower())
+
