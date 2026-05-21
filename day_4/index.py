@@ -501,3 +501,15 @@ print(challenge.isdecimal())
 challenge = '12 3'
 print(challenge.isdecimal()) # space excluded..
 
+
+# isdigit() - checks if all characters in a string are numbers and some other unicode characters for numbers
+
+challenge = 'thirty'
+print(challenge.isdigit())
+
+challenge = '30'
+print(challenge.isdigit())
+
+challenge = '\u00B2'
+print(challenge.isdigit())
+
