@@ -391,136 +391,142 @@ language = 'python'
 
 # tasks
 
-sentence = 'you cannot end a sentence with because because because is a conjunction'
-index = sentence.find('because')
-last_index = sentence.rfind('because')
-index_conj = sentence.find('conjunction')
-print(index)
-print(last_index)
-print(index_conj)
+# sentence = 'you cannot end a sentence with because because because is a conjunction'
+# index = sentence.find('because')
+# last_index = sentence.rfind('because')
+# index_conj = sentence.find('conjunction')
+# print(index)
+# print(last_index)
+# print(index_conj)
 
-# task 2
+# # task 2
 
-email = 'ayanleke.mubaraq@gmail.com'
-index_at = email.find('@')
-print(index_at)
+# email = 'ayanleke.mubaraq@gmail.com'
+# index_at = email.find('@')
+# print(index_at)
 
-username_slice = email[:index_at]
-print(username_slice)
+# username_slice = email[:index_at]
+# print(username_slice)
 
-domain = email[index_at + 1:]
-print(domain)
+# domain = email[index_at + 1:]
+# print(domain)
 
-index_dot = domain.find('.')
-print(index_dot)
-
-
-# task 3
-
-url = 'https://ayanleke.vercel.app'
-index_name = url.find('ayanleke')
-print(index_name)
-
-index_last = url.rfind('.')
-print(index_last)
-
-port_url = url.find('ayanleke.vercel.app')
-short_url = url[port_url:]
-print(short_url)
+# index_dot = domain.find('.')
+# print(index_dot)
 
 
-# format() - formats string into nicer output
+# # task 3
 
-first_name = 'mubaraq'
-last_name = 'ayanleke'
-age = 18
-job = 'software engineer'
-country = 'nigeria'
-sentence = 'i am {} {}. i am {} years old. i am {}. i live in {}'.format(first_name, last_name, age, job, country)
+# url = 'https://ayanleke.vercel.app'
+# index_name = url.find('ayanleke')
+# print(index_name)
 
-print(sentence)
+# index_last = url.rfind('.')
+# print(index_last)
 
-radius = 10
-pi = 3.14
-
-area = pi * radius ** 2
-result = 'the area of a circle with radius {} is {}'.format(str(radius), str(area))
-print(result)
-
-# index() - is used to find the position of an item in a string, list, or tuple
-
-challenge = 'thirty days of python'
-sub_string = 'da'
-print(challenge.index(sub_string))
-# print(challenge.index(sub_string, 9))
-
-# rindex() - finds position from right to left (default 0 and string length - 1)
-
-challenge = 'thirty days of python'
-sub_string = 'da'
-print(challenge.rindex(sub_string))
-# print(challenge.rindex(sub_string, 9))
-print(challenge.rindex('on', 8))
+# port_url = url.find('ayanleke.vercel.app')
+# short_url = url[port_url:]
+# print(short_url)
 
 
-# isalnum() - checks alphanumeric characters
+# # format() - formats string into nicer output
 
-challenge = 'thirtydayspython'
-print(challenge.isalnum())
+# first_name = 'mubaraq'
+# last_name = 'ayanleke'
+# age = 18
+# job = 'software engineer'
+# country = 'nigeria'
+# sentence = 'i am {} {}. i am {} years old. i am {}. i live in {}'.format(first_name, last_name, age, job, country)
 
-challenge = '30dayspython'
-print(challenge.isalnum())
+# print(sentence)
 
-challenge = 'thirty days of python'
-print(challenge.isalnum()) # false because space is not an alphanumeric character
+# radius = 10
+# pi = 3.14
 
-challenge = 'thirty days of python 2019'
-print(challenge.isalnum())
+# area = pi * radius ** 2
+# result = 'the area of a circle with radius {} is {}'.format(str(radius), str(area))
+# print(result)
 
+# # index() - is used to find the position of an item in a string, list, or tuple
 
-# isalpha() - checks is all string elements are alphabet characters
+# challenge = 'thirty days of python'
+# sub_string = 'da'
+# print(challenge.index(sub_string))
+# # print(challenge.index(sub_string, 9))
 
-challenge = 'thirty days of python'
-print(challenge.isalpha()) # space is excluded also
+# # rindex() - finds position from right to left (default 0 and string length - 1)
 
-challenge = 'thirtydayspython'
-print(challenge.isalpha())
-
-challenge = '123'
-print(challenge.isalpha())
-
-
-# isdecimal() - checks if all the characters in a string are decimal (0-9, floating numbers not included)
-
-challenge = 'thirty days of python'
-print(challenge.isdecimal())
-
-challenge = '221'
-print(challenge.isdecimal())
-
-challenge = '12 3'
-print(challenge.isdecimal()) # space excluded..
+# challenge = 'thirty days of python'
+# sub_string = 'da'
+# print(challenge.rindex(sub_string))
+# # print(challenge.rindex(sub_string, 9))
+# print(challenge.rindex('on', 8))
 
 
-# isdigit() - checks if all characters in a string are numbers and some other unicode characters for numbers
+# # isalnum() - checks alphanumeric characters
 
-challenge = 'thirty'
-print(challenge.isdigit())
+# challenge = 'thirtydayspython'
+# print(challenge.isalnum())
 
-challenge = '30'
-print(challenge.isdigit())
+# challenge = '30dayspython'
+# print(challenge.isalnum())
 
-challenge = '\u00B2'
-print(challenge.isdigit())
+# challenge = 'thirty days of python'
+# print(challenge.isalnum()) # false because space is not an alphanumeric character
+
+# challenge = 'thirty days of python 2019'
+# print(challenge.isalnum())
 
 
-# isnumeric() - checks if all characters are numbers or number related
+# # isalpha() - checks is all string elements are alphabet characters
 
-num = '10'
-print(num.isnumeric())
-num = '\u00BD'
-print(num.isnumeric())
-num = '10.5'
-print(num.isnumeric())
+# challenge = 'thirty days of python'
+# print(challenge.isalpha()) # space is excluded also
 
-# isidentifier() - checks for a valid identifier
+# challenge = 'thirtydayspython'
+# print(challenge.isalpha())
+
+# challenge = '123'
+# print(challenge.isalpha())
+
+
+# # isdecimal() - checks if all the characters in a string are decimal (0-9, floating numbers not included)
+
+# challenge = 'thirty days of python'
+# print(challenge.isdecimal())
+
+# challenge = '221'
+# print(challenge.isdecimal())
+
+# challenge = '12 3'
+# print(challenge.isdecimal()) # space excluded..
+
+
+# # isdigit() - checks if all characters in a string are numbers and some other unicode characters for numbers
+
+# challenge = 'thirty'
+# print(challenge.isdigit())
+
+# challenge = '30'
+# print(challenge.isdigit())
+
+# challenge = '\u00B2'
+# print(challenge.isdigit())
+
+
+# # isnumeric() - checks if all characters are numbers or number related
+
+# num = '10'
+# print(num.isnumeric())
+# num = '\u00BD'
+# print(num.isnumeric())
+# num = '10.5'
+# print(num.isnumeric())
+
+# isidentifier() - checks for a valid identifier(used as a variable name in python)
+
+challenge = '30DaysOfPython'
+print(challenge.isidentifier())
+
+challenge = 'thirty_days_of_python'
+print(challenge.isidentifier())
