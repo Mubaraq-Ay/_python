@@ -539,3 +539,10 @@ print(challenge.islower())
 challenge = 'thirty dAys of python'
 print(challenge.islower())
 
+# isupper() - checks if all alphabet characters in the string are uppercase
+
+challenge = 'thirty days of python'
+print(challenge.isupper())
+
+challenge = 'THIRTY DAYS OF PYTHON'
+print(challenge.isupper())
