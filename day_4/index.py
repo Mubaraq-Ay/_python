@@ -525,55 +525,101 @@ language = 'python'
 
 # isidentifier() - checks for a valid identifier(used as a variable name in python)
 
-challenge = '30DaysOfPython'
-print(challenge.isidentifier())
+# challenge = '30DaysOfPython'
+# print(challenge.isidentifier())
 
-challenge = 'thirty_days_of_python'
-print(challenge.isidentifier())
+# challenge = 'thirty_days_of_python'
+# print(challenge.isidentifier())
 
-# islower() - checks if all alphabet characters in a string are lowercase
+# # islower() - checks if all alphabet characters in a string are lowercase
 
-challenge = 'thirty days of python'
-print(challenge.islower())
+# challenge = 'thirty days of python'
+# print(challenge.islower())
 
-challenge = 'thirty dAys of python'
-print(challenge.islower())
+# challenge = 'thirty dAys of python'
+# print(challenge.islower())
 
-# isupper() - checks if all alphabet characters in the string are uppercase
+# # isupper() - checks if all alphabet characters in the string are uppercase
 
-challenge = 'thirty days of python'
-print(challenge.isupper())
+# challenge = 'thirty days of python'
+# print(challenge.isupper())
 
-challenge = 'THIRTY DAYS OF PYTHON'
-print(challenge.isupper())
+# challenge = 'THIRTY DAYS OF PYTHON'
+# print(challenge.isupper())
 
 
 # join() - returns a concatenated string
 
-web_tech = ['html', 'css', 'javascript', 'react']
-result = ' '.join(web_tech)
-print(result)
+# web_tech = ['html', 'css', 'javascript', 'react']
+# result = ' '.join(web_tech)
+# print(result)
 
-web_tech = ['html', 'css', 'javascript', 'react']
-result = '# '.join(web_tech)
-print(result)
+# web_tech = ['html', 'css', 'javascript', 'react']
+# result = '# '.join(web_tech)
+# print(result)
 
-# strip() - removes all given characters starting from the beginning and end of the string
+# # strip() - removes all given characters starting from the beginning and end of the string
 
-challenge = 'thirty days of python'
-print(challenge.strip('noth'))
+# challenge = 'thirty days of python'
+# print(challenge.strip('noth'))
 
-# replace() - replace substring with a given string
+# # replace() - replace substring with a given string
 
-challenge = 'thirty days of python'
-print(challenge.replace('python', 'coding'))
+# challenge = 'thirty days of python'
+# print(challenge.replace('python', 'coding'))
 
-# split() - splits the string into a list
+# # split() - splits the string into a list
 
-challenge = 'thirty days of python'
-print(challenge.split())
+# challenge = 'thirty days of python'
+# print(challenge.split())
 
-challenge = 'thirty, days, of, python'
-print(challenge.split(', '))
+# challenge = 'thirty, days, of, python'
+# print(challenge.split(', '))
 
+# task 1
+
+date = '21-05-2026'
+parts = date.split('-')
+
+day = parts[0]
+month = parts[1]
+year = parts[2]
  
+print(day)
+print(month)
+print(year)
+
+# task 2
+
+full_name = 'Mubaraq Ayanleke' 
+name_parts = full_name.split(' ')
+ 
+
+print(name_parts)
+
+first_name = name_parts[0]
+print(first_name)
+
+last_name = name_parts[1]
+print(last_name)
+
+initials = (f'{first_name[0].upper()}.{last_name[0].upper()}')
+print(initials)
+
+# task 3
+
+csv_data = 'Lagos,Nigeria,Africa,Alakuko'
+split_data = csv_data.split(',')
+
+print(split_data)
+city = split_data[0]
+print('city:', city)
+
+country = split_data[1]
+print('country:', country)
+
+continent = split_data[2]
+print('continent:', continent)
+
+area = split_data[3]
+print('area:', area)
