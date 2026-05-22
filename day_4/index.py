@@ -641,3 +641,7 @@ print(challenge.startswith('thirty'))
 
 challenge = '30 days of python'
 print(challenge.startswith('thirty'))
+
+
+# exercises
+
