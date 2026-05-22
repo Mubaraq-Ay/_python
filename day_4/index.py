@@ -557,3 +557,8 @@ print(result)
 web_tech = ['html', 'css', 'javascript', 'react']
 result = '# '.join(web_tech)
 print(result)
+
+# strip() - removes all given characters starting from the beginning and end of the string
+
+challenge = 'thirty days of python'
+print(challenge.strip('noth'))
