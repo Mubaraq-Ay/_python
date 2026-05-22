@@ -562,3 +562,11 @@ print(result)
 
 challenge = 'thirty days of python'
 print(challenge.strip('noth'))
+
+# replace() - replace substring with a given string
+
+challenge = 'thirty days of python'
+print(challenge.replace('python', 'coding'))
+
+
+
