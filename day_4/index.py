@@ -568,5 +568,12 @@ print(challenge.strip('noth'))
 challenge = 'thirty days of python'
 print(challenge.replace('python', 'coding'))
 
+# split() - splits the string into a list
 
+challenge = 'thirty days of python'
+print(challenge.split())
 
+challenge = 'thirty, days, of, python'
+print(challenge.split(', '))
+
+ 
