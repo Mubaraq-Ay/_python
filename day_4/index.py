@@ -623,3 +623,13 @@ print('continent:', continent)
 
 area = split_data[3]
 print('area:', area)
+
+
+# swapcase() - converts all uppercase characters to lowercase and all lowercase to lowercase
+
+challenge = 'Thirty Days Of Python'
+print(challenge.swapcase())
+
+challenge = 'thirty days of python'
+print(challenge.swapcase())
+
