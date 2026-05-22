@@ -546,3 +546,14 @@ print(challenge.isupper())
 
 challenge = 'THIRTY DAYS OF PYTHON'
 print(challenge.isupper())
+
+
+# join() - returns a concatenated string
+
+web_tech = ['html', 'css', 'javascript', 'react']
+result = ' '.join(web_tech)
+print(result)
+
+web_tech = ['html', 'css', 'javascript', 'react']
+result = '# '.join(web_tech)
+print(result)
