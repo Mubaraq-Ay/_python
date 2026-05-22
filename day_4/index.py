@@ -633,3 +633,11 @@ print(challenge.swapcase())
 challenge = 'thirty days of python'
 print(challenge.swapcase())
 
+
+# startswith() -  check if a string starts with the specified
+
+challenge = 'thirty days of python'
+print(challenge.startswith('thirty'))
+
+challenge = '30 days of python'
+print(challenge.startswith('thirty'))
