@@ -576,72 +576,89 @@ language = 'python'
 # challenge = 'thirty, days, of, python'
 # print(challenge.split(', '))
 
-# task 1
+# # task 1
 
-date = '21-05-2026'
-parts = date.split('-')
+# date = '21-05-2026'
+# parts = date.split('-')
 
-day = parts[0]
-month = parts[1]
-year = parts[2]
+# day = parts[0]
+# month = parts[1]
+# year = parts[2]
  
-print(day)
-print(month)
-print(year)
+# print(day)
+# print(month)
+# print(year)
 
-# task 2
+# # task 2
 
-full_name = 'Mubaraq Ayanleke' 
-name_parts = full_name.split(' ')
+# full_name = 'Mubaraq Ayanleke' 
+# name_parts = full_name.split(' ')
  
 
-print(name_parts)
+# print(name_parts)
 
-first_name = name_parts[0]
-print(first_name)
+# first_name = name_parts[0]
+# print(first_name)
 
-last_name = name_parts[1]
-print(last_name)
+# last_name = name_parts[1]
+# print(last_name)
 
-initials = (f'{first_name[0].upper()}.{last_name[0].upper()}')
-print(initials)
+# initials = (f'{first_name[0].upper()}.{last_name[0].upper()}')
+# print(initials)
 
-# task 3
+# # task 3
 
-csv_data = 'Lagos,Nigeria,Africa,Alakuko'
-split_data = csv_data.split(',')
+# csv_data = 'Lagos,Nigeria,Africa,Alakuko'
+# split_data = csv_data.split(',')
 
-print(split_data)
-city = split_data[0]
-print('city:', city)
+# print(split_data)
+# city = split_data[0]
+# print('city:', city)
 
-country = split_data[1]
-print('country:', country)
+# country = split_data[1]
+# print('country:', country)
 
-continent = split_data[2]
-print('continent:', continent)
+# continent = split_data[2]
+# print('continent:', continent)
 
-area = split_data[3]
-print('area:', area)
-
-
-# swapcase() - converts all uppercase characters to lowercase and all lowercase to lowercase
-
-challenge = 'Thirty Days Of Python'
-print(challenge.swapcase())
-
-challenge = 'thirty days of python'
-print(challenge.swapcase())
+# area = split_data[3]
+# print('area:', area)
 
 
-# startswith() -  check if a string starts with the specified
+# # swapcase() - converts all uppercase characters to lowercase and all lowercase to lowercase
 
-challenge = 'thirty days of python'
-print(challenge.startswith('thirty'))
+# challenge = 'Thirty Days Of Python'
+# print(challenge.swapcase())
 
-challenge = '30 days of python'
-print(challenge.startswith('thirty'))
+# challenge = 'thirty days of python'
+# print(challenge.swapcase())
+
+
+# # startswith() -  check if a string starts with the specified
+
+# challenge = 'thirty days of python'
+# print(challenge.startswith('thirty'))
+
+# challenge = '30 days of python'
+# print(challenge.startswith('thirty'))
 
 
 # exercises
 
+thirty = 'Thirty'
+day = 'Days'
+of = 'Of'
+python = 'Python'
+space = ' '
+
+single_string = thirty + space + day + space + of + space + python
+print(single_string)
+
+
+coding = 'Coding'
+for_str = 'For'
+all = 'All'
+space = ' '
+
+concatenated_str = coding + space + for_str + space + all
+print(concatenated_str)
