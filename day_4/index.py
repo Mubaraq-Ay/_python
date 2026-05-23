@@ -662,3 +662,100 @@ space = ' '
 
 concatenated_str = coding + space + for_str + space + all
 print(concatenated_str)
+
+company = concatenated_str
+print(company)
+print(len(company))
+print(company.upper())
+print(company.lower())
+
+print(company.capitalize())
+print(company.title())
+print(company.swapcase())
+
+print(company[0])
+print(company.find('Coding'))
+
+print(company.replace('Coding', 'Python'))
+
+statement = 'Python for Everyone'
+print(statement.replace('All', 'Everyone'))
+
+statement = 'coding for all'
+print(statement.split(' '))
+
+companies = 'facebook, google, microsoft, apple, ibm, oracle, amazon'
+print(companies.split(', '))
+
+character = 'coding for all'
+print(character[:6])
+print(character.index('all'))
+print('character:', character[10])
+
+statement = 'python for all'
+statement_first_part = statement[0]
+statement_second_part = statement[1]
+statement_third_part = statement[2]
+
+statement_initials = (f'{statement_first_part.upper()}.{statement_second_part.upper()}.{statement_third_part.upper()}')
+print(statement_initials)
+
+
+statement_acronym = 'coding for all'
+
+statement_part_1 = statement_acronym[0]
+statement_part_2 = statement_acronym[1]
+statement_part_3 = statement_acronym[2]
+
+initials = (f'{statement_part_1.upper()}.{statement_part_2.upper()}.{statement_part_3.upper()}')
+print(initials)
+
+print(statement_acronym.index('c'))
+print(statement_acronym.index('f'))
+print(statement_acronym.rfind('l'))
+
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+print(sentence.find('because'))
+print(sentence.rindex('because'))
+phrase_slice = sentence.find('because because because')
+print(sentence[phrase_slice:54])
+
+stmt = 'Coding For All'
+print(stmt.startswith('Coding'))
+print(stmt.endswith('coding'))
+
+stmt_2 = '   Coding For All      '
+print(stmt_2.strip(' '))
+
+character = '30DaysOfPython'
+print(character.isidentifier())
+
+second_character = 'thirty_days_of_python'
+print(second_character.isidentifier()) # this obviously
+
+
+libraries = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+result = '# '.join(libraries)
+
+print(result)
+
+sentences = 'I am enjoying this challenge. \nI just wonder what is next.'
+print(sentences)
+
+tab_escape = 'Name\tAge\tCountry\tCity\nAsabeneh 250\tFinland\tHelsinki'
+print(tab_escape) # didn't put the tab before 250 because of an awkward spacing
+
+radius = 10
+area = 3.14 * radius ** 2
+print(f'The area of a circle with radius {radius} is {area} meters square.')
+
+a = 8
+b = 6
+
+print(f'{a} + {b} = {a + b}')
+print(f'{a} - {b} = {a - b}')
+print(f'{a} * {b} = {a * b}')
+print(f'{a} / {b} = {a / b:.2f}')
+print(f'{a} % {b} = {a % b}')
+print(f'{a} // {b} = {a // b}')
+print(f'{a} ** {b} = {a ** b}')
