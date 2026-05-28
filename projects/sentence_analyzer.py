@@ -25,3 +25,10 @@ print(sentence_title_case)
 
 sentence_reversed = sentence[::-1]
 print(sentence_reversed)
+
+check_word = input('enter word to check: ')
+starts_with = sentence.startswith(check_word)
+ends_with = sentence.endswith(check_word)
+
+print(f'Starts with {check_word}: {starts_with}')
+print(f'Ends with {check_word}: {ends_with}')
