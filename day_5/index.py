@@ -40,3 +40,41 @@ print('Number of web technologies:', len(web_techs))
 
 print('Countries:', countries)
 print('Number of countries:', len(countries))
+
+# lists can have items of different data types
+
+lst = ['Asabeneh', 250, True, {'country':'finland', 'city':'helsinki'}] # this contains different data types
+
+# accessing list items using positive indexing
+
+# index starts from 0
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+first_fruit = fruits[0]
+print(first_fruit)
+
+second_fruit = fruits[1]
+print(second_fruit)
+
+last_fruit = fruits[3]
+print(last_fruit)
+
+# last index, 
+
+last_index = len(fruits) - 1
+last_fruit = fruits[last_index]
+
+print(last_index)
+print(last_fruit)
+print(fruits)
+
+# accessing list items using negative indexing
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+first_fruit = fruits[-4]
+second_fruit = fruits[-2]
+last_fruit = fruits[-1]
+
+print(first_fruit)
+print(second_fruit)
+print(last_fruit)
