@@ -114,3 +114,21 @@ print(scandic)
 print(es)
 
 # slicing items from a list
+
+# positive indexing - we can specify a range of positive indexes by specifying the start, end and step
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+all_fruits = fruits[0:4]
+print(all_fruits)
+
+all_fruits = fruits[0:]
+print(all_fruits)
+
+orange_and_mango = fruits[1:3]
+print(orange_and_mango)
+
+orange_mango_lemon = fruits[1:]
+print(orange_mango_lemon)
+
+orange_and_lemon = fruits[::2]
+print(orange_and_lemon)
