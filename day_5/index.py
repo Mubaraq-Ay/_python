@@ -115,7 +115,7 @@ print(es)
 
 # slicing items from a list
 
-# positive indexing - we can specify a range of positive indexes by specifying the start, end and step
+# positive indexing - we can specify a range of positive indexes by specifying the start, end and step. the return value would be a new list
 
 fruits = ['banana', 'orange', 'mango', 'lemon']
 all_fruits = fruits[0:4]
@@ -132,3 +132,28 @@ print(orange_mango_lemon)
 
 orange_and_lemon = fruits[::2]
 print(orange_and_lemon)
+
+
+# negative indexing - we can specify a range of negative indexes by specifing the start, stop and end. the return value would be a new list
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+all_fruits = fruits[-4:]
+print(all_fruits)
+orange_and_mango = fruits[-3:-1]
+print(orange_and_mango)
+
+orange_mango_lemon = fruits[-3:]
+print(orange_mango_lemon)
+
+reversed_fruits = fruits[::-1]
+print(reversed_fruits)
+
+# tasks
+
+numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+first_three_numbers = numbers[0:3]
+print(first_three_numbers)
+
+last_three_numbers = numbers[-3:]
+print(last_three_numbers)
