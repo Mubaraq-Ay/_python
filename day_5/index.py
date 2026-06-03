@@ -157,3 +157,7 @@ print(first_three_numbers)
 
 last_three_numbers = numbers[-3:]
 print(last_three_numbers)
+
+three_to_seven = numbers[3:8]
+print(three_to_seven)
+
