@@ -187,7 +187,8 @@ print(first_three_countries)
 last_three_countries = countries[-3:]
 print(last_three_countries)
 
-
+every_countries = countries[0:]
+print(every_countries)
 
 reversed_countries = countries[::-1]
 print(reversed_countries)
