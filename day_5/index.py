@@ -161,3 +161,10 @@ print(last_three_numbers)
 three_to_seven = numbers[3:8]
 print(three_to_seven)
 
+
+# task 2
+
+countries = ['Nigeria', 'Ghana', 'Kenya', 'Egypt', 'Morocco', 'Ethiopia', 'Tanzania']
+
+first_country = countries[0]
+print(first_country)
