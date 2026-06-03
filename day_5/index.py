@@ -161,7 +161,7 @@ print(last_three_numbers)
 three_to_seven = numbers[3:8]
 print(three_to_seven)
 
-second_number = numbers[1]
+second_number = numbers[::2]
 print(second_number)
 
 reversed_numbers = numbers[::-1]
@@ -187,8 +187,28 @@ print(first_three_countries)
 last_three_countries = countries[-3:]
 print(last_three_countries)
 
-every_countries = countries[0:]
+every_countries = countries[::2]
 print(every_countries)
 
 reversed_countries = countries[::-1]
 print(reversed_countries)
+
+
+# task 3
+
+stack = ['Python', 'Linux', 'Docker', 'AWS', 'Terraform', 'Kubernetes', 'CI/CD']
+
+current_stage = stack[0]
+print(current_stage)
+
+end_goal = stack[-1]
+print(end_goal)
+
+devops_tools = stack[2:]
+print(devops_tools)
+
+first_two_items_reversed = stack[0:2][::-1]
+print(first_two_items_reversed)
+
+all_stack_except_last = stack[:-1]
+print(all_stack_except_last)
