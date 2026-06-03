@@ -161,6 +161,15 @@ print(last_three_numbers)
 three_to_seven = numbers[3:8]
 print(three_to_seven)
 
+second_number = numbers[1]
+print(second_number)
+
+reversed_numbers = numbers[::-1]
+print(reversed_numbers)
+
+thirty_to_sixty = numbers[2:6]
+print(thirty_to_sixty)
+
 
 # task 2
 
@@ -168,3 +177,17 @@ countries = ['Nigeria', 'Ghana', 'Kenya', 'Egypt', 'Morocco', 'Ethiopia', 'Tanza
 
 first_country = countries[0]
 print(first_country)
+
+last_country = countries[-1]
+print(last_country)
+
+first_three_countries = countries[0:3]
+print(first_three_countries)
+
+last_three_countries = countries[-3:]
+print(last_three_countries)
+
+
+
+reversed_countries = countries[::-1]
+print(reversed_countries)
