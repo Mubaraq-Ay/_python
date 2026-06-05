@@ -212,3 +212,21 @@ print(first_two_items_reversed)
 
 all_stack_except_last = stack[:-1]
 print(all_stack_except_last)
+
+
+subjects = ['Maths', 'English', 'Physics', 'Chemistry', 'Python']
+scores = [85, 72, 90, 68, 95]
+
+first_subject = subjects[0]
+first_score = scores[0]
+print(f'First subject and its score: {first_subject}, {first_score}')
+
+last_subject = subjects[-1]
+last_score = scores[-1]
+print(f'Last subject and score is: {last_subject}, {last_score}')
+
+
+first_three_subjects = subjects[0:3]
+print(first_three_subjects)
+
+last_two_
