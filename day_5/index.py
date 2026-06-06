@@ -229,4 +229,13 @@ print(f'Last subject and score is: {last_subject}, {last_score}')
 first_three_subjects = subjects[0:3]
 print(first_three_subjects)
 
-last_two_
+last_two_subjects = subjects[-2:]
+last_two_scores = scores[-2:]
+print(f'{last_two_subjects}, {last_two_scores}')
+
+subjects_reversed = subjects[::-1]
+print(subjects_reversed)
+
+best_score = scores[-1]
+print(best_score)
+
