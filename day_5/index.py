@@ -390,3 +390,13 @@ ages = [22, 19, 24, 25, 26, 24, 25, 24]
 print(ages.index(24)) # prints the first occurence.
 
 
+# reversing a list
+#  reverse(), reverses the order of the list
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.reverse()
+print(fruits)
+
+ages = [22, 19, 24, 25, 26, 24, 25, 24]
+ages.reverse()
+print(ages)
