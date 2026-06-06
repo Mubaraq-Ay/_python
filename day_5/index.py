@@ -252,3 +252,11 @@ last_index = len(fruits) - 1
 fruits[last_index] = 'lime'
 print(fruits)
 
+# checking items in a list
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+does_exist = 'banana' in fruits
+print(does_exist)
+
+does_exist = 'lime' in fruits
+print(does_exist)
