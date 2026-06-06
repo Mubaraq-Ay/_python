@@ -278,3 +278,12 @@ fruits.insert(2, 'melon')
 print(fruits)
 fruits.insert(3, 'apple')
 print(fruits)
+
+# removing items from a list
+# we use remove()
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.remove('banana')
+print(fruits)
+fruits.remove('lemon')
+print(fruits)
