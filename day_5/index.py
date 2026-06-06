@@ -271,4 +271,10 @@ fruits.append('lime')
 print(fruits)
 
 # inserting items into a list
-# we use insert()
+# we use insert(), it takes two args, the index and the item
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.insert(2, 'melon')
+print(fruits)
+fruits.insert(3, 'apple')
+print(fruits)
