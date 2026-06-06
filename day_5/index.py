@@ -379,3 +379,14 @@ print(fruits.count('orange'))
 
 ages = [22, 19, 24, 25, 26, 24, 25, 24]
 print(ages.count(24))
+
+# finding index of an item 
+# The index() method returns the index of an item in the list:
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+print(fruits.index('orange'))
+
+ages = [22, 19, 24, 25, 26, 24, 25, 24]
+print(ages.index(24)) # prints the first occurence.
+
+
