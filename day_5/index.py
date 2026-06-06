@@ -287,3 +287,13 @@ fruits.remove('banana')
 print(fruits)
 fruits.remove('lemon')
 print(fruits)
+
+# removing items using pop
+# we use pop()
+# The pop() method removes the specified index, (or the last item if index is not specified):
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.pop()
+print(fruits) # removes the last index because the index is not specified
+fruits.pop(2)
+print(fruits)
