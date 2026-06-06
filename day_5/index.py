@@ -311,4 +311,12 @@ print(fruits)
 del fruits[1:3]
 print(fruits)
 del fruits
-print(fruits) # deletes the list completely
+# print(fruits) # deletes the list completely
+
+# clearing list items
+# clear() , empties the list
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.clear()
+print(fruits)
+
