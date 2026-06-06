@@ -297,3 +297,18 @@ fruits.pop()
 print(fruits) # removes the last index because the index is not specified
 fruits.pop(2)
 print(fruits)
+
+# removing items using del
+# del 
+# The del keyword removes the specified index and it can also be used to delete items within index range.
+# It can also delete the list completely
+
+fruits = ['banana', 'orange', 'mango', 'lemon', 'kiwi', 'lime']
+del fruits[0]
+print(fruits)
+del fruits[1]
+print(fruits)
+del fruits[1:3]
+print(fruits)
+del fruits
+print(fruits) # deletes the list completely
