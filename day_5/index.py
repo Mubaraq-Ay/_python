@@ -269,3 +269,6 @@ fruits.append('pear')
 print(fruits)
 fruits.append('lime')
 print(fruits)
+
+# inserting items into a list
+# we use insert()
