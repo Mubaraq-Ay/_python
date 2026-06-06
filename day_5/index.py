@@ -267,3 +267,5 @@ print(does_exist)
 fruits = ['banana', 'orange', 'mango', 'lemon']
 fruits.append('pear')
 print(fruits)
+fruits.append('lime')
+print(fruits)
