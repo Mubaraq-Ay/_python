@@ -260,3 +260,10 @@ print(does_exist)
 
 does_exist = 'lime' in fruits
 print(does_exist)
+
+# adding items to a list
+# to add an item to an existing list, we use append()
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.append('pear')
+print(fruits)
