@@ -320,3 +320,9 @@ fruits = ['banana', 'orange', 'mango', 'lemon']
 fruits.clear()
 print(fruits)
 
+# copying a list
+# copy()
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits_copy = fruits.copy()
+print(fruits_copy)
