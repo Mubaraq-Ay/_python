@@ -400,3 +400,31 @@ print(fruits)
 ages = [22, 19, 24, 25, 26, 24, 25, 24]
 ages.reverse()
 print(ages)
+
+# sorting list items
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.sort()
+print(fruits)
+
+fruits.sort(reverse=True)
+print(fruits)
+
+ages = [22, 19, 24, 25, 26, 24, 25, 24]
+ages.sort()
+print(ages)
+
+ages.sort(reverse=True)
+print(ages)
+
+# using sorted(), returns the ordered list without modifying the original list
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+print(sorted(fruits))
+
+# reverse order
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits = sorted(fruits, reverse=True)
+
+print(fruits)
