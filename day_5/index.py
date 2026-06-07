@@ -428,3 +428,100 @@ fruits = ['banana', 'orange', 'mango', 'lemon']
 fruits = sorted(fruits, reverse=True)
 
 print(fruits)
+
+
+# tasks
+
+empty_list = []
+
+cars = ['bmw', 'mercedes', 'byd', 'changan', 'honda', 'kia', 'hyundai']
+print(len(cars))
+
+first_car = cars[0]
+print(first_car)
+
+middle_car = cars[len(cars) // 2]
+print(middle_car)
+
+last_car = cars[-1]
+print(last_car)
+
+mixed_data_types = ['mubaraq', 18, 192, 'single', 'interstellar']
+print(mixed_data_types)
+print(len(mixed_data_types))
+
+it_companies = ['facebook', 'google', 'microsoft', 'apple', 'ibm', 'oracle', 'amazon']
+print(it_companies)
+print(len(it_companies))
+
+first_company = it_companies[0]
+print(first_company)
+
+middle_company = len(it_companies) // 2
+it_companies.pop(middle_company)
+print(it_companies)
+
+last_company = it_companies[-1]
+print(last_company)
+
+it_companies.pop()
+print(it_companies)
+
+it_companies.append('meta')
+print(it_companies)
+
+it_companies.insert(3, 'tesla')
+print(it_companies) # couldn,t do it dynamically
+
+it_companies[2] = it_companies[2].upper()
+print(it_companies)
+
+
+result = '#; '.join(it_companies)
+print(result)
+
+does_exist = 'meta' in it_companies
+print(does_exist)
+
+it_companies.sort()
+print(it_companies)
+
+it_companies.reverse()
+print(it_companies)
+
+first_three_companies = it_companies[0:3] 
+print(first_three_companies)
+
+last_three_companies = it_companies[-3:]
+print(last_three_companies)
+
+middle_company = it_companies[len(it_companies) // 2]
+print(middle_company)
+
+first_company = it_companies.pop(0)
+print(first_company)
+print(it_companies)
+
+middle_company = len(it_companies) // 2
+it_companies.pop(middle_company)
+print(it_companies)
+
+last_company = it_companies.pop(-1)
+print(last_company)
+
+it_companies.clear()
+print(it_companies)
+
+# del it_companies
+# print(it_companies)
+
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node','Express', 'MongoDB']
+
+full_stack = front_end + back_end
+print(full_stack)
+
+full_stack.insert(5, 'Python')
+full_stack.insert(6, 'SQL')
+print(full_stack)
+
