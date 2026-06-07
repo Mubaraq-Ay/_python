@@ -525,3 +525,35 @@ full_stack.insert(5, 'Python')
 full_stack.insert(6, 'SQL')
 print(full_stack)
 
+# exercises level 2
+
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+ages.sort()
+print(ages)
+
+maximum_age = max(ages)
+print(maximum_age)
+
+minimum_age = min(ages)
+print(minimum_age)
+
+ages.append(maximum_age)
+print(ages)
+
+ages.append(minimum_age)
+print(ages)
+
+ages.sort()
+
+median = ages[len(ages) // 2]
+print(median)
+
+average = sum(ages) / len(ages) # didn't use floor division
+print(average)
+
+range = maximum_age - minimum_age
+print(range)
+
+compare_value = (abs(minimum_age - average), abs(maximum_age - average))
+print(compare_value)
