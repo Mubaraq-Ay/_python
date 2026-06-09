@@ -6,3 +6,6 @@ print(f'{students_names[1]}: {scores[1]}')
 print(f'{students_names[2]}: {scores[2]}')
 print(f'{students_names[3]}: {scores[3]}')
 print(f'{students_names[4]}: {scores[4]}')
+
+highest_score = max(scores)
+print(highest_score)
