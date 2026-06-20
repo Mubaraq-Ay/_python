@@ -774,3 +774,4 @@ second_half = countries[mid:]
 
 print(f'first half: {len(first_half)} countries')
 print(f'second half: {len(second_half)} countries')
+

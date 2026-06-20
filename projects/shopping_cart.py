@@ -29,7 +29,3 @@ most_expensive_item = max(price_list)
 item_index = most_expensive_item
 rs = price_list.index()
 
-print(rs)
-
-print(most_expensive_item) 
- 
