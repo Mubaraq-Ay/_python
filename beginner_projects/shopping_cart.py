@@ -22,10 +22,11 @@ price_list = [price_1, price_2, price_3, price_4, price_5]
 print(items_list) 
 print(f'${price_list}')
 
-total_cost = sum(price_list)
-print(f'Total cost: {total_cost}')
 
-most_expensive_item = max(price_list)
-item_index = most_expensive_item
-rs = price_list.index()
+total_cost = sum(price_list)
+print(f'Total cost: $ {total_cost}')
+
+
+
+
 
