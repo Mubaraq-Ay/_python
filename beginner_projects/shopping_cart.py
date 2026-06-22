@@ -19,7 +19,7 @@ items_list = [item_1, item_2, item_3, item_4, item_5]
 price_list = [price_1, price_2, price_3, price_4, price_5]
  
 
-print(items_list)
+print(items_list) 
 print(f'${price_list}')
 
 total_cost = sum(price_list)
