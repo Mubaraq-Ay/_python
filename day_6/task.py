@@ -11,12 +11,15 @@ print(len(siblings))
 # modify the siblings tuple
 
 siblings = list(siblings)
-siblings[0] = 'dami'
-siblings[1] = 'laide'
+father = 'dami'
+mother = 'laide'
 
-family_members = siblings
-print(family_members)
-
+family_members = siblings + [father, mother]
 family_members = tuple(family_members)
 print(family_members)
+
+
+# level 2
+
+
 
