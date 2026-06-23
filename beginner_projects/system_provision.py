@@ -13,5 +13,5 @@ system_tools.append(backend)
 print(system_tools)
 print('Number of tools: ',len(system_tools))
 
-command = 'apt-get install ' + ' '.join(system_tools)
+command = 'sudo apt-get install ' + ' '.join(system_tools)
 print(command) 
