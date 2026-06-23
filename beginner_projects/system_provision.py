@@ -1,5 +1,7 @@
 system_tools = [
-    'git', 'python', 'linux'
+    'git', 
+    'python', 
+    'linux'
 ]
 
 frontend = input('enter your preferred frontend framework: ')
