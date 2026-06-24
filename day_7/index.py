@@ -48,3 +48,16 @@ removed_item = fruits.pop()
 print(removed_item)
 
 # clearing items in a set
+# we use clear()
+
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+fruits.clear()
+
+print(fruits)
+
+# deleting a set
+
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+del fruits
+
+# print(fruits)
