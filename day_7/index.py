@@ -61,3 +61,10 @@ fruits = {'banana', 'orange', 'mango', 'lemon'}
 del fruits
 
 # print(fruits)
+
+# converting list to set
+
+fruits = ['banana', 'orange', 'mango', 'lemon','orange', 'banana']
+fruits = set(fruits)
+
+print(fruits)
