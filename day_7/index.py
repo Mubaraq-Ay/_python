@@ -145,4 +145,24 @@ print(A)
 print(B)  
 
 
+# finding symmetric difference between two sets
+# Give me the elements that are in either set, but NOT in both.
+
+
+whole_numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+some_numbers = {1, 2, 3, 4, 5}
+
+print(whole_numbers.symmetric_difference(some_numbers))
+
+
+python = {'p', 'y', 't', 'h', 'o','n'}
+dragon = {'d', 'r', 'a', 'g', 'o','n'}
+print(python.symmetric_difference(dragon))
+
+# or
+
+print(python ^ dragon)
+
+
+# disjoint sets
 
