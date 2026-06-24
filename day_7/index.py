@@ -68,3 +68,11 @@ fruits = ['banana', 'orange', 'mango', 'lemon','orange', 'banana']
 fruits = set(fruits)
 
 print(fruits)
+
+
+# joining set
+# we use union
+
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+vegetables = {'tomato', 'potato', 'cabbage','onion', 'carrot'}
+print(fruits.union(vegetables))
