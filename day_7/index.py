@@ -165,4 +165,15 @@ print(python ^ dragon)
 
 
 # disjoint sets
+# Two sets are disjoint if they have no common elements at all.
+# to check if two sets are joint or disjoint, we use isdijoint() method.
+
+even_numbers = {0, 2, 4 ,6, 8}
+odd_numbers = {1, 3, 5, 7, 9}
+print(even_numbers.isdisjoint(odd_numbers))
+
+
+python = {'p', 'y', 't', 'h', 'o','n'}
+dragon = {'d', 'r', 'a', 'g', 'o','n'}
+print(python.isdisjoint(dragon))
 
