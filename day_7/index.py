@@ -93,3 +93,26 @@ python = {'p', 'y', 't', 'h', 'o','n'}
 dragon = {'d', 'r', 'a', 'g', 'o','n'}
 
 print(python.intersection(dragon))
+
+# checking subset and superset
+# A set can be a subset or super set of other sets:
+
+# Subset: issubset()
+# Super set: issuperset
+
+whole_numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+even_numbers = {0, 2, 4, 6, 8, 10}
+
+print(whole_numbers.issuperset(even_numbers))
+print(whole_numbers.issubset(even_numbers))
+
+print(even_numbers.issubset(whole_numbers))
+print(even_numbers.issuperset(whole_numbers))
+
+python = {'p', 'y', 't', 'h', 'o','n'}
+dragon = {'d', 'r', 'a', 'g', 'o','n'}
+
+print(python.issuperset(dragon))
+print(python.issubset(dragon))
+
+print(dragon.issubset(python))
