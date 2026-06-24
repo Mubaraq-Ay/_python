@@ -76,3 +76,7 @@ print(fruits)
 fruits = {'banana', 'orange', 'mango', 'lemon'}
 vegetables = {'tomato', 'potato', 'cabbage','onion', 'carrot'}
 print(fruits.union(vegetables))
+# or
+print(fruits | vegetables)
+
+# finding intersection items
