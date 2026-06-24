@@ -67,4 +67,4 @@ check_estonia = 'Estonia' in nordic_countries
 print(check_estonia)
 
 check_iceland = 'Iceland' in nordic_countries
-print(check_iceland)
+print(check_iceland) 
