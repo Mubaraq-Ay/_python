@@ -133,3 +133,15 @@ print(python.difference(dragon))
 print(dragon.difference(python))
 
 # print(dragon - python)
+
+# difference_update(), this modifies the set directly
+
+A = {1, 2, 3, 4, 5, 7}
+B = {3, 4, 6, 7, 8}
+
+# Removes 3 and 4 from A
+A.difference_update(B)
+
+print(A)   
+print(B)  # Output: {3, 4, 6} (B remains unchanged)
+
