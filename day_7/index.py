@@ -177,3 +177,20 @@ python = {'p', 'y', 't', 'h', 'o','n'}
 dragon = {'d', 'r', 'a', 'g', 'o','n'}
 print(python.isdisjoint(dragon))
 
+
+# joining sets
+# we use union() or the pipe operator ( | )  and update()
+
+A = {1, 2, 3}
+B = {3, 4, 5}
+
+print(A.union(B))
+
+print(A | B)
+
+# update() - modifies the original set
+A = {1, 2, 3}
+B = {3, 4, 5}
+
+A.update(B)
+print(A)
