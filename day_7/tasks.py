@@ -16,7 +16,7 @@ it_companies.update(companies)
 print(it_companies)
 
 it_companies.remove('Apple')
-print(it_companies)
+print(it_companies) 
 
 # remove - remove an item if it exists, and if it doesn't, throw an error.
 # discard - remove an item if it exists, if it doesnt, just move on
