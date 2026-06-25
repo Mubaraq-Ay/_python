@@ -1,6 +1,5 @@
 # sets
 it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
-age = [22, 19, 24, 25, 26, 24, 25, 24]
 
 # length of the set it_companies
 
@@ -44,3 +43,22 @@ print(A.symmetric_difference(B))
 # symmetric difference - items that exist in one set but not in both sets
 
 del (A, B)
+
+
+# level 3
+
+age = [22, 19, 24, 25, 26, 24, 25, 24]
+print(len(age))
+
+age = set(age)
+print(age)
+print(len(age))
+
+# string - is the collection of characters
+# list - is an ordered and mutable collection of data
+# tuple - is an ordered and immutable collection of data
+# set = is an unordered and unindexed collection of data. it is mutable
+
+
+ 
+
