@@ -48,17 +48,25 @@ del (A, B)
 # level 3
 
 age = [22, 19, 24, 25, 26, 24, 25, 24]
-print(len(age))
+
+len_list = len(age)
 
 age = set(age)
 print(age)
-print(len(age))
+len_set = len(age)
+
+print(len_list > len_set)
 
 # string - is the collection of characters
 # list - is an ordered and mutable collection of data
 # tuple - is an ordered and immutable collection of data
 # set = is an unordered and unindexed collection of data. it is mutable
 
+sentence  = 'I am a teacher and I love to inspire and teach people.'
+word_list = sentence.split()
 
- 
+unique_words = set(word_list)
+print(unique_words)
 
+print(f'unique words: {unique_words}')
+print(f'number of unique words {len(unique_words)}')
