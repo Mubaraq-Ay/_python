@@ -60,6 +60,24 @@ person['skills'].append('devops')
 print(person)
 
 
+# modifying items in a dictionary
 
+person = {
+    'first_name': 'mubaraq',
+    'last_name': 'ayanleke',
+    'age': 18,
+    'country': 'nigeria',
+    'is_married': True,
+    'skills': ['python', 'linux', 'mongodb', 'node', 'aws'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+    }
+}
+
+person['first_name'] = 'Ayoub'
+person['age'] = 334
+
+print(person)
 
 
