@@ -100,3 +100,29 @@ person = {
 print('first_name' in person)
 print('city' in person)
 print('address' in person)
+
+
+# removing key and value pairs from a dictionary
+
+# pop(key): removes the item with the specified key name
+# popitem(): removes the last item
+# del: removes an item with specified key name
+
+person = {
+    'first_name': 'mubaraq',
+    'last_name': 'ayanleke',
+    'age': 18,
+    'country': 'nigeria',
+    'is_married': True,
+    'skills': ['python', 'linux', 'mongodb', 'node', 'aws'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+    }
+}
+
+person.pop('first_name')
+person.popitem()
+del person['country']
+
+print(person)
