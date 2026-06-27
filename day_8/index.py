@@ -39,5 +39,25 @@ print(person.get('skills')[0])
 print(person.get('city')) # returns none
 
 
+# adding items to a dictionary
+
+person = {
+    'first_name': 'mubaraq',
+    'last_name': 'ayanleke',
+    'age': 18,
+    'country': 'nigeria',
+    'is_married': True,
+    'skills': ['python', 'linux', 'mongodb', 'node', 'aws'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+    }
+}
+
+person['job_title'] = 'software engineer'
+person['skills'].append('devops')
+
+print(person)
+
 
 
