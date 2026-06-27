@@ -168,3 +168,28 @@ person = {
 
 person.clear()
 print(person)
+
+
+# deleting a dictionary
+
+
+person = {
+    'first_name': 'mubaraq',
+    'last_name': 'ayanleke',
+    'age': 18,
+    'country': 'nigeria',
+    'is_married': True,
+    'skills': ['python', 'linux', 'mongodb', 'node', 'aws'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+    }
+}
+
+
+del person
+# print(person)
+
+# copy a dictionary
+
+
