@@ -192,4 +192,20 @@ del person
 
 # copy a dictionary 
 
+# we use the copy() method. using copy, we avoid mutation of the original dictionary.
 
+person = {
+    'first_name': 'mubaraq',
+    'last_name': 'ayanleke',
+    'age': 18,
+    'country': 'nigeria',
+    'is_married': True,
+    'skills': ['python', 'linux', 'mongodb', 'node', 'aws'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+    }
+}
+
+person_copy = person.copy()
+print(person_copy)
