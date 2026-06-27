@@ -231,3 +231,23 @@ person = {
 keys = person.keys()
 print(keys)
 
+# getting dictionary values as a list
+
+# we use the values() method to give us all the values of a dictionary as a list
+
+person = {
+    'first_name': 'mubaraq',
+    'last_name': 'ayanleke',
+    'age': 18,
+    'country': 'nigeria',
+    'is_married': True,
+    'skills': ['python', 'linux', 'mongodb', 'node', 'aws'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+    }
+}
+
+values = person.values()
+print(values)
+
