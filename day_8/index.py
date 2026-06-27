@@ -126,3 +126,25 @@ person.popitem()
 del person['country']
 
 print(person)
+
+
+# changing dictionary to a list of items
+# the items method item() changes dictionary to a list of tuples
+
+
+person = {
+    'first_name': 'mubaraq',
+    'last_name': 'ayanleke',
+    'age': 18,
+    'country': 'nigeria',
+    'is_married': True,
+    'skills': ['python', 'linux', 'mongodb', 'node', 'aws'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+    }
+}
+
+
+person_list = person.items()
+print(person_list)
