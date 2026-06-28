@@ -39,17 +39,36 @@
 
 # students grading
 
-scores = int(input('enter your score: '))
+# scores = int(input('enter your score: '))
 
-if scores >= 90:
-    print('a')
-elif scores >= 80:
-    print('b')
-elif scores >= 70:
-    print('c')
-elif scores >= 60:
-    print('d')
-elif scores >= 0:
-    print('f')
+# if scores >= 90:
+#     print('a')
+# elif scores >= 80:
+#     print('b')
+# elif scores >= 70:
+#     print('c')
+# elif scores >= 60:
+#     print('d')
+# elif scores >= 0:
+#     print('f')
+# else:
+#     print('score not found!')
+
+
+# season checker
+season_input = input('Enter a month to know what season it is: ').lower()
+winter_months = ['december','january', 'february']
+autumn_months = ['september', 'october', 'november']
+summer_months = ['june', 'july', 'august']
+spring_months = ['march', 'april', 'may']
+
+if season_input in winter_months:
+    print('Winter')
+elif season_input in autumn_months:
+    print('Autumn')
+elif season_input in summer_months:
+    print('Summer')
+elif season_input in spring_months:
+    print('Spring')
 else:
-    print('score not found!')
+    print('enter a valid month!')
