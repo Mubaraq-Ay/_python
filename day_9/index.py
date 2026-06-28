@@ -64,4 +64,11 @@ else:
     print('a is negative')
 
 
-#
+# if and or logical operators
+
+user = 'james'
+access_level = 3
+if user == 'admin' or access_level >= 4:
+    print('access granted!')
+else: 
+    print('access denied!')
