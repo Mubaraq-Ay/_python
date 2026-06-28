@@ -53,3 +53,15 @@ else:
 
 # if condition and logical operators
 
+a = 0
+if a > 0 and a % 2 == 0:
+    print('a is an even and positive integer')
+elif a > 0:
+    print('a is a positive integer')
+elif a == 0:
+    print('a is zero')
+else:
+    print('a is negative')
+
+
+#
