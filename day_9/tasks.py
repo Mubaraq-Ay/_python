@@ -12,12 +12,31 @@
 
    
 
-my_age = 18
-your_age = int(input('enter your age: '))
-age_gap = your_age - my_age
+# my_age = 18
+# your_age = int(input('enter your age: '))
+# age_gap = your_age - my_age
 
-if your_age > my_age:
-    print(f'you are {age_gap} years older than me')
-elif my_age == your_age:
-    print('we are age mates g.')
+# if your_age > my_age:
+#     print(f'you are {age_gap} years older than me')
+# elif my_age == your_age:
+#     print('we are age mates g.')
+
+
+# 3
+
+a = int(input('enter a number: '))
+b = int(input('enter a number: '))
+
+if a > b:
+    print('a is greater than b')
+elif a < b:
+    print('a is smaller than b')
+else:
+    print('a is equal to b')
+
+    
+
+
+
+
 
