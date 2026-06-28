@@ -77,12 +77,58 @@
 
 
 
-fruits = ['banana', 'orange', 'mango', 'lemon']
+# fruits = ['banana', 'orange', 'mango', 'lemon']
 
-add_fruit = input('enter a fruit: ').lower()
+# add_fruit = input('enter a fruit: ').lower()
 
-if add_fruit in fruits:
-    print('That fruit already exist in the list')
+# if add_fruit in fruits:
+#     print('That fruit already exist in the list')
+# else:
+#     fruits.append(add_fruit)
+#     print(f'added! updated list {fruits}')
+
+
+# level 3
+
+person={
+    'first_name': 'Asabeneh',
+    'last_name': 'Yetayeh',
+    'age': 250,
+    'country': 'Finland',
+    'is_married': True,
+    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+    }
+    }
+
+if 'skills' in person:
+    skills = (person['skills']) 
+    mid = len('skills') // 2
+    print(skills[mid])
+
+if 'skills' in person:
+    if 'Python' in person['skills']:
+        print('this person knows python')
+    else:
+        print('this person does not know python')
+
+
+
+skills = person['skills']
+
+if 'JavaScript' in skills and 'React' in skills and len(skills) == 2:
+    print("He is a front end developer")
+
+elif 'Node' in skills and 'Python' in skills and 'MongoDB' in skills:
+    print("He is a backend developer")
+
+elif 'React' in skills and 'Node' in skills and 'MongoDB' in skills:
+    print("He is a fullstack developer")
+
 else:
-    fruits.append(add_fruit)
-    print(f'added! updated list {fruits}')
+    print("unknown title")
+
+if person['is_married'] and person['country'] == 'Finland':
+    print(f"{person['first_name']} {person['last_name']} lives in {person['country']}. He is married.")
