@@ -78,3 +78,11 @@
 
 
 fruits = ['banana', 'orange', 'mango', 'lemon']
+
+add_fruit = input('enter a fruit: ').lower()
+
+if add_fruit in fruits:
+    print('That fruit already exist in the list')
+else:
+    fruits.append(add_fruit)
+    print(f'added! updated list {fruits}')
