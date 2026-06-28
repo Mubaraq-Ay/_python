@@ -34,3 +34,22 @@ else:
 
 a = 3
 print('A is positive') if a > 0 else print('A is negative')
+
+
+# nested conditions
+
+a = 3
+if a > 0:
+    if a % 2 == 0:
+        print('a is a positive and even integer')
+    else:
+        print('a is a positive number')
+elif a == 0:
+    print('a is zero')
+else:
+    print('a is a negative number')
+
+# we can avoid nested condition by using logical operator and.
+
+# if condition and logical operators
+
