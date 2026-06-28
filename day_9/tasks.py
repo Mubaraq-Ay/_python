@@ -24,19 +24,32 @@
 
 # 3
 
-a = int(input('enter a number: '))
-b = int(input('enter a number: '))
+# a = int(input('enter a number: '))
+# b = int(input('enter a number: '))
 
-if a > b:
-    print('a is greater than b')
-elif a < b:
-    print('a is smaller than b')
+# if a > b:
+#     print('a is greater than b')
+# elif a < b:
+#     print('a is smaller than b')
+# else:
+#     print('a is equal to b')
+
+
+# level 2
+
+# students grading
+
+scores = int(input('enter your score: '))
+
+if scores >= 90:
+    print('a')
+elif scores >= 80:
+    print('b')
+elif scores >= 70:
+    print('c')
+elif scores >= 60:
+    print('d')
+elif scores >= 0:
+    print('f')
 else:
-    print('a is equal to b')
-
-    
-
-
-
-
-
+    print('score not found!')
