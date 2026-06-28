@@ -20,6 +20,8 @@
 #     print(f'you are {age_gap} years older than me')
 # elif my_age == your_age:
 #     print('we are age mates g.')
+# else:
+#     print(f'you are {abs(age_gap)} years younger than me') 
 
 
 # 3
@@ -56,19 +58,23 @@
 
 
 # season checker
-season_input = input('Enter a month to know what season it is: ').lower()
-winter_months = ['december','january', 'february']
-autumn_months = ['september', 'october', 'november']
-summer_months = ['june', 'july', 'august']
-spring_months = ['march', 'april', 'may']
+# season_input = input('Enter a month to know what season it is: ').lower()
+# winter_months = ['december','january', 'february']
+# autumn_months = ['september', 'october', 'november']
+# summer_months = ['june', 'july', 'august']
+# spring_months = ['march', 'april', 'may']
 
-if season_input in winter_months:
-    print('Winter')
-elif season_input in autumn_months:
-    print('Autumn')
-elif season_input in summer_months:
-    print('Summer')
-elif season_input in spring_months:
-    print('Spring')
-else:
-    print('enter a valid month!')
+# if season_input in winter_months:
+#     print('Winter')
+# elif season_input in autumn_months:
+#     print('Autumn')
+# elif season_input in summer_months:
+#     print('Summer')
+# elif season_input in spring_months:
+#     print('Spring')
+# else:
+#     print('enter a valid month!')
+
+
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
