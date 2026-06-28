@@ -28,3 +28,9 @@ elif a < 0:
     print('A is a negative number')
 else:
     print('a is zero')
+
+
+# short hand
+
+a = 3
+print('A is positive') if a > 0 else print('A is negative')
