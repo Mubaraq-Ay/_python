@@ -5,11 +5,11 @@
 # while loop
 # this is used to execute a block of statements repeatedly until a given condition is satisfied.
 
-# count = 0
+count = 0
 
-# while count < 5:
-#     print(count)
-#     count = count + 1
+while count < 5:
+    print(count)
+    count = count + 1
 
 
 # while else
@@ -22,3 +22,36 @@ while count < 5:
     count += 1
 else:
     print(count)
+
+# mini tasks
+# 1
+
+number = 1
+
+while number < 11:
+    print(number)
+    number += 1
+else:
+    print('counting done!')
+
+# 2
+
+count_down = 10
+
+while count_down > 0:
+    print(count_down)
+    count_down -= 1
+else:
+    print('liftoff! 🚀')
+
+# 3
+
+num = 0
+
+while num <= 30:
+    print(num)
+    num += 3
+else:
+    print('reached 30!')
+
+
