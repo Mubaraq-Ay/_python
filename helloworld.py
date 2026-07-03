@@ -17,3 +17,7 @@ print(type([1, 2, 3]))   # List
 print(type({'name':'Asabeneh'})) # Dictionary
 print(type({9.8, 3.14, 2.7}))    # Set
 print(type((9.8, 3.14, 2.7)))    # Tuple
+
+# recently learnt you can run a file like this
+
+# python "COS202 Assignment U24CS0970.py"
