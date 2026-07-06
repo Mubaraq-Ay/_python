@@ -55,3 +55,52 @@ else:
     print('reached 30!')
 
 
+# break and continue - part 1
+# we use break when we'd like to get out or stop the loop.
+
+count = 0
+
+while count < 5:
+    print(count)
+    count += 1
+    if count == 3:
+        break
+
+# continue - we can skip the current iteration and continue with the next.
+
+count = 0
+
+while count < 5:
+    if count == 3:
+        count += 1
+        continue
+    print(count)
+    count += 1
+
+
+# mini tasks
+
+# 1
+
+numbers = 0
+
+while numbers <= 20:
+    print(numbers)
+    numbers += 1
+    if numbers == 14:
+        break
+
+
+# 2
+
+numbers = 1
+ 
+while numbers <= 10:
+       if numbers % 2 == 0:
+        numbers += 1
+        continue
+       
+       print(numbers)
+       numbers += 1
+        
+        
