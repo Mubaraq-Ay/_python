@@ -228,13 +228,49 @@ while countdown >= 1:
 correct_password = 'python'
 
 while True:
-    user_password = input('enter password: ')
-    if user_password != correct_password:
-        print('access denied!')
-    else:
-     print('access granted!')
-     break
+    password = input('enter the password: ')
+    if password == correct_password:
+        print('access granted')
 
-    
+        break
+    print('access denied')
 
+# keep adding
+
+# total = 0
+
+# while True:
+#     number = int(input('enter number: '))
+#     total = number + total # i wrote this but cant really explain this line
+#     if number == 0:
+#         print(f'total = {total}')
+#         break
+
+# count attempts
+
+attempts = 0
+secret_number = 9
+
+while True:
+    user_input = int(input('guess number: '))
+    attempts += 1
+    if user_input == 9:
+        print('correct!')
+        print(f'Attempts: {attempts}')
+        break
+
+    print('wrong')
+
+    # task 9 - 1,2,3,4
+    # task 10 - 1,2,3,4,6
     
+# count = 0
+
+# while count < 4:
+#     print(count)
+#     count += 1
+#     break
+# else:
+#     print("Finished")
+
+
