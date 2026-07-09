@@ -59,3 +59,12 @@ while count < 5:
 else:
     print('ok')
 
+# tasks
+
+numbers = 1
+
+while numbers <= 10:
+    print(numbers)
+    numbers += 1
+else:
+    print('finished counting!')
