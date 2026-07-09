@@ -143,3 +143,16 @@ while count <= 30:
     count += 5
 else:
     print('finished')
+
+
+
+# asking a number
+
+numbers = 0
+
+while numbers >= 0:
+    numbers = int(input('enter a number: '))
+    if numbers >= 0:
+     print(numbers)
+else:
+    print('negative number entered, stopping')
