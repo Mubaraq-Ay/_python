@@ -24,6 +24,21 @@ while countdown >= 1:
 else:
     print('Blast off! 🚀')
 
+# print 1 - 10
 
-# 3
+numbs = 1
+
+while numbs <= 10:
+    print(numbs)
+    numbs += 1
+
+# print from 10 -1
+
+reverse_countdown = 15
+
+while reverse_countdown >= 1:
+    print(reverse_countdown)
+    reverse_countdown -= 1
+
+
 
