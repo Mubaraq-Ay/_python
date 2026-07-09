@@ -41,4 +41,14 @@ while reverse_countdown >= 1:
     reverse_countdown -= 1
 
 
+# numbers 2 -20
 
+numbers = 2
+
+while numbers <= 20:
+    print(numbers)
+    numbers += 1
+
+# print odd numbers from 1 - 19
+
+ 
