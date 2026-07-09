@@ -68,3 +68,13 @@ while numbers <= 10:
     numbers += 1
 else:
     print('finished counting!')
+
+# 2
+
+numbers = 2
+
+while numbers <= 20:
+    numbers % 2 == 0
+    print(numbers)
+else:
+    print('done')
