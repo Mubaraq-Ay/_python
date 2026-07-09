@@ -170,12 +170,71 @@
 
 # break tasks
 
-numbers = 1
+# numbers = 1
 
-while numbers <= 10:
-    print(numbers)
-    numbers += 1
-    if numbers == 7:
-        break
+# while numbers <= 10:
+#     print(numbers)
+#     numbers += 1
+#     if numbers == 7:
+#         break
 
 # task 2
+
+# numbers = 1
+
+# while numbers <= 10:
+#     print(numbers)
+#     numbers += 1
+
+
+#     if numbers > 5 and numbers % 2 == 0: 
+#         print(numbers)
+#         break
+
+# multiples of 5
+
+multiples = 5
+
+while multiples <= 25:
+    print(multiples)
+    multiples += 5
+
+# countdown from 10
+
+countdown = 10
+
+while countdown >= 1:
+    print(countdown)
+    countdown -= 1
+
+    if countdown == 4:
+        break
+
+# user guess
+
+# number = 8
+
+# while True:
+#     user_number = int(input('guess the number: '))
+#     if user_number != number:
+#         print('wrong')
+#     else:
+#         print('correct')
+#         break
+
+
+# password 
+
+correct_password = 'python'
+
+while True:
+    user_password = input('enter password: ')
+    if user_password != correct_password:
+        print('access denied!')
+    else:
+     print('access granted!')
+     break
+
+    
+
+    
