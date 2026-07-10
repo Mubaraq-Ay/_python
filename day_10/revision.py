@@ -319,3 +319,16 @@ while multiples <= 15:
         continue
     print(multiples)
     multiples += 1
+
+# 4
+# skip a range.
+
+numbers = 1
+
+while numbers <= 10:
+    if 4 <= numbers <= 6:
+        numbers += 1
+        continue
+    print(numbers)
+    numbers += 1
+
