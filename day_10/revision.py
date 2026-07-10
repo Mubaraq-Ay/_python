@@ -193,22 +193,22 @@
 
 # multiples of 5
 
-multiples = 5
+# multiples = 5
 
-while multiples <= 25:
-    print(multiples)
-    multiples += 5
+# while multiples <= 25:
+#     print(multiples)
+#     multiples += 5
 
-# countdown from 10
+# # countdown from 10
 
-countdown = 10
+# countdown = 10
 
-while countdown >= 1:
-    print(countdown)
-    countdown -= 1
+# while countdown >= 1:
+#     print(countdown)
+#     countdown -= 1
 
-    if countdown == 4:
-        break
+#     if countdown == 4:
+#         break
 
 # user guess
 
@@ -225,15 +225,15 @@ while countdown >= 1:
 
 # password 
 
-correct_password = 'python'
+# correct_password = 'python'
 
-while True:
-    password = input('enter the password: ')
-    if password == correct_password:
-        print('access granted')
+# while True:
+#     password = input('enter the password: ')
+#     if password == correct_password:
+#         print('access granted')
 
-        break
-    print('access denied')
+#         break
+#     print('access denied')
 
 # keep adding
 
@@ -248,18 +248,18 @@ while True:
 
 # count attempts
 
-attempts = 0
-secret_number = 9
+# attempts = 0
+# secret_number = 9
 
-while True:
-    user_input = int(input('guess number: '))
-    attempts += 1
-    if user_input == 9:
-        print('correct!')
-        print(f'Attempts: {attempts}')
-        break
+# while True:
+#     user_input = int(input('guess number: '))
+#     attempts += 1
+#     if user_input == 9:
+#         print('correct!')
+#         print(f'Attempts: {attempts}')
+#         break
 
-    print('wrong')
+#     print('wrong')
 
     # task 9 - 1,2,3,4
     # task 10 - 1,2,3,4,6
@@ -274,3 +274,39 @@ while True:
 #     print("Finished")
 
 
+# continue
+
+count = 0
+
+while count < 5:
+    if count == 3:
+        count += 1
+        continue
+    print(count)
+    count += 1
+
+
+# task 1
+
+numbers = 1
+
+while numbers <= 10:
+    if numbers == 5:
+        numbers += 1
+        continue
+    print(numbers)
+    numbers += 1
+
+# 2
+
+numbers = 1
+
+while numbers <= 10:
+    if numbers % 2 == 0:
+        numbers += 1
+        continue
+    print(numbers)
+    numbers += 1
+
+# 3
+ 
