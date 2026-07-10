@@ -342,3 +342,11 @@ while countdown >= 1:
         continue
     print(countdown)
     countdown -= 1
+
+# user input
+
+user_input = int(input('enter number: '))
+
+while user_input > 0:
+        print(user_input)
+        
