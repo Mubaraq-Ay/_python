@@ -309,4 +309,13 @@ while numbers <= 10:
     numbers += 1
 
 # 3
- 
+# skip the multiples of 3
+
+multiples = 1
+
+while multiples <= 15:
+    if multiples % 3 == 0:
+        multiples += 1
+        continue
+    print(multiples)
+    multiples += 1
