@@ -332,3 +332,13 @@ while numbers <= 10:
     print(numbers)
     numbers += 1
 
+# countdown 
+
+countdown = 10
+
+while countdown >= 1:
+    if countdown == 7:
+        countdown -= 1
+        continue
+    print(countdown)
+    countdown -= 1
