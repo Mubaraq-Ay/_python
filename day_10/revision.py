@@ -372,23 +372,23 @@ while multiples <= 15:
 
 # guessing game
 
-secret_number = 8
+# secret_number = 8
 
-while True:
-    user_input = int(input('enter number: '))
-    if user_input < 1 or user_input > 10:
-     print('please enter a number between one and 10')
-     continue
-    if user_input == secret_number:
-        print('correct')
-        break
-    else:
-        print('wrong try again')
+# while True:
+#     user_input = int(input('enter number: '))
+#     if user_input < 1 or user_input > 10:
+#      print('please enter a number between one and 10')
+#      continue
+#     if user_input == secret_number:
+#         print('correct')
+#         break
+#     else:
+#         print('wrong try again')
          
 
-    
+# for loops
 
 
-   
-
-        
+numbers = [0, 1, 2, 3, 4, 5]
+for number in numbers:
+    print(number)
