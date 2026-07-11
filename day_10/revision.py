@@ -323,30 +323,72 @@ while multiples <= 15:
 # 4
 # skip a range.
 
-numbers = 1
+# numbers = 1
 
-while numbers <= 10:
-    if 4 <= numbers <= 6:
-        numbers += 1
-        continue
-    print(numbers)
-    numbers += 1
+# while numbers <= 10:
+#     if 4 <= numbers <= 6:
+#         numbers += 1
+#         continue
+#     print(numbers)
+#     numbers += 1
 
-# countdown 
+# # countdown 
 
-countdown = 10
+# countdown = 10
 
-while countdown >= 1:
-    if countdown == 7:
-        countdown -= 1
-        continue
-    print(countdown)
-    countdown -= 1
+# while countdown >= 1:
+#     if countdown == 7:
+#         countdown -= 1
+#         continue
+#     print(countdown)
+#     countdown -= 1
 
-# user input
+# # user input
 
-user_input = int(input('enter number: '))
 
-while user_input > 0:
-        print(user_input)
+# while True:
+#     user_input = int(input('enter number: '))
+#     if user_input == 0:
+#         break
+#     if user_input > 0:
+#         print(f'you entered: {user_input}')
+        
+
+
+# # # password.
+
+# correct_password = 'python'
+
+# while True:
+#     password = input('enter password: ')
+#     if password == '':
+#         continue
+#     if password != correct_password:
+#         print('wrong password.')
+#     else:
+#         print('welcome')
+#         break
+
+
+# guessing game
+
+secret_number = 8
+
+while True:
+    user_input = int(input('enter number: '))
+    if user_input < 1 or user_input > 10:
+     print('please enter a number between one and 10')
+     continue
+    if user_input == secret_number:
+        print('correct')
+        break
+    else:
+        print('wrong try again')
+         
+
+    
+
+
+   
+
         
