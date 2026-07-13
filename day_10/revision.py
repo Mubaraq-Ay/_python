@@ -418,7 +418,26 @@ for number in numbers:
 
 # 4
 
+# using for loop on list
+
 words = ["python", "fastapi", "docker"]
 
 for word in words:
     print(word.upper())
+
+# using for loop on string.
+
+language = 'Python'
+for letter in language:
+    print(letter)
+
+for i in range(len(language)):
+    print(i, language[i])
+
+
+# using for loop on tuple
+
+numbers = (1, 2, 3, 4, 5)
+for number in numbers:
+    print(number)
+
