@@ -441,3 +441,25 @@ numbers = (1, 2, 3, 4, 5)
 for number in numbers:
     print(number)
 
+# using for loop on dictionary
+
+person = {
+    'first_name': 'mubaraq',
+    'last_name': 'ayanleke',
+    'age': 250,
+    'country': 'saudi',
+    'is_married': True,
+    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address': {
+        'street': 'space street',
+        'zipcode': '02210'
+    }
+}
+
+for key in person:
+    print(key)
+
+# to get both keys and values printed out
+
+for key, value in person.items():
+    print(key, value)
