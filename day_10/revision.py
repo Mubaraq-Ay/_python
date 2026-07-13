@@ -392,3 +392,33 @@ while multiples <= 15:
 numbers = [0, 1, 2, 3, 4, 5]
 for number in numbers:
     print(number)
+
+
+# tasks.
+
+fruits = ["Apple", "Banana", "Orange"]
+
+for fruit in fruits:
+    print(fruit)
+
+
+# 2
+
+names = ["Ali", "Aisha", "Mubaraq", "Yusuf"]
+
+for name in names:
+    print(f'hello, {name}')
+
+# 3
+
+numbers = [2, 4, 6, 8, 10]
+
+for number in numbers:
+    print(number ** 2)
+
+# 4
+
+words = ["python", "fastapi", "docker"]
+
+for word in words:
+    print(word.upper())
