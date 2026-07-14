@@ -568,4 +568,6 @@ for number in numbers:
     print(number)
     if number == 3:
         continue
+    print('next number should be', number + 1) if number != 5 else print("loop's end")
     
+print('outside loop')
