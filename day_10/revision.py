@@ -461,5 +461,91 @@ for key in person:
 
 # to get both keys and values printed out
 
-for key, value in person.items():
+for key, value in person.items(): # u gats explain this one well.
     print(key, value)
+
+# using for loop in set.
+
+it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
+
+for company in it_companies:
+    print(company)
+
+
+# tasks
+
+colors = ["red", "blue", "green", "yellow"]
+
+for color in colors:
+    print(f'i like {color}')
+
+# 2
+
+name = "Mubaraq"
+for letter in name:
+    print(letter.upper())
+
+# 3
+
+for numbers in range(10, 21):
+    print(numbers)
+
+# 4
+
+for step in range(5, 31, 5):
+    print(step)
+
+# 5
+
+for number in range(20, 1, -2):
+    print(number)
+
+# 6
+# print only the even numbers.
+
+numbers = [3, 7, 10, 15, 18, 21]
+
+for even_numbers in numbers:
+    if even_numbers % 2 == 0:
+     print(even_numbers)
+
+# 7
+# dictionary keys
+
+student = {
+    "name": "Aisha",
+    "age": 19,
+    "course": "Computer Science"
+}
+
+for key in student:
+    print(key)
+
+# 8
+# dictionary values.
+
+for key, value in student.items():
+    print(value)
+
+# 9.
+
+for key, value in student.items():
+    print(f'{key}: {value}')
+
+# 10
+
+languages = ["Python", "JavaScript", "Go", "Rust"]
+
+for i in range(len(languages)):
+    print(i, languages[i])
+
+# 11
+
+person = {
+    "name": "Mubaraq",
+    "country": "Nigeria",
+    "stack": "FastAPI"
+}
+
+for key, value in person.items():
+    print(f'the value of the {key} is {value}')
