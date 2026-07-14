@@ -569,5 +569,26 @@ for number in numbers:
     if number == 3:
         continue
     print('next number should be', number + 1) if number != 5 else print("loop's end")
-    
+
 print('outside loop')
+
+
+# shorthand for if else statements.
+
+# print('a') if condition else print('b') 
+
+# range.
+
+lst = list(range(11))
+print(lst)
+
+st = set(range(1, 11))
+print(st)
+
+lst = list(range(0,11,2))
+print(lst)
+
+# for backward from start to end.
+
+lst = list(range(11, 0, -2))
+print(lst)
