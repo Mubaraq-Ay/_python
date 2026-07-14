@@ -549,3 +549,15 @@ person = {
 
 for key, value in person.items():
     print(f'the value of the {key} is {value}')
+
+
+# break and continue 2
+
+numbers = (0,1,2,3,4,5)
+
+for number in numbers:
+    print(number)
+    if number == 3:
+        break
+
+# continue.
