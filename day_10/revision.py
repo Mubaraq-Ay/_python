@@ -702,3 +702,143 @@ for number in numbers:
     for i in number:
         total += i
 print(total)
+
+
+# 1
+
+numbers = [
+    [10, 20],
+    [30, 40],
+    [50, 60]
+]
+
+for number in numbers:
+    for i in number:
+        print(i)
+
+# 2
+# print only numbers greater than 25.
+
+numbers = [
+    [10, 20],
+    [30, 40],
+    [50, 60]
+]
+
+for number in numbers:
+    for i in number:
+        if i > 25:
+            print(i)
+
+#  3
+# multiply every number by 10.
+
+numbers = [
+    [10, 20],
+    [30, 40],
+    [50, 60]
+]
+
+for number in numbers:
+    for i in number:
+        print(i * 10)
+
+# 4
+# find the largest number.
+
+numbers = [
+    [4, 8],
+    [15, 3],
+    [2, 20]
+]
+
+largest = 0
+
+for number in numbers:
+    for i in number:
+        if i > largest:
+         largest = i
+print(largest)
+
+for number in numbers:
+    for i in number:
+        if i < largest:
+            largest = i
+print(largest)
+
+5
+# count only even numbers
+
+numbers = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8]
+]
+
+for number in numbers:
+    for i in number:
+        if i % 2 == 0:
+            print(i)
+
+# 6
+
+games = [
+    ["EA FC", "Forza"],
+    ["Minecraft", "Terraria"],
+    ["Valorant"]
+]
+
+for game in games:
+    for i in game:
+        print(i)
+
+# 7
+
+watches = [
+    ['rolex', 'rm'],
+    ['franck muller', 'tissot', 'poedgar'],
+    ['geneve', 'ap', 'quartz', 'mechanical watches']
+]
+
+for watch in watches:
+    for i in watch:
+        print(i)
+
+# 8
+
+languages = [
+    ['php', 'python', 'go', 'rust'],
+    ['c'],
+    ['c++', 'c#', '.net'],
+    ['javascript', 'typescript', 'java']
+]
+
+for language in languages:
+    for i in language:
+        print(i)
+
+    
+# 9
+
+cars = [
+    ['toyota', 'changan', 'mercedes'],
+    ['porshe', 'bugatti'],
+    ['lamboghini', 'ferrari', 'lexus'],
+    ['byd', 'omoda']
+]
+
+for car in cars:
+    for i in car:
+        print(i)
+
+# 10
+
+foods = [
+    ['rice', 'beans'],
+    ['pancakes','suya', 'semo'],
+    ['amala', 'ewedu']
+]
+
+for food in foods:
+    for i in food:
+        print(i)
