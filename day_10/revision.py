@@ -851,3 +851,10 @@ for number in range(11):
     print(number)
 else:
     print(f'the loop stops at {number}')
+
+# pass
+# pass does nothing, it is a placeholder for code to be added later 
+
+for number in range(6):
+    pass
+
