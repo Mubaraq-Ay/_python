@@ -843,3 +843,11 @@ foods = [
 for food in foods:
     for i in food:
         print(i)
+
+# for else
+# used when we want to execute a message after the loop stops.
+
+for number in range(11):
+    print(number)
+else:
+    print(f'the loop stops at {number}')
