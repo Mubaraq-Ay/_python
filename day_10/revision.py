@@ -592,3 +592,113 @@ print(lst)
 
 lst = list(range(11, 0, -2))
 print(lst)
+
+
+# nested for loop.
+
+person = {
+    'first_name': 'mubaraq',
+    'last_name': 'ayanleke',
+    'age': 250,
+    'country': 'vinland',
+    'is_married': True,
+    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address': {
+        'street': 'space street',
+        'zipcode': '02210'
+    } 
+}
+
+for key in person:
+    if key == 'skills':
+        for skill in person['skills']:
+            print(skill)                   
+
+
+# tasks. 
+
+numbers = [
+    [1, 2],
+    [3, 4],
+    [5, 6]
+]
+
+
+for number in numbers:
+    for i in number:
+     print(i)  
+
+
+# 2
+# square every number
+
+numbers = [
+    [1, 2],
+    [3, 4],
+    [5, 6]
+]
+
+
+for number in numbers:
+    for i in number:
+        print(i ** 2)
+
+
+# 3
+# print every letter.
+
+words = [
+    "Hi",
+    "Python",
+    "Go"
+]
+
+for word in words:
+    for letter in word:
+        print(letter)
+
+# 4
+# student skills.
+
+students = {
+    "Ali": ["Python", "HTML"],
+    "Aisha": ["React", "CSS"],
+    "Yusuf": ["Node", "Docker"]
+}
+
+for key, value in students.items():
+    print(key)
+    for skill in value:
+        print(skill)
+
+    
+# 5 
+# count all numbers.
+
+numbers = [
+    [5, 8, 2],
+    [1, 7],
+    [9, 4, 6, 3]
+]
+
+count = 0
+for number in numbers:
+    for i in number:
+        count += 1
+print(count) 
+
+#     # 6 
+#     # sum all numbers.
+
+numbers = [
+    [5, 8, 2],
+    [1, 7],
+    [9, 4, 6, 3]
+]
+
+total = 0
+
+for number in numbers:
+    for i in number:
+        total += i
+print(total)
