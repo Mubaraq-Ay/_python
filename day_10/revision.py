@@ -752,7 +752,7 @@ numbers = [
     [2, 20]
 ]
 
-largest = 0
+largest = numbers[0][0]
 
 for number in numbers:
     for i in number:
@@ -760,12 +760,13 @@ for number in numbers:
          largest = i
 print(largest)
 
+smallest = numbers[0][0]
+
 for number in numbers:
     for i in number:
-        if i < largest:
-            largest = i
-print(largest)
-
+        if i < smallest:
+            smallest = i
+print(smallest)
 5
 # count only even numbers
 
