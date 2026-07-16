@@ -85,6 +85,15 @@ for numbers in range(101):
 print(f'the sum of all numbers is {total}')
 
 
+# 2
+# sum of all even and sum of all odds
 
+even = 0
+odd = 0
 
-
+for i in range(101):
+    if i % 2 == 0:
+     even += i
+    elif i % 2 == 1:
+        odd += i
+print(f'the sum of all evens is {even}. and the sum of all odds are {odd}')
