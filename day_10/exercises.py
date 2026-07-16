@@ -306,3 +306,13 @@ for country in countries:
     if 'land' in country:
      print(country)
     
+
+# 2
+
+fruit_list = ['banana', 'orange', 'mango', 'lemon']
+
+for fruit in reversed(fruit_list):
+    print(fruit)
+
+for fruit in range(len(fruit_list)-1, -1, -1):
+    print(fruit_list[fruit])
