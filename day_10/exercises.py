@@ -20,7 +20,7 @@ for number in range(10, -1, -1):
 # iterate 10 - 0 using while loop.
 
 number = 10
-while number <= 0:
+while number >= 0:
     print(number)
     number -= 1
 
@@ -33,7 +33,7 @@ for triangle in range(7):
     print('#' * count)
 
 # shorter version
-for triangle in range(8, 1):
+for triangle in range(1, 8):
     print('#' * triangle)
 
 # 4
@@ -77,10 +77,14 @@ for numbers in range(101):
 # 1
 
 # sum of 0 - 100, using for loop.
-# for numbers in range(101):
-#     print(numbers)
 
-# 
+total = 0
+
+for numbers in range(101):
+    total += numbers
+print(f'the sum of all numbers is {total}')
+
+
 
 
 
