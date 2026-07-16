@@ -322,3 +322,13 @@ for fruit in range(len(fruit_list)-1, -1, -1):
 
 
 # imported the countries_data at the top.
+
+# would comeback to this. this consists of concepts i havent learnt yet
+
+# for country in countries:
+#     for key, value in countries.items():
+#         print(key, value)
+# print(country)
+
+
+ 

@@ -461,7 +461,7 @@ for key in person:
 
 # to get both keys and values printed out
 
-for key, value in person.items(): # u gats explain this one well.
+for key, value in person.items():
     print(key, value)
 
 # using for loop in set.
