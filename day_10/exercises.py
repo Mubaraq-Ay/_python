@@ -1,6 +1,9 @@
 # level 1
 # 1
 
+from countries_data import countries
+
+
 # iterate 0 - 10 using for loop
 for number in range(11):
     print(number)
@@ -316,3 +319,6 @@ for fruit in reversed(fruit_list):
 
 for fruit in range(len(fruit_list)-1, -1, -1):
     print(fruit_list[fruit])
+
+
+# imported the countries_data at the top.
