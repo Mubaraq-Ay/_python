@@ -128,3 +128,10 @@ def sum_of_numbers(n):
     return total
 print(sum_of_numbers(10))
 print(sum_of_numbers(100))
+
+# tasks
+
+def say_name(name):
+    name = 'mubaraq'
+    return name
+print(say_name(name))
