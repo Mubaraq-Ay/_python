@@ -97,3 +97,34 @@ def full_name():
     return full_name
 print(full_name().upper())
     
+
+# function with parameters.
+
+def greetings (name):
+    message = name + ' , welcome to python for everyone!'
+    return message
+
+print(greetings('mubaraq'))
+
+def add_ten(num):
+    ten = 10
+    return num + ten
+print(add_ten(22))
+
+def square_number(x):
+    return x ** 2
+print(square_number(2))
+
+def area_of_a_circle(r):
+    PI = 3.14
+    area = PI * r ** 2
+    return area
+print(area_of_a_circle(10))
+
+def sum_of_numbers(n):
+    total = 0
+    for i in range(n+1):
+        total += i
+    return total
+print(sum_of_numbers(10))
+print(sum_of_numbers(100))
