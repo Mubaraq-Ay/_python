@@ -42,6 +42,8 @@ def say_hello():
     say_hello = 'hello!'
     print(say_hello)
 say_hello()
+say_hello()
+say_hello() # calling the function 3 times.
 
 # 2
 
@@ -75,4 +77,23 @@ print(multiply())
 
 # 6
 
- 
+def print_name():
+    print("Mubaraq")
+print(print_name()) # none, because it has no return statement.
+
+def return_name():
+    return "Mubaraq"
+print(return_name())
+
+
+# 7
+
+# write a function that returns my full name.
+
+def full_name():
+    first_name = 'mubaraq'
+    last_name = 'ayanleke'
+    full_name = f'{first_name} {last_name}'
+    return full_name
+print(full_name().upper())
+    
