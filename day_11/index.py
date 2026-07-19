@@ -267,6 +267,16 @@ def print_full_name(firstname, lastname):
     return full_name
 print_full_name(firstname= 'mubaraq', lastname='ayanleke')
 
+# returning a number.
 
+def add_two_numbers(num1, num2):
+    total = num1 + num2
+    return total
+print(add_two_numbers(2, 3))
+
+def calculate_age(current_year, birth_year):
+    age = current_year - birth_year
+    return age
+print(calculate_age(2026, 2008))
 
 
