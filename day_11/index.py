@@ -132,6 +132,109 @@ print(sum_of_numbers(100))
 # tasks
 
 def say_name(name):
-    name = 'mubaraq'
-    return name
-print(say_name(name))
+    return f'my name is {name}'
+print(say_name('mubaraq'))
+
+# 2
+
+def double_number(number):
+    return number * 2
+print(double_number(4))
+
+
+# 3
+
+def cube(number):
+    return number ** 3
+print(cube(2))
+
+# 4
+
+def is_even(number):
+   if number % 2 == 0:
+      return f'{number}: ', True
+   else:
+       return f'{number}: ', False   
+print(is_even(5))
+
+# 5
+
+def full_name(first_name, last_name):
+    return f'{first_name} {last_name}'
+print(full_name('mubaraq', 'ayanleke'))
+
+# 6
+
+def largest(a, b):
+    if a >= b:
+        return a
+    else:
+        return b
+
+print(largest(6,14))
+
+# 7
+
+def rectangle_area(length, width):
+    area = length * width 
+    return area
+print(rectangle_area(2, 1))
+
+# 8
+
+def greet(name, language):
+    if language == 'English':
+        return f'Hello, {name}'
+    elif language == 'French':
+        return f'Bonjour, {name}'
+    else:
+        return 'language not supported.'
+print(greet('mubaraq', 'English'))
+
+# 9
+# calculator.
+
+def calculator(a, b, operator):
+    if operator == '+':
+        return a + b
+    elif operator == '-':
+        return a - b
+    elif operator == '*':
+        return a * b
+    elif operator == '/':
+        return a / b
+    else:
+        return 'invalid.'
+print(calculator(1, 2, '*'))
+
+# 10
+# def count_vowels(word):
+#     vowels = 'aeiou'
+#     for i in word:
+#         if vowels in word:
+#             return i
+# print(count_vowels('lioe'))
+
+
+# function with two parameters.
+
+def generate_full_name(first_name, last_name):
+    full_name = f'{first_name} {last_name}'
+    return full_name
+print('Full name:',generate_full_name('mubby', 'jr'))
+
+def sum_two_numbers(num_one, num_two):
+    sum = num_one + num_two
+    return sum
+print('sum of two numbers:', sum_two_numbers(2, 6))
+
+def calculate_age(current_year, birth_year):
+    age = current_year - birth_year
+    return age
+print('age:', calculate_age(2026, 2008))
+
+def weight_of_object(mass, gravity):
+    weight = str(mass * gravity)+ ' N' # converting to str so i'd be able to join them.
+    return weight
+print('weight of an object in newton:', weight_of_object(11, 10))
+
