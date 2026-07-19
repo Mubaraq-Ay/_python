@@ -255,5 +255,8 @@ def add_two_numbers(num1, num2):
 print(add_two_numbers(num2= 3, num1= 2)) # order does not matter.
 
 
+# function returning a value - part 2
 
-
+def print_name(firstname):
+    return firstname
+print(print_name(firstname= 'mubaraq'))
