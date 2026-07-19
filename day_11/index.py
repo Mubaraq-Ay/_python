@@ -208,12 +208,15 @@ def calculator(a, b, operator):
 print(calculator(1, 2, '*'))
 
 # 10
+
 # def count_vowels(word):
 #     vowels = 'aeiou'
 #     for i in word:
-#         if vowels in word:
-#             return i
-# print(count_vowels('lioe'))
+#         count = 0
+#         count += 1
+#         if i in vowels:
+#          return i
+# print(count_vowels('eeee'))
 
 
 # function with two parameters.
@@ -237,4 +240,12 @@ def weight_of_object(mass, gravity):
     weight = str(mass * gravity)+ ' N' # converting to str so i'd be able to join them.
     return weight
 print('weight of an object in newton:', weight_of_object(11, 10))
+
+
+# passing argument with key and value.
+
+def print_fullname(firstname, lastname):
+    full_name = f'{firstname} {lastname}'
+    print(full_name)
+print_fullname(firstname= 'mubaraq', lastname= 'ayanleke')
 
