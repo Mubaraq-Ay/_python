@@ -257,6 +257,16 @@ print(add_two_numbers(num2= 3, num1= 2)) # order does not matter.
 
 # function returning a value - part 2
 
+# returning a string
 def print_name(firstname):
     return firstname
-print(print_name(firstname= 'mubaraq'))
+print_name(firstname= 'mubaraq')
+
+def print_full_name(firstname, lastname):
+    full_name = f'{firstname} {lastname}'
+    return full_name
+print_full_name(firstname= 'mubaraq', lastname='ayanleke')
+
+
+
+
