@@ -247,5 +247,13 @@ print('weight of an object in newton:', weight_of_object(11, 10))
 def print_fullname(firstname, lastname):
     full_name = f'{firstname} {lastname}'
     print(full_name)
-print_fullname(firstname= 'mubaraq', lastname= 'ayanleke')
+print_fullname(firstname= 'mubaraq', lastname= 'ayanleke') 
+
+def add_two_numbers(num1, num2):
+    total = num1 + num2
+    return total
+print(add_two_numbers(num2= 3, num1= 2)) # order does not matter.
+
+
+
 
