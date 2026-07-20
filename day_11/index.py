@@ -305,6 +305,24 @@ print(find_even_number(10))
 def greetings (name = 'mubby'):
     message = f'{name}, welcome to python for everyone!'
     return message
-print(greetings()) # without parameter given
-print(greetings('mubaraq')) # with.
+print(greetings())  
+print(greetings('mubaraq'))  
+
+def generate_full_name(first_name = 'mubaraq', last_name= 'ayanleke'):
+    full_name = f'{first_name} {last_name}'
+    return full_name
+print(generate_full_name())
+print(generate_full_name('ay','mubby'))
+
+def calculate_age(birth_year, current_year = 2021):
+    age = current_year - birth_year
+    return age
+print('age: ', calculate_age(2008))
+
+def weight_of_object(mass, gravity = 9.81):
+    weight = str(mass * gravity)+ ' N'
+    return weight
+print('weight of object in Newton: ', weight_of_object(100))
+print('weight of an object in Newton: ', weight_of_object(100, 10))
+
 
