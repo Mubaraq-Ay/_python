@@ -280,3 +280,11 @@ def calculate_age(current_year, birth_year):
 print(calculate_age(2026, 2008))
 
 
+# returnign a boolean.
+
+def is_even(n):
+    if n % 2 == 0:
+        return True
+    return False
+print(is_even(10))
+print(is_even(7))
