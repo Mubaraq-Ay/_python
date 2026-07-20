@@ -342,3 +342,51 @@ def generate_groups(team, *args):
     for i in args:
         print(i)
 print(generate_groups('team-1', 'mubaraq', 'mubby', 'robin', 'khabib'))
+
+
+# dictionary unpacking
+# calling a function which has named arguments using dictionary with matching key names using **
+
+def greet(name='mubaraq', location='delaware'):
+    # print a greeting message using the provided arguments
+    print(f'hi there {name} how is the weather in {location}')
+
+# call the function using keyword arguments
+greet(name='mubaraq', location='delaware')
+
+# create a dictionary with keys matching the function's parameter names.
+
+my_dict = {
+    'name': 'mubaraq',
+    'location': 'delaware'
+}
+
+# call the function using dictionary unpacking.
+greet(**my_dict)
+# the ** operator unpacks the dictionary, passing its key-value pairs as keyword arguments to the function.
+
+# tsk
+
+# create a function
+def create_car(brand, model, year):
+    print(f' Brand: {brand} \n Model: {model} \n Year: {year}')
+    
+car = {
+    'brand': 'toyota',
+    'model': 'camry',
+    'year': 2022
+}
+
+create_car(**car)
+
+# default parameters
+
+def create_phone(brand='samsung', model='s25', storage='512'):
+    print(f' brand: {brand} \n model: {model} \n storage: {storage}')
+
+phone = {
+    'brand': 'google',
+    'model': 'pixel 10'
+}
+
+create_phone(**phone)
