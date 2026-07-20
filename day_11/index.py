@@ -288,3 +288,13 @@ def is_even(n):
     return False
 print(is_even(10))
 print(is_even(7))
+
+# returning a list.
+
+def find_even_number(n):
+    evens = []
+    for i in range(n + 1):
+        if i % 2 == 0:
+            evens.append(i)
+    return evens
+print(find_even_number(10))
