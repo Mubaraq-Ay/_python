@@ -335,4 +335,10 @@ def sum_all_nums(*nums):
     return total
 print(sum_all_nums(2,3,5))
 
+# default and arbitrary number of parameters in functions.
 
+def generate_groups(team, *args):
+    print(team)
+    for i in args:
+        print(i)
+print(generate_groups('team-1', 'mubaraq', 'mubby', 'robin', 'khabib'))
