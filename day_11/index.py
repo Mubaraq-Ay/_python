@@ -298,3 +298,13 @@ def find_even_number(n):
             evens.append(i)
     return evens
 print(find_even_number(10))
+
+
+# function with default parameters
+
+def greetings (name = 'mubby'):
+    message = f'{name}, welcome to python for everyone!'
+    return message
+print(greetings()) # without parameter given
+print(greetings('mubaraq')) # with.
+
