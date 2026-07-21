@@ -390,3 +390,41 @@ phone = {
 }
 
 create_phone(**phone)
+
+
+# arbitrary numbers of named arguments.
+# also, we can define a function to accept an arbitrary number of named arguments.
+
+def arbitrary_named_args(**args):
+    print('i received an arbitrary number of arguments, totaling', len(args))
+    print('they are provided as a dictionary in my function:', type(args))
+    print("let's print them:")
+    for k, v in args.items():
+        print(" * key:", k, "value:", v)
+
+arbitrary_named_args(
+    name="Mubaraq",
+    age=18,
+    language="Python"
+)
+
+# task
+
+def student(**args):
+    print('the total number of arguments is', len(args))
+    for key, value in args.items():
+        print(f'- {key}: {value}')
+
+student(
+    name="Mubaraq",
+    level=200,
+    department="Computer Science"
+)
+
+def profile(**kwargs):
+    if "age" in kwargs:
+        print(f"Age found: {kwargs['age']}")
+    else:
+        print("No age provided.")
+
+profile(name="Ali", country="Nigeria", age = 18)
