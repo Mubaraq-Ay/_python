@@ -77,5 +77,8 @@ def capitalize_list_items(my_list):
 
 print(capitalize_list_items(['man', 'man']))
 
- 
 
+def add_item(my_list,item):
+    my_list.append(item)
+    return my_list
+print(add_item([1], 't'))
