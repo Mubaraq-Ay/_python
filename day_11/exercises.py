@@ -67,3 +67,15 @@ def reverse_list(my_array):
         print(i)
     
 reverse_list(reversed([1,2,4,5,6,7]))
+
+# capitalize list items.
+def capitalize_list_items(my_list):
+    new_list = []
+    for i in my_list:
+        new_list.append(i.capitalize())
+    return new_list
+
+print(capitalize_list_items(['man', 'man']))
+
+ 
+
