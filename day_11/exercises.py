@@ -81,4 +81,5 @@ print(capitalize_list_items(['man', 'man']))
 def add_item(my_list,item):
     my_list.append(item)
     return my_list
-print(add_item([1], 't'))
+number = [1,2,3,4]
+print(add_item(number, 't'))
