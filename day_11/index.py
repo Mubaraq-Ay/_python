@@ -428,3 +428,58 @@ def profile(**kwargs):
         print("No age provided.")
 
 profile(name="Ali", country="Nigeria", age = 18)
+
+# function as a parameter of another function
+
+# we can pass functions around as parameters
+
+def square_number (n):
+    return n ** n
+def do_something(f, x):
+    return f(x)
+print(do_something(square_number, 3))
+
+# tasks
+
+def shout(word):
+    return word
+def execute(func, text):
+    return func, text
+print(execute(shout, 'python'))
+
+
+def create_user_email(first_name, last_name):
+    print(f'{first_name}.{last_name}@company.com')
+    
+create_user_email('mubaraq', 'ayan')
+
+def can_access_admin_panel(role, is_active):
+    if role == 'admin' and is_active == True:
+        return True
+    else:
+        return False
+print(can_access_admin_panel('admin', True))
+
+def apply_discount(price, discount):
+    final_price = price - discount
+    return final_price
+print(apply_discount(100, 10))
+
+
+def is_list_empty(my_list):
+    if len(my_list) == 0:
+        return True
+    else:
+        return False
+print(is_list_empty([]))
+
+def add_dollar_sign(amount):
+    return f'${amount}'
+
+def add_euro_sign(amount):
+    return f'€{amount}'
+
+def display_price(formatter, amount):
+    curreny_sign = formatter(amount)
+    return curreny_sign
+print(display_price(add_euro_sign, 2))
