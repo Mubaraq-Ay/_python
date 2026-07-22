@@ -52,4 +52,18 @@ def solve_quadratic_eqn(a, b, c):
       x2 = (-b - discriminant) / (2 * a)
       return x1, x2
 print(solve_quadratic_eqn(1,-5,6))
+
+def print_list(my_list):
+    for i in my_list:
+        print(i)
+
+my_list = ['bmw', 'porsche', 'mercedes', 'toyota']
+print_list(my_list)
+
+# reverse list
+
+def reverse_list(my_array):
+    for i in my_array:
+        print(i)
     
+reverse_list(reversed([1,2,4,5,6,7]))
