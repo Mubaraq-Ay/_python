@@ -44,3 +44,12 @@ def calculate_slope(y2, y1, x2, x1):
     m = (y2 - y1) / (x2 - x1)
     return m
 print(calculate_slope(2, 3, 4, 5))
+
+# solve quadratic equation
+def solve_quadratic_eqn(a, b, c):
+      discriminant = (b ** 2 - 4 * a * c)** 0.5 
+      x1 = (-b + discriminant) /  (2 * a)
+      x2 = (-b - discriminant) / (2 * a)
+      return x1, x2
+print(solve_quadratic_eqn(1,-5,6))
+    
