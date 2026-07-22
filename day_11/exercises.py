@@ -21,3 +21,20 @@ def convert_celcius_to_fahrenheit(c):
     conversion = str((c * 9/5) + 32) + ' °F'
     return conversion
 print(convert_celcius_to_fahrenheit(3))
+
+def check_season(month):
+   autumn_months = ['january', 'february', 'march']
+   winter_months = ['april', 'may', 'june']
+   spring_months = ['july', 'august', 'september']
+   summer_months = ['october', 'november', 'december']
+   month = month.lower()
+   if month in autumn_months:
+       return 'autumn'
+   elif month in winter_months:
+       return 'winter'
+   elif month in spring_months:
+       return 'spring'
+   elif month in summer_months:
+       return 'summer'
+   
+print(check_season('March'))
