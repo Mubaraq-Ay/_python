@@ -38,3 +38,9 @@ def check_season(month):
        return 'summer'
    
 print(check_season('March'))
+
+# calculate slope
+def calculate_slope(y2, y1, x2, x1):
+    m = (y2 - y1) / (x2 - x1)
+    return m
+print(calculate_slope(2, 3, 4, 5))
