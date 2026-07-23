@@ -20,3 +20,15 @@ mass = 100
 weight = mass * gravity
 print(weight)
 print(person['firstname'])
+
+# import function from a module and renaming.
+# during importing we can rename the module.
+
+from mymodule import generate_full_name as fullname, sum_two_nums as total, person as p, gravity as g
+print(fullname('mubby', 'jr'))
+print(total(1,9))
+mass = 100
+weight = mass * g
+print(weight)
+print(p)
+print(p['firstname'])
