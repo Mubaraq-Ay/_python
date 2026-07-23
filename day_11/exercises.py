@@ -83,3 +83,19 @@ def add_item(my_list,item):
     return my_list
 number = [1,2,3,4]
 print(add_item(number, 't'))
+
+
+def sum_of_numbers(num):
+    total = 0
+    for i in range(num + 1):
+        total += i
+    return total
+print(sum_of_numbers(5))
+
+def sum_of_odds(num):
+    total = 0
+    for i in range(num + 1):
+        if i % 2 == 1:
+            total += i
+    return total
+print(sum_of_odds(5))
