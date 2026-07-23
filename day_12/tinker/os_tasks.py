@@ -15,9 +15,8 @@ print(os.listdir())
 # create directory
 os.mkdir('Backend_project')
 # change to the directory
-os.chdir(r'C:\Users\Admin\Desktop\python\day_12\Backend_project')
+os.chdir(r'Backend_project')
 # pwd
 print(os.getcwd())
-
 
  
