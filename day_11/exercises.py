@@ -99,3 +99,11 @@ def sum_of_odds(num):
             total += i
     return total
 print(sum_of_odds(5))
+
+def sum_of_even(num):
+    total = 0
+    for i in range(num + 1):
+        if i % 2 == 0:
+            total += i
+    return total
+print(sum_of_even(8))
