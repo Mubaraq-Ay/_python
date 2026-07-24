@@ -49,3 +49,6 @@ os.chdir(r"C:\Users\Admin\Desktop\python\day_12")
 print(os.getcwd())
 # removing directory
 os.rmdir('hello')
+
+
+# sys module.
