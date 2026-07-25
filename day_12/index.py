@@ -68,3 +68,12 @@ print("1. Total items in sys.argv:", len(sys.argv))
 print("2. the actual sys.argv list:", sys.argv)
 
 # use quotes to make the terminal treat the entire string as an argument.
+
+# sys.path tells python where to search for modules.
+print(sys.path)
+
+
+import mymodule
+
+print(dir(mymodule))
+
