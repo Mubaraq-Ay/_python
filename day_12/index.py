@@ -77,3 +77,11 @@ import mymodule
 
 print(dir(mymodule))
 
+# to exit sys
+#  we use sys.exit()
+
+print('start')
+
+sys.exit()
+
+print('end')
