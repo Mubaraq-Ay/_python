@@ -48,9 +48,14 @@ os.chdir(r"C:\Users\Admin\Desktop\python\day_12")
 # get the current working directory
 print(os.getcwd())
 # removing directory
-os.rmdir('hello')
+os.rmdir('hello') 
 
 
 # sys module.
+# this is a built-in module that provides access to python' runtime evnironment, such as command-line arguments and interpreter information.
 
+# argv - argument vector
 
+# import sys
+# print(sys.argv[0], sys.argv[1], sys.argv[2])
+# print('welcome {}. Enjoy {} challenge!'.format(sys.argv[1], sys.argv[2]))
