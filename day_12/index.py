@@ -55,7 +55,16 @@ os.rmdir('hello')
 # this is a built-in module that provides access to python' runtime evnironment, such as command-line arguments and interpreter information.
 
 # argv - argument vector
-
+# sys.argv[0] - is the name of the script, so it's always on index 0 in the list.
 import sys
 print(sys.argv[0], sys.argv[1], sys.argv[2])
+# format() is basically like f-string
 print('welcome {}. Enjoy {} challenge!'.format(sys.argv[1], sys.argv[2]))
+
+#  - wrote this f-string to confirm.
+print(f'hello, {sys.argv[1]}. enjoy {sys.argv[2]} challenge')
+
+print("1. Total items in sys.argv:", len(sys.argv))
+print("2. the actual sys.argv list:", sys.argv)
+
+# use quotes to make the terminal treat the entire string as an argument.
