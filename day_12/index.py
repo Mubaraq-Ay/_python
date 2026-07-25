@@ -56,6 +56,6 @@ os.rmdir('hello')
 
 # argv - argument vector
 
-# import sys
-# print(sys.argv[0], sys.argv[1], sys.argv[2])
-# print('welcome {}. Enjoy {} challenge!'.format(sys.argv[1], sys.argv[2]))
+import sys
+print(sys.argv[0], sys.argv[1], sys.argv[2])
+print('welcome {}. Enjoy {} challenge!'.format(sys.argv[1], sys.argv[2]))
