@@ -100,8 +100,7 @@ print(sys.version)
 # this module provides built-in functions for performing statistical calculation on numerical data.
 # mean, median, mode etc.
 
-# importing all statistics module.
-
+# importing all statistics module
 from statistics import *
 ages = [20, 20, 4, 24, 25, 22, 26, 20, 23, 22, 26]
 print(mean(ages))
@@ -121,3 +120,16 @@ print(math.pow(2,3)) # exponential function
 print(math.floor(9.81)) # rounding to the lowest
 print(math.ceil(9.81)) # rounding to the highest
 print(math.log10(100)) # logarithm with 10 as its base
+
+help(sys) # to display all the available functions in the module. any module btw.
+
+# we can import one specific function, multiple functions at once like we do normally, would just do an example.
+
+from math import pi
+
+from math import pi, sqrt, floor # and shii like that.
+
+from math import * # importing all functions at once.
+
+
+
