@@ -85,3 +85,7 @@ print('start')
 sys.exit()
 
 print('end')
+
+# to know the largest integer variable it takes
+# we use sys.maxsize
+sys.maxsize
