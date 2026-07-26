@@ -94,3 +94,17 @@ print(sys.maxsize)
 # we use sys.version
 
 print(sys.version)
+
+
+# statistics module.
+# this module provides built-in functions for performing statistical calculation on numerical data.
+# mean, median, mode etc.
+
+# importing all statistics module.
+
+from statistics import *
+ages = [20, 20, 4, 24, 25, 22, 26, 20, 23, 22, 26]
+print(mean(ages))
+print(median(ages))
+print(mode(ages))
+print(stdev(ages))
