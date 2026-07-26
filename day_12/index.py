@@ -82,13 +82,13 @@ print(dir(mymodule))
 
 print('start')
 
-sys.exit()
+# sys.exit()
 
 print('end')
 
 # to know the largest integer variable it takes
 # we use sys.maxsize
-sys.maxsize
+print(sys.maxsize)
 
 # to know the version of python you are using, 
 # we use sys.version
