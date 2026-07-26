@@ -150,6 +150,15 @@ print(randint(5, 20))
 
 # tsks
 
-help(random)
+print(random())
 
+print(randint(20, 30))
 
+print(randint(1, 6))
+
+for i in range(5):
+    print(randint(1, 6))
+
+# generate otp
+
+print(randint(100000, 999999))
