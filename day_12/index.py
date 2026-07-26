@@ -108,3 +108,16 @@ print(mean(ages))
 print(median(ages))
 print(mode(ages))
 print(stdev(ages))
+
+
+# math module
+# a module containing many mathematical operation and constants.
+
+import math
+
+print(math.pi)
+print(math.sqrt(2))
+print(math.pow(2,3)) # exponential function
+print(math.floor(9.81)) # rounding to the lowest
+print(math.ceil(9.81)) # rounding to the highest
+print(math.log10(100)) # logarithm with 10 as its base
