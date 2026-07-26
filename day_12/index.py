@@ -141,5 +141,14 @@ print(string.ascii_letters)
 print(string.digits)
 print(string.punctuation)
 
+# random module.
+# this module provides functions for generating random values.
+
+from random import random, randint
+print(random()) # it doesn't take any arguments; it returns a value between 0 and 0.9999
+print(randint(5, 20))
+
+
+
 
 
