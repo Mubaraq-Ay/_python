@@ -121,7 +121,7 @@ print(math.floor(9.81)) # rounding to the lowest
 print(math.ceil(9.81)) # rounding to the highest
 print(math.log10(100)) # logarithm with 10 as its base
 
-help(sys) # to display all the available functions in the module. any module btw.
+# help(sys) # to display all the available functions in the module. any module btw.
 
 # we can import one specific function, multiple functions at once like we do normally, would just do an example.
 
@@ -130,6 +130,16 @@ from math import pi
 from math import pi, sqrt, floor # and shii like that.
 
 from math import * # importing all functions at once.
+
+
+# string module.
+# The string module provides useful string-related constants and helper functions for working with text.
+# we can use this in generating random passwords btw.
+
+import string
+print(string.ascii_letters)
+print(string.digits)
+print(string.punctuation)
 
 
 
