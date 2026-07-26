@@ -89,3 +89,8 @@ print('end')
 # to know the largest integer variable it takes
 # we use sys.maxsize
 sys.maxsize
+
+# to know the version of python you are using, 
+# we use sys.version
+
+print(sys.version)
