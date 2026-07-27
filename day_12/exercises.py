@@ -75,3 +75,15 @@ def plates():
 
     return f'{letters}-{numbers}-{last_letters}'
 print(plates())
+
+
+def user_id_gen_by_user():
+    number_of_char = int(input('enter the number of chaacters you want: '))
+    num_of_ids = int(input("how many id's do you want to generate?: "))
+    rands = string.ascii_letters + string.digits
+    result = ''
+
+    for i in range(number_of_char, num_of_ids):
+        result += choice(rands)
+    return result
+print(user_id_gen_by_user())
