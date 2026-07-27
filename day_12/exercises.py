@@ -1,6 +1,6 @@
 # generate a six-digit character.
 import string
-from random import choice
+from random import choice, randint
 
 def random_user_id():
     otp = string.ascii_letters + string.digits
@@ -81,9 +81,16 @@ def user_id_gen_by_user():
     number_of_char = int(input('enter the number of chaacters you want: '))
     num_of_ids = int(input("how many id's do you want to generate?: "))
     rands = string.ascii_letters + string.digits
-    result = ''
 
-    for i in range(number_of_char, num_of_ids):
-        result += choice(rands)
-    return result
-print(user_id_gen_by_user())
+    for i in range(num_of_ids):
+        result = ''
+        for i in range(number_of_char):
+         result += choice(rands)
+        print(result)
+user_id_gen_by_user()
+
+# rgb color gen
+def rgb_color_gen():
+    return f"rgb({randint(0,255)},{randint(0,255)},{randint(0,255)})"
+
+print(rgb_color_gen())
