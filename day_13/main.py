@@ -48,3 +48,30 @@ print(positive_even_numbers)
 list_of_lists = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 flattened_list = [number for row in list_of_lists for number in row]
 print(flattened_list)
+
+# lambda function
+# a lambda function is a small anonymous function used for short, one line operations
+# it does not use return but it explicitly returns the expression
+
+# example
+def add_two_numbers(a, b):
+    return a + b
+print(add_two_numbers(2, 4))
+
+# change the above function to a lambda function
+add_two_numbers = lambda a, b: a + b
+print(add_two_numbers(2,4))
+
+# self invoking lambda function
+print((lambda a, b: a + b)(2, 3))
+
+# square
+square = lambda x : x ** 2
+print(square(3))
+
+cube = lambda x : x ** 3
+print(cube(2))
+
+# multiple variables.
+multiple_variable = lambda a, b, c: a ** 2 - 3 * b + 4 * c
+print(multiple_variable(1,2,3))
