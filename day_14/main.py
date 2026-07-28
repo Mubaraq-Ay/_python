@@ -25,4 +25,36 @@ def run(func):
 
 run(greet)
 
+
 # function as a return value
+def square(x):
+    return x ** 2
+print(square(2))
+
+def cube(x):
+    return x ** 3
+
+def absolute(x): # an absolute value.
+    if x >= 0:
+        return x
+    else:
+        return -(x)
+print(absolute(1))
+
+# a higher order function returning a function
+def highest_order_function(type):
+    if type == 'square':
+        return square
+    elif type == 'cube':
+        return cube
+    elif type == 'absolute':
+        return absolute
+
+result = highest_order_function('square')
+print(result(3))
+result = highest_order_function('cube')
+print(result(3))
+result = highest_order_function('absolute')
+print(result(-3))
+
+# python closures.
