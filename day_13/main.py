@@ -51,7 +51,8 @@ print(flattened_list)
 
 # lambda function
 # a lambda function is a small anonymous function used for short, one line operations
-# it does not use return but it explicitly returns the expression
+# Lambda functions don't use the 'return' keyword.
+# The expression after the colon is returned automatically.
 
 # example
 def add_two_numbers(a, b):
