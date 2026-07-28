@@ -75,3 +75,12 @@ print(cube(2))
 # multiple variables.
 multiple_variable = lambda a, b, c: a ** 2 - 3 * b + 4 * c
 print(multiple_variable(1,2,3))
+
+# lambda function inside another function
+def power(x):
+    return lambda n : x ** n
+
+cube = power(2)(3)
+print(cube)
+two_power_of_five = power(2)(5)
+print(two_power_of_five)
