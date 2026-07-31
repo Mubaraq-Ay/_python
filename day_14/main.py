@@ -25,6 +25,7 @@ def run(func):
 
 run(greet)
 
+# ps - a variable can store a function
 
 # function as a return value
 def square(x):
@@ -110,3 +111,41 @@ def add_number(number):
 
 add_five = add_number(5)
 print(add_five(3))
+
+
+def laugh():
+    return '😂😂😂'
+
+def execute(func):
+    return func()
+
+print(execute(laugh))
+
+def add():
+    return 2 + 3
+def subtract():
+    return 10 - 4
+def calculator(func):
+    return func()
+
+print(calculator(add))
+print(calculator(subtract))
+
+def subtract_num(num):
+  def subtract(number):
+     return number - num
+  return subtract
+
+minus_five = subtract_num(5)
+
+print(minus_five(7))
+
+
+def tax(amt):
+    def tax_amt(amount):
+        return amount * (1 + amt / 100)
+    return tax_amt
+
+add_vat = tax(7.5)
+
+print(add_vat(100))
