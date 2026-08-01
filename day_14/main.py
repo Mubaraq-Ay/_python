@@ -251,4 +251,16 @@ def log(func):
 def run():
     return 'hello'
 print(run())
-    
+
+
+def repeat(func):
+    def laugh():
+        rs = func()
+        return f'{rs * 3}'
+    return laugh
+
+
+@repeat
+def laugh():
+    return "😂"
+print(laugh())
