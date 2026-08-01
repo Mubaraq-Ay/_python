@@ -149,3 +149,106 @@ def tax(amt):
 add_vat = tax(7.5)
 
 print(add_vat(100))
+
+
+# python decorators
+# decorator is a design pattern in python that allows a user to add new functionality to an existing object without modifying its structure
+
+# creating decorators
+
+# normal function
+def greeting():
+    return 'welcome to python'
+def uppercase_decorator(function):
+    def wrapper():
+        func = function()
+        make_uppercase = func.upper()
+        return make_uppercase
+    return wrapper
+g = uppercase_decorator(greeting)
+print(g())
+
+# implementing the example above with a decorator.
+'''this decorator function is a higher order function that takes a function as a parameter'''
+
+def uppercase_decorator(function):
+    def wrapper():
+        func = function()
+        make_uppercase = func.upper()
+        return make_uppercase
+    return wrapper
+@uppercase_decorator
+def greeting():
+    return 'welcome to python'
+print(greeting())
+
+
+def star_decorator(function):
+    def wrapper():
+        result = function()
+        return f'***{result}***'
+    return wrapper
+
+@star_decorator
+def greet():
+    return 'hello'
+print(greet())
+
+
+def excited(func):
+    def greet():
+        msg = func()
+        return f'{msg}!!!'
+    return greet
+
+@excited
+def greet():
+    return 'welcome'
+print(greet())
+
+
+def bracket(func):
+    def city():
+        result = func()
+        return f'[{result}]'
+    return city
+
+@bracket
+def city():
+    return 'lagos'
+print(city())
+
+def emoji(func):
+    def name():
+        result = func()
+        return f'😎 {result} 😎'
+    return name
+
+@emoji
+def name():
+    return 'mubaraq'
+print(name())
+
+def uppercase(func):
+    def school():
+        result = func()
+        make_upper = result.upper()
+        return f'{make_upper}'
+    return school
+
+@uppercase
+def school():
+    return 'mandem university'
+print(school())
+
+def log(func):
+    def run():
+        rs = func()
+        return f'Running function...\n{rs}'
+    return run
+
+@log
+def run():
+    return 'hello'
+print(run())
+    
