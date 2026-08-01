@@ -264,3 +264,31 @@ def repeat(func):
 def laugh():
     return "😂"
 print(laugh())
+
+
+# applying multiple decorators to a single function
+'''these decorator functions are higher order functions
+ that take functions as parameters'''
+
+# first decorator
+def uppercase_decorator(function):
+    def wrapper():
+        func = function()
+        make_uppercase = func.upper()
+        return make_uppercase
+    return wrapper
+
+# second decorator
+def split_string_decorator(function):
+    def wrapper():
+        func = function()
+        splitted_string = func.split()
+        return splitted_string
+    return wrapper
+
+# decorators would be executed from the top
+@split_string_decorator
+@uppercase_decorator
+def greeting():
+    return 'hello mubaraq welcome'
+print(greeting())
