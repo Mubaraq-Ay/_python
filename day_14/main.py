@@ -266,9 +266,10 @@ def laugh():
 print(laugh())
 
 
-# applying multiple decorators to a single function
-'''these decorator functions are higher order functions
- that take functions as parameters'''
+# applying multiple decorators to a single function 
+# decoratorception
+'''The decorator closest to the function is applied first.
+The outer decorator wraps the result of the first one.'''
 
 # first decorator
 def uppercase_decorator(function):
@@ -292,3 +293,63 @@ def split_string_decorator(function):
 def greeting():
     return 'hello mubaraq welcome'
 print(greeting())
+
+# some tasks..
+
+def question(func):
+    def greet():
+        rs = func()
+        return rs + '?'
+    return greet
+
+@question
+def greet():
+    return 'how are you'
+print(greet())
+
+def double(func):
+    def laugh():
+        rs = func()
+        return rs * 2
+    return laugh
+
+@double
+def laugh():
+    return "😂"
+print(laugh())
+
+
+def money(func):
+    def salary():
+        rs = func()
+        return f'₦{rs}'
+    return salary
+
+@money
+def salary():
+    return 50000000000
+print(salary())
+
+def uppercase(func):
+    def bank():
+        rs = func()
+        upper = rs.upper()
+        return upper
+    return bank
+
+@uppercase
+@money
+def bank():
+    return 'flutterwave'
+print(bank())
+
+def border(func): 
+    def title():
+      rs = func() 
+      return f'======================\n {rs} \n======================' 
+    return title 
+
+@border 
+def title(): 
+    return 'SYSTEM HEALTH CHECKER' 
+print(title())
