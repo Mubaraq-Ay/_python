@@ -353,3 +353,17 @@ def border(func):
 def title(): 
     return 'SYSTEM HEALTH CHECKER' 
 print(title())
+
+# accepting parameters in decorator functions
+# we might need our functions to take parameters, so we might need to define a decorator that accepts parameters.
+
+def decorator_with_parameters(function):
+    def wrapper_accepting_parameters(param1, param2, param3):
+        function(param1, param2, param3)
+        print(f'i live in {param3}')
+    return wrapper_accepting_parameters
+
+@decorator_with_parameters
+def print_full_name(first_name, last_name, country):
+    print(f'i am {first_name} {last_name}. i love to teach {country}.')
+print_full_name('mubaraq', 'ayanleke', 'saudi')
