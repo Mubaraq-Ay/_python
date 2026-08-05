@@ -443,3 +443,16 @@ def is_name_long(name):
 
 long_names = filter(is_name_long, names)
 print(list(long_names))
+
+
+# reduce function
+# this turns many values into one.
+
+from functools import reduce
+
+numbers_str = ['1', '2', '3', '4', '5']
+def add_two_nums(x, y):
+    return int(x) + int(y)
+
+total = reduce(add_two_nums, numbers_str)
+print(total)
