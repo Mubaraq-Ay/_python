@@ -367,3 +367,40 @@ def decorator_with_parameters(function):
 def print_full_name(first_name, last_name, country):
     print(f'i am {first_name} {last_name}. i love to teach {country}.')
 print_full_name('mubaraq', 'ayanleke', 'saudi')
+
+
+# built-in higher order functions
+# map(), filter, reduce. lambda function can be passed as a parameter and the best use case is in functions like map, filter and reduce
+
+# map function
+# this is a built-in function that takes a function and iterable as parameters.
+# syntax -- map(function, iterable)
+
+# example 1
+numbers = [1, 2, 3, 4, 5]
+def square(x):
+    return x ** 2
+numbers_squared = map(square, numbers)
+print(list(numbers_squared))
+
+# applying within a lambda function
+numbers_squared = map(lambda x : x ** 2, numbers)
+print(list(numbers_squared))
+
+# example 2
+numbers_str = ['1', '2', '3', '4', '5']
+numbers_int = map(int, numbers_str)
+print(list(numbers_int))
+
+# example 3
+names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']
+
+def change_to_upper(name):
+    return name.upper()
+
+names_upper_cased = map(change_to_upper, names)
+print(list(names_upper_cased))
+
+# applying with a lambda function
+names_upper_cased = map(lambda name: name.upper(), names)
+print(list(names_upper_cased))
