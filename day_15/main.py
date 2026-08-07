@@ -68,3 +68,7 @@ print(pow(2,3))
 # ValueError
 # int('12a') - we cant change this string to an int because of the a
 
+# ZeroDivisionError
+# we cannot divide a number by zero.
+
+# 1/0
