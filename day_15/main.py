@@ -39,3 +39,16 @@ import math
 # math.PI  - pi and not PI
 
 math.pi     # - correct way.
+
+
+# KeyError
+users = {
+    'name':'Asab', 
+    'age':250, 
+    'country':'Finland'
+}
+
+print(users['name'])
+# print(users['county']) there's a typo 'county' instead of 'country'.
+
+print(users['country'])
