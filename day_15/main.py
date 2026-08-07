@@ -31,3 +31,11 @@ print(age)
 
 import math
 
+
+# AttributeError
+
+import math
+
+# math.PI  - pi and not PI
+
+math.pi     # - correct way.
