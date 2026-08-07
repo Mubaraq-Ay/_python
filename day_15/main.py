@@ -28,3 +28,5 @@ print(age)
 # import maths  - no module named maths - wrong module, the correct module is math.
 
 # correct way
+
+import math
