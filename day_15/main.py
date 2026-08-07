@@ -52,3 +52,9 @@ print(users['name'])
 # print(users['county']) there's a typo 'county' instead of 'country'.
 
 print(users['country'])
+
+# TypeError
+# print(4 + '3') can't add a string and int
+
+# correct
+print(4 + int('8'))
