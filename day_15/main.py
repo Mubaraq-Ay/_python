@@ -60,7 +60,11 @@ print(users['country'])
 print(4 + int('8'))
 
 # ImportError
-# from math import power
+# from math import power - There is no function called power in the math module, it goes with a different name: pow.
 
 from math import pow
 print(pow(2,3))
+
+# ValueError
+# int('12a') - we cant change this string to an int because of the a
+
