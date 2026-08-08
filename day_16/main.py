@@ -88,3 +88,15 @@ print(f'date_string: {date_string}')
 
 date_object = datetime.strptime(date_string, '%d %B, %Y')
 print(f'date_object: {date_object}')
+
+# using date from datetime.
+from datetime import date
+d = date(2020, 1, 1)
+print(d)
+print(f'current date: {d.today()}')
+
+# date object of today's date.
+today = date.today()
+print(f'current year: {today.year}')
+print(f'current month: {today.month}')
+print(f'current day: {today.day}')
