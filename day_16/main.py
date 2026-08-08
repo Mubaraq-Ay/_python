@@ -96,6 +96,8 @@ print(d)
 print(f'current date: {d.today()}')
 
 # date object of today's date.
+
+
 today = date.today()
 print(f'current year: {today.year}')
 print(f'current month: {today.month}')
@@ -119,3 +121,21 @@ print(f'c: {c}')
 d = time(10, 30, 50, 200303) # remember micro is 6 digits.
 print(f'd: {d}')
 
+
+"""
+    date only stores: 
+        Year
+        Month
+        Day
+
+    datetime stores:
+        Year
+        Month
+        Day
+        Hour
+        Minute
+        Second
+        Microsecond
+
+    time represents only clock.
+"""
