@@ -78,3 +78,13 @@ print(f'time_one: {time_one}')
 
 time_two = now.strftime('%d/%m/%Y, %H:%M:%S')
 print(f'time_two: {time_two}')
+
+
+# string to time using strptime
+
+from datetime import datetime
+date_string = '5 December, 2019'
+print(f'date_string: {date_string}')
+
+date_object = datetime.strptime(date_string, '%d %B, %Y')
+print(f'date_object: {date_object}')
