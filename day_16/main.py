@@ -153,3 +153,16 @@ t1 = datetime(year = 2026, month = 8, day=7, hour=18, minute=22, second=29)
 t2 = datetime(year=2027, month=1, day=1, hour=0, second=0)
 diff = t2 - t1
 print(f'time left for new year is: {diff}')
+
+
+# difference between two points using timedelta
+
+from datetime import timedelta
+
+t1 = timedelta(weeks=12, days=10, hours=4, seconds=20)
+t2 = timedelta(days=7, hours=5, minutes=3, seconds=30)
+t3 = t1 - t2
+print(f't3 = {t3}')
+
+''' date_string = 5 December, 2019
+    date_object = 2019-12-05 00:00:00'''
