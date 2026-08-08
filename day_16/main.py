@@ -100,3 +100,22 @@ today = date.today()
 print(f'current year: {today.year}')
 print(f'current month: {today.month}')
 print(f'current day: {today.day}')
+
+# time objects to represent time.
+from datetime import time
+
+a = time()
+print(f'a: {a}')
+
+# time(hour, minute, second)
+b = time(10, 30, 50)
+print(f'b: {b}')
+
+# time(hour, minute, second)
+c = time(hour=10, minute=30, second=50)
+print(f'c: {c}')
+
+# time(hour, minute, second, microsecond)
+d = time(10, 30, 50, 200303) # remember micro is 6 digits.
+print(f'd: {d}')
+
