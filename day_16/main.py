@@ -139,3 +139,17 @@ print(f'd: {d}')
 
     time represents only clock.
 """
+
+# difference between two points using time date and datetime.
+
+from datetime import date, datetime
+
+today = date(year=2026, month=8, day=7)
+new_year = date(year=2027, month=1, day=1)
+time_left_for_new_year = new_year - today
+print(f'time left for new year: {time_left_for_new_year}')
+
+t1 = datetime(year = 2026, month = 8, day=7, hour=18, minute=22, second=29)
+t2 = datetime(year=2027, month=1, day=1, hour=0, second=0)
+diff = t2 - t1
+print(f'time left for new year is: {diff}')
