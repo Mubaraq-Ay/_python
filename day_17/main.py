@@ -269,3 +269,19 @@ def sum_all(*args):
 print(sum_all(1,2,3)) 
 print(sum_all(1,2,3,4,5,6,6,7))
 
+# packing dictionaries
+
+def packing_person_info(**kwargs):
+    # check the type of kwargs and it is a dict type
+    # print(type(kwargs))
+    # printing dictionary items
+    for key in kwargs:
+        print(f'{key} = {kwargs[key]}')
+    return kwargs
+print(packing_person_info(
+      name="Asabeneh",
+      country="Finland", 
+      city="Helsinki", 
+      age=250
+))
+
