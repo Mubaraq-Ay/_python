@@ -5,3 +5,9 @@ fin, swe, nor, den, ice, es, ru = names
 print(nordic_countries)
 print(es)
 print(ru)
+
+
+'''enumerate() → index + value
+zip()       → pair iterables
+*           → unpack / collect positional values
+**          → unpack keyword/dict values'''
