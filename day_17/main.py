@@ -193,21 +193,55 @@ process_order(20, 10, 2)
 process_order(-39, 2, 2)
 
 
-try:
-    name = input('enter your name: ')
-    year_born = int(input('year you born: '))
-    age = 2026 - year_born
-    print(f'you are {name}. and your age is {age}.')
-except TypeError:
-    print('type error occured')
-except ValueError:
-    print('value error occured')
-except ZeroDivisionError:
-    print('zero division error occured')
-else:
-    print('i usually run with the try block')
-finally:
-    print('i always run.')
+# try:
+#     name = input('enter your name: ')
+#     year_born = int(input('year you born: '))
+#     age = 2026 - year_born
+#     print(f'you are {name}. and your age is {age}.')
+# except TypeError:
+#     print('type error occured')
+# except ValueError:
+#     print('value error occured')
+# except ZeroDivisionError:
+#     print('zero division error occured')
+# else:
+#     print('i usually run with the try block')
+# finally:
+#     print('i always run.')
 
 # else - the risky operation ran, now do this.
 # finally - runs regardless of whether an exception happened or not.
+
+
+# packing and unpacking arguments in python.
+
+# we use two operators.
+
+# * for tuples and
+# ** for dictionaries.
+
+# unpacking. (unpacking lists)
+
+def sum_of_five_nums(a, b, c, d ,e):
+    return a + b + c + d + e
+
+lst = [1, 2, 3, 4, 5]
+print(sum_of_five_nums(*lst))
+
+# we can also use unpacking in the range built-in function that expects a start and an end.
+
+numbers = range(2, 7)
+print(list(numbers))
+args = [2, 7]
+numbers = range(*args)
+print(numbers)
+
+# a tuple or a list can also be unpacked like this
+
+countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
+fin, sw, nor, *rest = countries
+print(fin, sw, nor, rest)
+
+numbers = [1,2,3,4,5,6,7]
+one, *middle, last = numbers
+print(one, middle, last)
