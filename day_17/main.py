@@ -191,3 +191,23 @@ def process_order(item_price, quantity, stock_available):
 process_order(50, 2, 10)
 process_order(20, 10, 2)
 process_order(-39, 2, 2)
+
+
+try:
+    name = input('enter your name: ')
+    year_born = int(input('year you born: '))
+    age = 2026 - year_born
+    print(f'you are {name}. and your age is {age}.')
+except TypeError:
+    print('type error occured')
+except ValueError:
+    print('value error occured')
+except ZeroDivisionError:
+    print('zero division error occured')
+else:
+    print('i usually run with the try block')
+finally:
+    print('i always run.')
+
+# else - the risky operation ran, now do this.
+# finally - runs regardless of whether an exception happened or not.
