@@ -245,3 +245,16 @@ print(fin, sw, nor, rest)
 numbers = [1,2,3,4,5,6,7]
 one, *middle, last = numbers
 print(one, middle, last)
+
+# unpacking dictionaries.
+
+def unpacking_person_info(name, country, city, age):
+    return f'{name} lives in {country}, {city}. he is {age} years old'
+dct = {
+    'name': 'mubaraq',
+    'country': 'nig', 
+    'city': 'lag',
+    'age': '250'
+}
+
+print(unpacking_person_info(**dct))
