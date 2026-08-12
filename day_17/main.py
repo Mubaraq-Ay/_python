@@ -258,3 +258,14 @@ dct = {
 }
 
 print(unpacking_person_info(**dct))
+
+# packing lists
+
+def sum_all(*args):
+    s = 0
+    for i in args:
+        s += i
+    return s
+print(sum_all(1,2,3)) 
+print(sum_all(1,2,3,4,5,6,6,7))
+
