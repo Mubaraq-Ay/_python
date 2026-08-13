@@ -7,3 +7,122 @@ import re
 
 # methods in re module.
 
+'''
+    We use regex character sets and symbols to describe 
+    the pattern we're looking for in a string.
+'''
+
+# re.match()   # → "Does it start here?"
+# re.search()  # → "Is it anywhere?"
+# re.findall() # → "Give me ALL matches. returns a list btw."
+# re.split()   # → "Cut it at the matches."
+# re.sub()     # → "Replace the matches."
+
+# match.
+# syntax - re.match(substring, string, re.I)
+
+import re
+
+txt = 'i love to teach python and javascript'
+# returns an object with span, and match.
+
+# re.I disables python case sensitive stuff.
+match = re.match('i love to teach', txt, re.I)
+print(match)
+
+# span is the start and end positions of matched text in the string.
+span = match.span()
+print(span)
+
+# find out the start and stop position from the span
+start, end = span
+print(start, end)
+
+substring = txt[start:end]
+print(substring)
+
+# 1
+
+txt = 'python is fun and python is powerful.'
+
+match = re.match('python is fun', txt, re.I)
+print(match)
+
+span = match.span()
+print(span)
+
+start, end = span
+print(start, end)
+
+substring = txt[start:end]
+print(substring)
+
+# 2
+
+txt = 'PYTHON is fun'
+
+match = re.match('python', txt, re.I)
+print(match)
+
+span = match.span()
+print(span)
+
+start, end = span
+print(start, end)
+
+substring = txt[start:end]
+print(substring)
+
+# 3
+
+txt = 'i love Python'
+
+match = re.search('python', txt, re.I) # added ignore case, still didnt work.
+print(match)
+
+# 4
+
+txt = 'Hello, my name is Mubaraq'
+
+match = re.match('hello', txt, re.I)
+print(match)
+
+start, end = match.span()
+print(start, end)
+
+substring = txt[start:end]
+print(substring)
+
+# 5
+
+txt = 'i am learning python'
+
+match = re.match('i am learning', txt, re.I)
+span = match.span()
+start, end = span
+
+substring = txt[start:end]
+
+
+print(f'''
+    match: {match}
+    span: {span}
+    start: {start}
+    end: {end}
+    substring: {substring}
+''')
+
+txt = 'i love Python and i also love javascript.'
+
+search = re.search('python', txt, re.I)
+print(search)
+
+span = search.span()
+print(span)
+
+start, end = span
+print(start, end)
+
+substring = txt[start:end]
+print(substring)
+
