@@ -196,3 +196,24 @@ I found teaching more interesting than any other jobs.
 Does this motivate you to be a teacher?'''
 
 print(re.split('\n', txt))
+
+
+# writing regex patterns
+
+# to declare a string variable we use single or double quotes. to declare a regex variable r
+
+regex_pattern = r'apple'
+txt = 'Apple and banana are fruits. An old cliche says an apple a day a doctor way has been replaced by a banana a day keeps the doctor far far away. '
+matches = re.findall(regex_pattern, txt)
+print(matches)
+
+
+# to make case insensitive adding flag
+matches = re.findall(regex_pattern, txt, re.I)
+print(matches)
+
+# or we can use set of character method.
+
+regex_pattern = r'[Aa]pple'  # means the first letter could be A or a
+matches = re.findall(regex_pattern, txt)
+print(matches)
