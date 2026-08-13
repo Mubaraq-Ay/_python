@@ -217,3 +217,82 @@ print(matches)
 regex_pattern = r'[Aa]pple'  # means the first letter could be A or a
 matches = re.findall(regex_pattern, txt)
 print(matches)
+
+
+
+# square bracket.
+
+# looking for apple and banana.
+regex_pattern = r'[Aa]pple | [Bb]anana'
+txt = 'Apple and banana are fruits. An old cliche says an apple a day a doctor way has been replaced by a banana a day keeps the doctor far far away.'
+matches = re.findall(regex_pattern, txt)
+print(matches)
+
+
+# escape character (\) in regex
+
+regex_pattern = r'\d' # -> d is a special character which means digits.
+txt = 'This regular expression example was made on December 6,  2019 and revised on July 8, 2021'
+matches = re.findall(regex_pattern, txt)
+print(matches)
+
+# one or more times (+)
+
+regex_pattern = r'\d+' # the + mean one or more times - it grabs the digits at once instead of one by one.
+txt = 'This regular expression example was made on December 6,  2019 and revised on July 8, 2021'
+matches = re.findall(regex_pattern, txt)
+print(matches)
+
+# period (.)
+
+regex_pattern = r'[a].' # this square bracket means a, and the . means grab the character after it.
+txt = '''Apple and banana are fruits'''
+matches = re.findall(regex_pattern, txt)
+print(matches)
+
+# zero or more times (*)
+# this pattern may not occur or occur many times.
+
+regex_pattern = r'[a].*'
+txt = '''Apple and banana are fruits'''
+matches = re.findall(regex_pattern, txt)
+print(matches)
+
+# zero or one time (?)
+# the pattern may not occur or it may occur once.
+
+txt = '''I am not sure if there is a convention how to write the word e-mail.
+Some people write it as email others may write it as Email or E-mail.'''
+regex_pattern = r'[Ee]-?mail' # ? means that '-' is optional
+matches = re.findall(regex_pattern, txt)
+print(matches)
+
+# quantifier in regex.
+# we can specify the length of the substring we are looking for in a text using curlyy bracket.
+
+txt = 'This regular expression example was made on December 6,  2019 and revised on July 8, 2021'
+regex_pattern = r'\d{4}'
+matches = re.findall(regex_pattern, txt)
+print(matches)
+
+# can accept multiple lengths
+txt = 'This regular expression example was made on December 6,  2019 and revised on July 8, 2021'
+regex_pattern = r'\d{1,4}' # no spacing between them.
+matches = re.findall(regex_pattern, txt)
+print(matches)
+
+# cart
+# means the match must start at the beginning of the string.
+
+txt = 'This regular expression example was made on December 6,  2019 and revised on July 8, 2021'
+regex_pattern = r'^This'
+matches = re.findall(regex_pattern, txt)
+print(matches)
+
+# negation
+# means not this (pass the regex in the square bracket)
+
+txt = 'This regular expression example was made on December 6,  2019 and revised on July 8, 2021'
+regex_pattern = r'[^A-Za-z ]+'
+matches = re.findall(regex_pattern, txt)
+print(matches)
