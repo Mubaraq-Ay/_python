@@ -142,3 +142,25 @@ print(start, end)
 
 substring = txt[start:end]
 print(substring)
+
+
+# findall() - returns all the matches as a list.
+
+txt = '''Python is the most beautiful language that a human being has ever created.
+I recommend python for a first programming language'''
+
+matches = re.findall('language', txt, re.I)
+print(matches)
+
+# since we are using both lowercase and uppercase letters
+
+txt = '''Python is the most beautiful language that a human being has ever created.
+I recommend python for a first programming language'''
+
+matches = re.findall('Python|python', txt)
+print(matches)
+
+# or
+
+matches = re.findall('[Pp]ython', txt)
+print(matches)
