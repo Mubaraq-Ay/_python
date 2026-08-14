@@ -157,3 +157,20 @@ person = {
 person_json = json.dumps(person, indent=4)
 print(type(person_json))
 print(person_json)
+
+
+# saving as json file.
+# we can save our data as a json file following these steps.
+
+import json
+
+
+person = {
+    'name': 'mubby',
+    'country': 'nigeria',
+    'city': 'lagos',
+    'skills': ['go', 'python', 'docker']
+}
+
+with open('../json_example.json', 'w', encoding='utf-8') as f:
+    json.dump(person, f, ensure_ascii=False, indent=4)
