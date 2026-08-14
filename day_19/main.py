@@ -7,3 +7,57 @@
 # syntax
 # open('filename', mode)
 
+'''
+    r - read
+    w - write → creates if missing, overwrites if it exists
+    a - append  → creates if missing, adds to the end
+    x - create → creates only, errors if it already exist
+
+    t - text
+    b - binary
+'''
+
+
+# opening files for reading.
+# the default mode for opening a file is reading. we dont need to specify 'r' or 'rt'
+
+f = open('../reading_file_example.txt')
+print(f) 
+
+txt = f.read()
+print(type(txt))
+print(txt)
+f.close()
+
+# instead of printing all the text, print the furst 10 characters of the text file.
+
+f = open('../reading_file_example.txt')
+txt = f.read(10)
+print(type(txt))
+print(txt)
+
+
+# readline() - prints the first line of the file.
+
+f = open('../reading_file_example.txt')
+line = f.readline()
+print(type(line))
+print(line)
+
+# readlines -  read all the text line by line and returns a list of lines.
+
+f = open('../reading_file_example.txt')
+lines = f.readlines()
+print(type(lines))
+print(lines)
+f.close()
+
+# another way to get all the lines as a list is using splitlines()
+
+f = open('../reading_file_example.txt')
+lines = f.read().splitlines()
+print(type(lines))
+print(lines)
+f.close()
+
+# 
