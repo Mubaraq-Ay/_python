@@ -83,3 +83,13 @@ with open('../reading_file_example.txt', 'a') as f:
 with open('../reading_file_example.txt', 'w') as f:
     f.write('this is a newly created file') # if file exist sef, it clears everything there and upload what is here.
 
+
+# deleting files
+# we use os module if we want to remove a file ;)
+
+import os
+
+if os.path.exists('../reading_file_example.txt'):
+    os.remove('../reading_file_example.txt')
+else:
+    print('this file does not exist.')
