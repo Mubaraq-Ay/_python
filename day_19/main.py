@@ -78,3 +78,8 @@ with open('../reading_file_example.txt') as f:
 
 with open('../reading_file_example.txt', 'a') as f:
     f.write('this is the appended text')
+
+# this method creates a new file if the file does not exist
+with open('../reading_file_example.txt', 'w') as f:
+    f.write('this is a newly created file') # if file exist sef, it clears everything there and upload what is here.
+
