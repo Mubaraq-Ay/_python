@@ -93,3 +93,10 @@ if os.path.exists('../reading_file_example.txt'):
     os.remove('../reading_file_example.txt')
 else:
     print('this file does not exist.')
+
+
+# file types
+
+# file with txt extension.
+# this is a common form of data. 
+
