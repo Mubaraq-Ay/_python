@@ -139,3 +139,21 @@ person_dct = json.loads(person_json)
 print(type(person_dct))
 print(person_dct)
 print(person_dct['name'])
+
+
+# changing dictionary to json
+# to change dictionary to json, we use dumps method from the json module.
+
+import json
+
+person = {
+    'name': 'mubby',
+    'country': 'nigeria',
+    'city': 'lagos',
+    'skills': ['go', 'python', 'docker']
+}
+
+# convert to json
+person_json = json.dumps(person, indent=4)
+print(type(person_json))
+print(person_json)
