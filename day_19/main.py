@@ -66,3 +66,15 @@ with open('../reading_file_example.txt') as f:
     lines = f.read().splitlines()
     print(type(lines))
     print(lines)
+
+
+# opening files for writing and updating
+# to write an existing file, we must add mode as a parameter to the open() function.
+
+'''
+    a - append - will append to the end of the file. if file does not exist it creates a new file.
+    w - write - will overwrite any existing content, if the file does not exist it creates.
+'''
+
+with open('../reading_file_example.txt', 'a') as f:
+    f.write('this is the appended text')
