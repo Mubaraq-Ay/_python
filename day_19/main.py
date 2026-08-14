@@ -60,4 +60,9 @@ print(type(lines))
 print(lines)
 f.close()
 
-# 
+# new way of closing a file.
+
+with open('../reading_file_example.txt') as f:
+    lines = f.read().splitlines()
+    print(type(lines))
+    print(lines)
