@@ -35,3 +35,8 @@ for url in url_lists:
 
 # list of packages.
 # we use pip list to see the installed packages on my machine.
+
+# show package 
+# to show information about a package.
+# we use := pip show packagename e.g. pip show psutil
+# to get more details, we use := pip show psutil --verbose
