@@ -33,3 +33,5 @@ for url in url_lists:
 
 # we use := pip uninstall packagename e.g. pip unistall numpy
 
+# list of packages.
+# we use pip list to see the installed packages on my machine.
