@@ -27,3 +27,9 @@ url_lists = [
 # opens the above websites in a different tab
 for url in url_lists:
     webbrowser.open_new_tab(url)
+
+
+# uninstalling packages.
+
+# we use := pip uninstall packagename e.g. pip unistall numpy
+
