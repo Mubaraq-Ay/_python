@@ -40,3 +40,10 @@ for url in url_lists:
 # to show information about a package.
 # we use := pip show packagename e.g. pip show psutil
 # to get more details, we use := pip show psutil --verbose
+
+
+# pip freeze.
+# this shows the installed packages with their version and the output suitable to use it in a requirements.txt file
+
+# usage := pip freeze
+# to save the list in a file we use:= pip freeze > requirements.txt
