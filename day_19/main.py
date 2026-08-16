@@ -196,4 +196,9 @@ with open('../csv_example.csv') as f:
 
 
 # file with xlsx extension
-# to read excel files, we need to install xlrd package. would do on the next chapter.
+# to read excel files, we need to install xlrd package.  
+
+# import xlrd
+# excel_book = xlrd.open_workbook('samples.xls')
+# print(excel_book.nsheets)
+# print(excel_book.sheet_names)
