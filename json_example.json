@@ -1,0 +1,10 @@
+{
+    "name": "mubby",
+    "country": "nigeria",
+    "city": "lagos",
+    "skills": [
+        "go",
+        "python",
+        "docker"
+    ]
+}
