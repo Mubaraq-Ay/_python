@@ -1,0 +1,11 @@
+<?xml version='1.0'?>
+<person gender="male">
+  <name>mubaraq</name>
+  <country>qatar</country>
+  <city>Makkah</city>
+  <skills>
+    <skill>JavaScrip</skill>
+    <skill>React</skill>
+    <skill>Python</skill>
+  </skills>
+</person>
