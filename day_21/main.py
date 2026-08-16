@@ -18,3 +18,8 @@ class Person:
     pass
 print(Person)
 
+# creating an object
+# we can create an object by simply calling the class.
+
+p = Person()
+print(p)
