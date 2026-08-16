@@ -25,8 +25,8 @@ url_lists = [
 ]
 
 # opens the above websites in a different tab
-for url in url_lists:
-    webbrowser.open_new_tab(url)
+# for url in url_lists:
+#     webbrowser.open_new_tab(url)
 
 
 # uninstalling packages.
@@ -47,3 +47,28 @@ for url in url_lists:
 
 # usage := pip freeze
 # to save the list in a file we use:= pip freeze > requirements.txt
+
+# reading from the url.
+# an api is a way for two applications to communicate with each other.
+
+# requests module contains the following
+
+'''
+    get(): sends a request to a url and fetches whatever is there, returns a response object (a package containing everything about what came back.)
+    status_code(): a number telling you if the request succeded or failed.
+    headers: extra info about the response itself
+    text:  the actual contenr, as a plain string
+    json: same as text, but automatically converts it into a python dict/list if the response is json data.
+'''
+
+
+import requests
+
+
+url = 'https://ayanleke.cv'
+
+response = requests.get(url)
+print(response)
+print(response.status_code)
+print(response.headers)
+print(response.text)
