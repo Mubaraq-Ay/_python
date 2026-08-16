@@ -68,7 +68,14 @@ import requests
 url = 'https://ayanleke.cv'
 
 response = requests.get(url)
-print(response)
-print(response.status_code)
-print(response.headers)
-print(response.text)
+# print(response)
+# print(response.status_code)
+# print(response.headers)
+# print(response.text)
+
+
+print(f'response: {response}')
+print(f'status: {response.status_code}')
+print(f'headers: {response.headers}')
+print(f'page content: {response.text}')
+print(f"mubaraq found: {'Mubaraq' in response.text}")
