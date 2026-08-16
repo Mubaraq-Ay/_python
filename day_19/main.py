@@ -202,3 +202,16 @@ with open('../csv_example.csv') as f:
 # excel_book = xlrd.open_workbook('samples.xls')
 # print(excel_book.nsheets)
 # print(excel_book.sheet_names)
+
+
+
+# file with xml extension
+# xml is another structured data format which looks like html. in xml the tags are not predefined, you create the tags.
+
+import xml.etree.ElementTree as ET
+tree = ET.parse('test.xml')
+root = tree.getroot()
+print(f'root tag: {root.tag}')
+print(f'attribute: {root.attrib}')
+for child in root:
+    print(f'field: {child.tag}')
