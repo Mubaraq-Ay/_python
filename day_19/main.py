@@ -193,3 +193,7 @@ with open('../csv_example.csv') as f:
             )
             line_count += 1
     print(f'number of lines: {line_count}')
+
+
+# file with xlsx extension
+# to read excel files, we need to install xlrd package. would do on the next chapter.
