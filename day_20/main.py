@@ -93,3 +93,5 @@ print(users)
 
 # creating a package.
 # A package is a folder that contains related Python modules.
+
+# __init__.py is a file that configures a folder as a python package.
