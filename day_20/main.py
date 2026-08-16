@@ -10,3 +10,20 @@
 
 # check pip version -: pip --version
 
+# installing packages using pip.
+
+# open any website
+
+import webbrowser # module to open websites
+
+# list of urls: python
+url_lists = [
+    'http://www.python.org',
+    'https://www.linkedin.com/in/asabeneh/',
+    'https://github.com/Asabeneh',
+    'https://twitter.com/Asabeneh',
+]
+
+# opens the above websites in a different tab
+for url in url_lists:
+    webbrowser.open_new_tab(url)
