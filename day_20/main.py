@@ -89,3 +89,7 @@ print(response)
 print(response.status_code)
 users = response.json()
 print(users)
+
+
+# creating a package.
+# A package is a folder that contains related Python modules.
