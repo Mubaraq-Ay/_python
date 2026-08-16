@@ -64,7 +64,6 @@ url_lists = [
 
 import requests
 
-
 url = 'https://ayanleke.cv'
 
 response = requests.get(url)
@@ -74,8 +73,19 @@ response = requests.get(url)
 # print(response.text)
 
 
-print(f'response: {response}')
-print(f'status: {response.status_code}')
-print(f'headers: {response.headers}')
-print(f'page content: {response.text}')
-print(f"mubaraq found: {'Mubaraq' in response.text}")
+# print(f'response: {response}')
+# print(f'status: {response.status_code}')
+# print(f'headers: {response.headers}')
+# print(f'page content: {response.text}')
+# print(f"mubaraq found: {'Mubaraq' in response.text}")
+
+
+
+
+url = "https://jsonplaceholder.typicode.com/users"
+response = requests.get(url)
+
+print(response)
+print(response.status_code)
+users = response.json()
+print(users)
