@@ -116,3 +116,80 @@ print(p1.person_info())
 # i can override the values
 p2 = Person('ali', 'smith', 230, 'saudi', 'makkah')
 print(p2.person_info())
+
+# method to modify class default values.
+# this let's us change an object's data after it has been created. 
+
+class Person:
+    def __init__(self, firstname = 'mubaraq', lastname = 'ayanleke', age = 250, country = 'qatar', city = 'medinah'):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.age = age
+        self.country = country
+        self.city = city
+        self.skills = []
+
+    def person_info(self):
+            return f'{self.firstname} {self.lastname} is {self.age} years old. he lives in {self.country}, {self.city}'
+
+    def add_skill(self, skill):
+            self.skills.append(skill)
+
+p1 = Person()
+print(p1.person_info())
+p1.add_skill('html')
+p1.add_skill('css')
+p1.add_skill('python')
+
+print(p1.skills)
+
+p2 = Person('ali', 'smith', 230, 'saudi', 'makkah')
+print(p2.person_info())
+
+p2.add_skill('docker')
+p2.add_skill('go')
+
+print(p2.skills)
+
+
+# 2
+
+class Person:
+    def __init__(self, firstname='Mubaraq', lastname='Ayinde', age=20):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.age = age
+
+    def person_info(self):
+        return f'{self.firstname} {self.lastname} is {self.age} years old'
+
+    def set_age(self, age):
+        self.age = age
+
+p1 = Person()
+print(p1.person_info())
+
+p1.set_age(25)
+print(p1.person_info())
+
+
+class Car:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def describe(self):
+        print(f'this is a {self.make} {self.model} {self.year}')
+
+    def set_year(self, year):
+        self.year = year
+
+corolla = Car('toyota', 'corolla', 2020)
+corolla.describe()
+
+accord = Car('honda', 'accord', 2020)
+accord.describe()
+
+corolla.set_year(2026)
+corolla.describe()
