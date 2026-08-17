@@ -76,3 +76,22 @@ corolla.describe()
 
 accord = Car('honda', 'accord', 2020)
 accord.describe()
+
+
+# object methods
+
+# object can have methods. the methods are functions which belong to the object.
+
+class Person:
+    def __init__(self, firstname, lastname, age, country, city):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.age = age
+        self.country = country
+        self.city = city
+
+    def person_info(self):
+        return f'{self.firstname} {self.lastname} is {self.age} years old. he lives in {self.country}, {self.city}'
+
+p = Person('mubaraq', 'ayanleke', 250, 'kuwaiti', 'dinar')
+print(p.person_info())
