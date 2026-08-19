@@ -265,3 +265,80 @@ print(c.area())
 r = Rectangle('rectangle', 4, 6)
 r.describe()
 print(r.area())
+
+
+# overriding parent method.
+# this is when the child class provides its own version of a method that already exists in the parent class.
+
+class Shape:
+    def describe(self):
+        print('this is a shape')
+
+class Circle(Shape):
+    def describe(self):
+        print('this is a circle')
+
+
+s = Shape()
+s.describe()
+
+c = Circle()
+c.describe()
+
+# combining it with super()
+
+
+class Shape:
+    def describe(self):
+        print('this is a shape')
+
+
+class Circle(Shape):
+    def __init__(self):
+        super().describe()
+        print('round sh')
+
+
+c = Circle()
+c.describe()
+
+
+
+class Shape:
+    def __init__(self, name):
+        self.name = name
+
+    def describe(self):
+        print(f'this is a {self.name}')
+
+class Circle(Shape):
+    def __init__(self, name, radius):
+        super().__init__(name)
+        self.radius = radius
+
+    def area(self):
+           return 3.14 * self.radius ** 2
+
+    def describe(self):
+        print(f'this is a {self.name} with radius {self.radius}')
+
+class Rectangle(Shape):
+    def __init__(self, name, width, height):
+        super().__init__(name)
+        self.width = width
+        self.height = height
+
+    def area(self):
+        return self.width * self.height
+
+    def describe(self):
+        print(f'this is a {self.name} with width {self.width} and height {self.height}')
+
+
+c = Circle("circle", 5)
+c.describe()         
+print(c.area())
+
+r = Rectangle('rectangle', 4, 6)
+r.describe()
+print(r.area())
