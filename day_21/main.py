@@ -193,3 +193,75 @@ accord.describe()
 
 corolla.set_year(2026)
 corolla.describe()
+
+# inheritance
+# inheritance lets one class build on top of another.
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+class Student(Person):
+    pass
+
+
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        print(f'{self.name} makes a sound')
+
+class Dog(Animal):
+    pass        
+
+d = Dog('rex')
+d.speak()
+
+# super()
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+class Student(Person):
+    def __init__(self, name, age, school):
+        super().__init__(name, age)
+        self.school = school
+
+
+
+class Shape:
+    def __init__(self, name):
+        self.name = name
+
+    def describe(self):
+        print(f'this is a {self.name}')
+
+class Circle(Shape):
+    def __init__(self, name, radius):
+        super().__init__(name)
+        self.radius = radius
+
+    def area(self):
+           return 3.14 * self.radius ** 2
+
+class Rectangle(Shape):
+    def __init__(self, name, width, height):
+        super().__init__(name)
+        self.width = width
+        self.height = height
+
+    def area(self):
+        return self.width * self.height
+
+
+c = Circle("circle", 5)
+c.describe()         
+print(c.area())
+
+r = Rectangle('rectangle', 4, 6)
+r.describe()
+print(r.area())
