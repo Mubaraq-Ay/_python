@@ -82,3 +82,42 @@ PATCH    → partial update
 DELETE   → delete
 '''
 
+# status codes.
+# every response comes back with a 3-digit number.
+
+# the 5 categories.
+'''
+    1xx → Informational
+    2xx → Success
+    3xx → Redirection
+    4xx → Client error
+    5xx → Server error 
+'''
+
+'''
+    1xx - rare, might not deal with these directly
+    2xx = success
+        200 - ok (the request worked, here's your data)
+        201 - specifically for POST. created (a new request has been successfully created)
+            e.g. POST /users → 201 Created
+        204 - no content. (common for delete.) works but nothing to send back
+
+    3xx - redirection.
+        301 - moved permanently. means the url has been moved somewhere else
+        302 - temporary redirection
+
+    4xx - client error
+        400 - bad request. (your request was malformed somehow)
+        401 - unauthorized. you need to authenticate (login/provide credentials) to be able to access
+        403 - forbidden. you're authenticated but not allowed to do this specific thing (e.g. a user trying to access the admin dashboard)
+        404 - not found - what you asked for doesnt exist
+        422 - unprocessable content. - well formed request but contains semantic errors
+        429 - too many requests. - rate-limiting
+
+    5xx - server error 
+        500 - internal server error, - something broke on their end 
+        502 - bad gateway. - invalid response received from an upstream server. (An upstream server is simply another server that a server depends on to complete your request.)
+        503 - service unavailable - server is temporarily down
+
+
+'''
