@@ -149,3 +149,42 @@ headers = {
 # print(response.headers)
 # Content-Type: application/json  -> "what I'm sending back is JSON"
 # Content-Length: 1234            -> "the response body is this many bytes"
+
+
+# body
+# body is the actual data/content of the request or response
+
+import requests
+
+# Sending a body (POST) — creating a new user:
+new_user = {
+    'name': 'john',
+    'email': 'john@gmail.vom'
+}
+
+# response = requests.post('https://jsonplaceholder.typicode.com/users', json=new_user) # json=new_user is telling the request to convert it to json and send it as the body of the request
+# print(response.status_code)
+# print(response.json())
+
+# receiving a body (GET)
+
+response = requests.get('https://jsonplaceholder.typicode.com/users/1')
+data = response.json()
+print(data['name'])
+
+# GET - no body is sent. body is received
+# POST/PUT - body sent. new/updated data body often received back too (confirmation of what was created/updated)
+
+
+# tsk
+
+import requests
+
+user = {
+    'name': 'mubby',
+    'email': 'mubby@gmail.com'
+}
+
+response = requests.post('https://jsonplaceholder.typicode.com/users', json=user)
+print(response.status_code)
+print(response.json())
