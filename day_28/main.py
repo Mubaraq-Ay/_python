@@ -118,6 +118,34 @@ DELETE   → delete
         500 - internal server error, - something broke on their end 
         502 - bad gateway. - invalid response received from an upstream server. (An upstream server is simply another server that a server depends on to complete your request.)
         503 - service unavailable - server is temporarily down
+'''
 
+# headers.
+# headers are metadata about the request or response. (extra information about the message, seperate from the actual data/content itself.)
+
+# common headers
+# request headers (info you send)
+
+
+headers = {
+    'Content-Type': 'application/json', # the data im sending is json
+    'Authorization': 'Bearer abc123token' # here is my auth token
+}
+
+# requests.get(url, headers=headers)
 
 '''
+    Content-Type       → what format is the body?
+    Content-Length     → how large is the body?
+    Content-Encoding   → was the body compressed?
+    Cache-Control      → caching instructions
+    ETag               → version/representation identifier
+    X-RateLimit-*      → rate-limit information
+'''
+
+# response headers (info you receive back)
+
+# response = requests.get(url)
+# print(response.headers)
+# Content-Type: application/json  -> "what I'm sending back is JSON"
+# Content-Length: 1234            -> "the response body is this many bytes"
