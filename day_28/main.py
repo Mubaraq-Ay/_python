@@ -188,3 +188,27 @@ user = {
 response = requests.post('https://jsonplaceholder.typicode.com/users', json=user)
 print(response.status_code)
 print(response.json())
+
+
+# query parameters
+# a query parameter lets you give extra instructions to an api about what you want.
+
+'''
+    example:
+
+    https://example.com/users?country=Nigeria
+
+    the part after the ? is the query string.
+    country - is the parameter name
+    Nigeria - is the parameter value.
+
+
+    multiple parameters.
+
+    it is seperated with &
+
+    example:
+    /users?country=Nigeria&limit=10
+
+    meaning: Give me Nigerian users, but limit the result to 10.
+'''
