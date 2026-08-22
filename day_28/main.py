@@ -244,3 +244,12 @@ Nest related resources logically: /users/1/posts — "posts belonging to user 1"
 Statelessness: the server does not rely on remembering the previous request from the client. each request should contain the information the server needs to handle it.
          the server treats each request as if it's the first time it's heard from me.
 '''
+
+
+'''
+    Authentication. (basics)
+ - authentication: proving your identity (who are you?)
+ - authorization: (what are you allowed to do?) e.g. trying to access a page for only admins
+
+ btw, you can be authenticated but not authorized to do something.
+'''
