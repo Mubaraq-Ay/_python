@@ -282,3 +282,15 @@ Statelessness: the server does not rely on remembering the previous request from
     api key - long-lived, identifies an app
     bearer token - often short lived, identifies a logged in user session
 '''
+
+
+'''
+    sessions vs tokens
+    two different startegies for staying logged in across multiple requests
+
+    - sessions (stateful): older approach. Server maintains user state, allowing users to remain logged in
+    across multiple requests without re-entering credentials.
+
+    - tokens (stateless): the server doesnt store anything about your session. the token itself contains everything needed
+    to verify who you are, and you just send it every request
+'''
