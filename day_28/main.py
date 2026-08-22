@@ -266,3 +266,19 @@ Statelessness: the server does not rely on remembering the previous request from
 # }
 
 # requests.get(url, headers=headers)
+
+'''
+    bearer tokens
+
+    this is a temporary credential proving you're currently authenticated. issued after you login, and sent in the header on every subsequent request (stateless)
+
+    e.g. 
+    headers = {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...'}
+    requests.get(url, headers=headers)
+
+    the long string is usually a jwt (json web token). a piece of data proving who you are, often with an expiration time built in.
+
+    API key & token 
+    api key - long-lived, identifies an app
+    bearer token - often short lived, identifies a logged in user session
+'''
