@@ -253,3 +253,16 @@ Statelessness: the server does not rely on remembering the previous request from
 
  btw, you can be authenticated but not authorized to do something.
 '''
+
+'''
+    API keys.
+    this is a secret string that identifies your app or account when talking to an api. (like a permanent password specifically for programmatic access. unchangeable btw, not tied to a login session)
+'''
+
+# e.g.
+
+# headers = {
+#     'Authorization': 'Api-Key abc123xyz'
+# }
+
+# requests.get(url, headers=headers)
