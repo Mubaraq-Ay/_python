@@ -211,4 +211,36 @@ print(response.json())
     /users?country=Nigeria&limit=10
 
     meaning: Give me Nigerian users, but limit the result to 10.
+
+    also, Path identifies the resource;
+    query parameters provide additional instructions for the request.
+'''
+
+'''
+    REST basics.
+
+resource: is a thing your api manages.
+
+endpoint: this is a specific api url you can interact with. it represents a resource.
+example:
+
+/users        <- endpoint for the users resource (collection resource)
+/users/1      <- endpoint for one specific user (individual resource)
+
+also:
+
+GET    /users      -> read all users
+GET    /users/1    -> read one user
+POST   /users      -> create a new user
+PUT    /users/1    -> update user 1
+DELETE /users/1    -> delete user 1
+
+RESTful url conventions (few rules):
+
+Use nouns, not verbs, in URLs: /users not /getUsers (the method GET already says "get," don't repeat it in the URL)
+Plural nouns for collections: /users not /user
+Nest related resources logically: /users/1/posts — "posts belonging to user 1"
+
+Statelessness: the server does not rely on remembering the previous request from the client. each request should contain the information the server needs to handle it.
+         the server treats each request as if it's the first time it's heard from me.
 '''
